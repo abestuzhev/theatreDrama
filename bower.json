@@ -1,0 +1,23 @@
+{
+  "name": "theatre",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Aleksey <aleksey.bestuzhev@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/abestuzhev/theatreDrama",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery.dotdotdot": "dotdotdot#^1.8.3",
+    "fancybox": "^2.1.5",
+    "slick-carousel": "^1.6.0"
+  }
+}

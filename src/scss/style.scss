@@ -1,0 +1,130 @@
+@import 'font';
+@import 'mixins';
+
+$default-font-size: 12px;
+$default-font-family: "Open Sans", sans-serif;
+$expresion-font-family: "MinionPro", serif;
+$img-dir: '../img/';
+$expresion-color: #44A397;
+$dark-color: #2a2531;
+
+body {
+  font-size: $default-font-size;
+  font-family: $default-font-family;
+  background-color: #fff;
+  color: #000;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: $default-font-family;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.2;
+  color: #292929;
+  font-size: 14px;
+  font-weight: 400;
+}3
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #6C8795;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+%transition {
+  transition: all .2s ease-out;
+}
+
+%outline {
+  outline: 1px solid #ccc;
+}
+
+.l-layout {
+  @extend %outline;
+  max-width: 1250px;
+  padding-bottom: 1px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  background: #fff url($img-dir + 'bg.jpg') 0 0 repeat;
+}
+
+input {
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: 100%;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  bottom: 0;
+  outline: 0;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  padding: 10px 15px;
+  width: auto;
+}
+
+.vk svg:hover #vk {
+  fill: #4d76a1;
+}
+
+.fb svg:hover #fb {
+  fill: #3b5998;
+}
+
+.ok svg:hover #ok {
+  fill: #f58220;
+}
+
+
+.vk, .fb, .ok  {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: auto 17px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 5px;
+}
