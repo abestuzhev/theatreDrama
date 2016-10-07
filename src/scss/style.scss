@@ -13,6 +13,7 @@ body {
   font-family: $default-font-family;
   background-color: #fff;
   color: #000;
+  background: #fff url($img-dir + 'bg.jpg') 0 0 repeat;
 }
 
 *,
@@ -352,6 +353,7 @@ input[type="checkbox"] {
   @include clear;
   border-bottom: 4px solid #E1A4A4;
   position: relative;
+  background-color: #fff;
 
   &_top {
     padding: 10px 0;
@@ -515,8 +517,6 @@ input[type="checkbox"] {
 //main
 //**************************//
 .main {
-  background: #fff url($img-dir + 'bg.jpg') 0 0 repeat;
-
 
   &_left-column {
     width: 75%;
@@ -618,7 +618,7 @@ input[type="checkbox"] {
 //**************************//
 
 .subscription {
-  width: 288px;
+  //width: 288px;
   padding: 25px;
   border: 1px solid #000;
   position: relative;
@@ -644,5 +644,96 @@ input[type="checkbox"] {
 
   &_email {
     margin-bottom: 15px;
+  }
+}
+
+
+//**************************//
+//footer
+//**************************//
+.l-footer {
+}
+
+.footer {
+  margin: 0 auto;
+  width: 1250px;
+  //padding: 0 16px;
+  background: url($img-dir + 'footer-bg.jpg') 0 0 repeat;
+
+  &_body {
+    height: 215px;
+    box-shadow: 0px 25px 50px -15px rgba(0,0,0,0.42);
+    padding: 0 56px;
+    @include clear;
+  }
+
+  &_logo a{
+    margin-top: 35px;
+    margin-bottom: 52px;
+    width: 156px;
+    height: 130px;
+    float: left;
+    margin-right: 25px;
+    background-image: url($img-dir + 'logo-white.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &_content {
+    @extend %outline;
+    float: left;
+    padding-top: 30px;
+  }
+
+  &_copiright {
+    position: relative;
+    padding: 15px 0;
+    padding-top: 20px;
+    text-align: center;
+
+   &-text {
+      display: inline-block;
+      color: #CBCBCB;
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    &-site {
+      color: #CBCBCB;
+      position: absolute;
+      top: 45%;
+      right: 56px;
+      @extend %transition;
+
+      &:hover {
+        color: #17ba9f;
+        @extend %transition;
+      }
+    }
+  }
+
+  &_menu {
+    font-size: 0;
+
+    &_item {
+      display: inline-block;
+
+    }
+
+    &_link {
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+      padding: 0 15px;
+      color: #FFF;
+      font-family: "Minion Pro";
+      font-size: 13px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $expresion-color;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+      }
+    }
   }
 }
