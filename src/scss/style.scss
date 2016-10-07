@@ -172,10 +172,41 @@ input[type="checkbox"] {
   font-weight: 600;
   text-transform: uppercase;
   padding: 10px 33px;
+
   &:hover {
     color: $expresion-color;
     border-color: $expresion-color;
     @extend %transition;
+  }
+
+  &--bg {
+    position: relative;
+    z-index: 2;
+    background-color: $expresion-color;
+    border: none;
+    color: #fff;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 40px;
+      background-color: lighten($expresion-color, 10%);
+      transition: all .1s ease-out;
+    }
+
+    &:hover {
+      &::after {
+        left: 0;
+        transition: all .1s ease-out;
+      }
+      color: #fff;
+      transition: all .1s ease-out;
+    }
   }
 }
 
@@ -224,10 +255,6 @@ input[type="checkbox"] {
     margin-bottom: 15px;
 
     img {
-      //position: absolute;
-      //top: 50px;
-      //left: 50px;
-      //transform: translate(-50%, -50%);
       max-width: 100%;
       height: auto;
     }
@@ -239,14 +266,17 @@ input[type="checkbox"] {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
+    a {
+      color: #292929;
+    }
   }
 
   &_text {
-    height: 40px;
+    height: 39px;
     overflow: hidden;
     color: #000;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 18px;
     font-weight: 300;
   }
 
@@ -254,6 +284,13 @@ input[type="checkbox"] {
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+
+  .c-age-restrictions {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
   }
 }
 
@@ -267,6 +304,12 @@ input[type="checkbox"] {
   text-decoration: underline;
   position: relative;
 
+  &:hover {
+    color: $expresion-color;
+    border-color: $expresion-color;
+    @extend %transition;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -277,6 +320,30 @@ input[type="checkbox"] {
     background: url($img-dir + 'link-more-icon.png') 0 0 no-repeat;
   }
 }
+
+//c-age-restrictions
+.c-age-restrictions {
+  border: 1px solid #000;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  line-height: 48px;
+  border-radius: 50px;
+  color: #fff;
+
+  span {
+    font-family: "Minion Pro";
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  &--bg {
+    background-color: $expresion-color;
+    border: none;
+    color: #fff;
+  }
+}
+
 
 //**************************//
 //header
@@ -432,6 +499,7 @@ input[type="checkbox"] {
   font-size: 0;
 
   &_item {
+    vertical-align: top;
     display: inline-block;
     margin-right: 40px;
     margin-bottom: 40px;
@@ -451,9 +519,11 @@ input[type="checkbox"] {
 
 
   &_left-column {
+    width: 75%;
     float: left;
   }
   &_right-column {
+    width: 25%;
     float: right;
   }
 }
@@ -462,9 +532,17 @@ input[type="checkbox"] {
 //news
 //**************************//
 .news {
-  width: 288px;
+  //width: 288px;
   padding: 35px 25px;
   border: 1px solid #000;
+  position: relative;
+  margin-bottom: 25px;
+
+  &_all-link {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+  }
 
   &_title {
     color: #292929;
@@ -477,10 +555,12 @@ input[type="checkbox"] {
   }
 
   &_post {
+    text-align: center;
     padding: 20px 0;
     border-bottom: 1px dotted #000;
 
     &-date {
+      text-align: left;
       color: #292929;
       font-family: "Minion Pro";
       font-size: 15px;
@@ -489,10 +569,80 @@ input[type="checkbox"] {
     }
 
     &-title {
+      text-align: left;
+      display: inline-block;
       color: #000;
       font-size: 14px;
       font-weight: 300;
       text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+        @extend %transition;
+      }
     }
+
+    &-ava {
+      display: inline-block;
+      border-radius: 50px;
+      overflow: hidden;
+      width: 85px;
+      height: 85px;
+      position: relative;
+      margin-bottom: 20px;
+
+      img  {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left:-42px;
+        margin-top: -43px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-ava-description {
+      text-align: left;
+      color: #000;
+      font-family: "Minion Pro";
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//**************************//
+//subscription
+//**************************//
+
+.subscription {
+  width: 288px;
+  padding: 25px;
+  border: 1px solid #000;
+  position: relative;
+  margin-bottom: 25px;
+
+  &_title {
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &_text {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &_email {
+    margin-bottom: 15px;
   }
 }
