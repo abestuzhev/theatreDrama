@@ -5,7 +5,7 @@ $default-font-size: 12px;
 $default-font-family: "Open Sans", sans-serif;
 $expresion-font-family: "MinionPro", serif;
 $img-dir: '../img/';
-$expresion-color: #44A397;
+$expresion-color: #b42b25;
 $dark-color: #2a2531;
 
 body {
@@ -81,7 +81,8 @@ img, video {
   max-width: 1250px;
   padding-bottom: 1px;
   margin: 0 auto;
-  position: relative;
+  background-color: #fff;
+  padding: 0 16px;
 }
 
 .main {
@@ -91,9 +92,9 @@ img, video {
 input {
   bottom: 0;
   outline: 0;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  padding: 10px 15px;
+  border: 2px solid #5C5C5C;
+  padding: 5px 15px;
+  height: 33px;
   width: 100%;
 }
 input[type="radio"],
@@ -101,10 +102,11 @@ input[type="checkbox"] {
   bottom: 0;
   outline: 0;
   border: 1px solid #CCC;
-  border-radius: 4px;
   padding: 10px 15px;
   width: auto;
 }
+//input[type="search"],
+
 
 .vk svg:hover #vk {
   fill: #4d76a1;
@@ -119,12 +121,223 @@ input[type="checkbox"] {
 }
 
 
-.vk, .fb, .ok  {
+.vk, .fb, .inst  {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: auto 17px;
+  width: 30px;
+  height: 30px;
+  background-size: auto 22px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: $expresion-color;
   margin-right: 5px;
 }
+
+.fb {
+  background-image: url($img-dir + '/social/fb.svg');
+}
+.inst {
+  background-image: url($img-dir + '/social/inst.svg');
+}
+.vk {
+  background-image: url($img-dir + '/social/vk.svg');
+}
+//**************************//
+//components
+//**************************//
+.c-search {
+  position: relative;
+
+  &_input {
+    width: 91%;
+    vertical-align: top;
+    //margin-right: 38px;
+  }
+
+  &_button {
+    vertical-align: top;
+    //position: absolute;
+    //top: 0;
+    //right: 33px;
+    width: 33px;
+    background-color: #fff;
+    border: 2px solid #5C5C5C;
+    font-size: 0;
+    cursor: pointer;
+  }
+}
+
+.c-version {
+  vertical-align: top;
+  display: inline-block;
+  color: #595959;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  padding-left: 45px;
+  border: 1px dotted #000;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 26px;
+    height: 15px;
+    background: url($img-dir + 'version-icon.png') 0 0 no-repeat;
+  }
+}
+
+.c-social {
+  vertical-align: top;
+  display: inline-block;
+}
+
+//**************************//
+//header
+//**************************//
+.header {
+  @include clear;
+  border-bottom: 4px solid #E1A4A4;
+  position: relative;
+
+  &_top {
+    padding: 10px 0;
+    float: left;
+
+  }
+
+  &_logo {
+    width: 160px;
+    height: 150px;
+    float: left;
+    background-image: url($img-dir + 'logo.svg');
+    background-size: 160px auto;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    margin-right: 20px;
+  }
+
+  &-title {
+    float: left;
+
+    &_name {
+      font-family: "Minion Pro";
+
+      &-medium {
+        font-size: 30px;
+      }
+
+      &-big {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      &-small {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+    &_season {
+      &-number {
+        color: $expresion-color;
+        font-family: "Minion Pro";
+        font-size: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 5px;
+      }
+
+      &-text {
+        vertical-align: super;
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        color: #fff;
+        background-color: $expresion-color;
+      }
+    }
+  }
+
+  &_body {
+    width: 415px;
+    @include clear;
+    float: right;
+    padding-top: 20px;
+  }
+
+  &-version {
+    margin-bottom: 18px;
+  }
+
+  .c-search {
+    margin-bottom: 25px;
+  }
+
+  &-menu {
+    float: right;
+
+    &_list {
+      margin-bottom: 20px;
+    }
+
+    &_item {
+      display: inline-block;
+      margin: 0 17px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &_link {
+      font-family: "Minion Pro";
+      font-size: 17px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #292929;
+      @extend %transition;
+
+      &:hover {
+        color: $expresion-color;
+        @extend %transition;
+
+      }
+    }
+  }
+}
+
+.submenu {
+  width: 100%;
+  background-color: $expresion-color;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-size: 0;
+  text-align: center;
+
+  &_item {
+    margin: 0 13px;
+    display: inline-block;
+  }
+
+  &_link {
+    display: block;
+    padding: 11px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F0C2C0;
+    @extend %transition;
+
+    &:hover {
+      color: #fff;
+      @extend %transition;
+    }
+  }
+}
+

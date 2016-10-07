@@ -72,6 +72,9 @@ img, video {
   max-width: 100%;
   height: auto; }
 
+.header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover {
+  transition: all .2s ease-out; }
+
 .l-layout {
   outline: 1px solid #ccc; }
 
@@ -79,7 +82,8 @@ img, video {
   max-width: 1250px;
   padding-bottom: 1px;
   margin: 0 auto;
-  position: relative; }
+  background-color: #fff;
+  padding: 0 16px; }
 
 .main {
   background: #fff url("../img/bg.jpg") 0 0 repeat; }
@@ -87,9 +91,9 @@ img, video {
 input {
   bottom: 0;
   outline: 0;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  padding: 10px 15px;
+  border: 2px solid #5C5C5C;
+  padding: 5px 15px;
+  height: 33px;
   width: 100%; }
 
 input[type="radio"],
@@ -97,7 +101,6 @@ input[type="checkbox"] {
   bottom: 0;
   outline: 0;
   border: 1px solid #CCC;
-  border-radius: 4px;
   padding: 10px 15px;
   width: auto; }
 
@@ -110,11 +113,156 @@ input[type="checkbox"] {
 .ok svg:hover #ok {
   fill: #f58220; }
 
-.vk, .fb, .ok {
+.vk, .fb, .inst {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: auto 17px;
+  width: 30px;
+  height: 30px;
+  background-size: auto 22px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: #b42b25;
   margin-right: 5px; }
+
+.fb {
+  background-image: url("../img//social/fb.svg"); }
+
+.inst {
+  background-image: url("../img//social/inst.svg"); }
+
+.vk {
+  background-image: url("../img//social/vk.svg"); }
+
+.c-search {
+  position: relative; }
+  .c-search_input {
+    width: 91%;
+    vertical-align: top; }
+  .c-search_button {
+    vertical-align: top;
+    width: 33px;
+    background-color: #fff;
+    border: 2px solid #5C5C5C;
+    font-size: 0;
+    cursor: pointer; }
+
+.c-version {
+  vertical-align: top;
+  display: inline-block;
+  color: #595959;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  padding-left: 45px;
+  border: 1px dotted #000;
+  position: relative; }
+  .c-version::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 26px;
+    height: 15px;
+    background: url("../img/version-icon.png") 0 0 no-repeat; }
+
+.c-social {
+  vertical-align: top;
+  display: inline-block; }
+
+.header {
+  border-bottom: 4px solid #E1A4A4;
+  position: relative; }
+  .header::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .header_top {
+    padding: 10px 0;
+    float: left; }
+  .header_logo {
+    width: 160px;
+    height: 150px;
+    float: left;
+    background-image: url("../img/logo.svg");
+    background-size: 160px auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 20px; }
+  .header-title {
+    float: left; }
+    .header-title_name {
+      font-family: "Minion Pro"; }
+      .header-title_name-medium {
+        font-size: 30px; }
+      .header-title_name-big {
+        font-size: 40px;
+        font-weight: 700; }
+      .header-title_name-small {
+        font-size: 20px;
+        font-weight: 400; }
+    .header-title_season-number {
+      color: #b42b25;
+      font-family: "Minion Pro";
+      font-size: 45px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 5px; }
+    .header-title_season-text {
+      vertical-align: super;
+      font-size: 18px;
+      line-height: 1.3;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      color: #fff;
+      background-color: #b42b25; }
+  .header_body {
+    width: 415px;
+    float: right;
+    padding-top: 20px; }
+    .header_body::after {
+      content: '';
+      display: block;
+      clear: both; }
+  .header-version {
+    margin-bottom: 18px; }
+  .header .c-search {
+    margin-bottom: 25px; }
+  .header-menu {
+    float: right; }
+    .header-menu_list {
+      margin-bottom: 20px; }
+    .header-menu_item {
+      display: inline-block;
+      margin: 0 17px; }
+      .header-menu_item:last-child {
+        margin-right: 0; }
+    .header-menu_link {
+      font-family: "Minion Pro";
+      font-size: 17px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #292929; }
+      .header-menu_link:hover {
+        color: #b42b25; }
+
+.submenu {
+  width: 100%;
+  background-color: #b42b25;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  font-size: 0;
+  text-align: center; }
+  .submenu_item {
+    margin: 0 13px;
+    display: inline-block; }
+  .submenu_link {
+    display: block;
+    padding: 11px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F0C2C0; }
+    .submenu_link:hover {
+      color: #fff; }
