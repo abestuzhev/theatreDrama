@@ -78,6 +78,7 @@ img, video {
 
 .l-layout {
   @extend %outline;
+  @include clear;
   max-width: 1250px;
   padding-bottom: 1px;
   margin: 0 auto;
@@ -85,9 +86,6 @@ img, video {
   padding: 0 16px;
 }
 
-.main {
-  background: #fff url($img-dir + 'bg.jpg') 0 0 repeat;
-}
 
 input {
   bottom: 0;
@@ -166,6 +164,21 @@ input[type="checkbox"] {
   }
 }
 
+.c-button {
+  display: inline-block;
+  border: 2px solid #5C5C5C;
+  color: #292929;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 33px;
+  &:hover {
+    color: $expresion-color;
+    border-color: $expresion-color;
+    @extend %transition;
+  }
+}
+
 .c-version {
   vertical-align: top;
   display: inline-block;
@@ -193,6 +206,76 @@ input[type="checkbox"] {
 .c-social {
   vertical-align: top;
   display: inline-block;
+}
+
+//c-card
+.c-card {
+  width: 385px;
+  height: 440px;
+  display: inline-block;
+  @extend %outline;
+  position: relative;
+
+  &_img  {
+    width: 385px;
+    height: 258px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+
+    img {
+      //position: absolute;
+      //top: 50px;
+      //left: 50px;
+      //transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &_title {
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &_text {
+    height: 40px;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+
+  .c-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+//c-link-more
+
+.c-link-more {
+  padding-right: 14px;
+  color: #292929;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 8px;
+    height: 7px;
+    background: url($img-dir + 'link-more-icon.png') 0 0 no-repeat;
+  }
 }
 
 //**************************//
@@ -341,3 +424,75 @@ input[type="checkbox"] {
   }
 }
 
+//**************************//
+//l-grid
+//**************************//
+
+.l-grid {
+  font-size: 0;
+
+  &_item {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.l-main {
+  padding: 55px 40px;
+  @include clear;
+}
+
+//**************************//
+//main
+//**************************//
+.main {
+  background: #fff url($img-dir + 'bg.jpg') 0 0 repeat;
+
+
+  &_left-column {
+    float: left;
+  }
+  &_right-column {
+    float: right;
+  }
+}
+
+//**************************//
+//news
+//**************************//
+.news {
+  width: 288px;
+  padding: 35px 25px;
+  border: 1px solid #000;
+
+  &_title {
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &_post {
+    padding: 20px 0;
+    border-bottom: 1px dotted #000;
+
+    &-date {
+      color: #292929;
+      font-family: "Minion Pro";
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    &-title {
+      color: #000;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+    }
+  }
+}

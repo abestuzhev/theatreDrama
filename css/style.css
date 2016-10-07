@@ -72,10 +72,10 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-.header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover {
+.c-button:hover, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover {
   transition: all .2s ease-out; }
 
-.l-layout {
+.l-layout, .c-card {
   outline: 1px solid #ccc; }
 
 .l-layout {
@@ -84,9 +84,10 @@ img, video {
   margin: 0 auto;
   background-color: #fff;
   padding: 0 16px; }
-
-.main {
-  background: #fff url("../img/bg.jpg") 0 0 repeat; }
+  .l-layout::after {
+    content: '';
+    display: block;
+    clear: both; }
 
 input {
   bottom: 0;
@@ -145,6 +146,18 @@ input[type="checkbox"] {
     font-size: 0;
     cursor: pointer; }
 
+.c-button {
+  display: inline-block;
+  border: 2px solid #5C5C5C;
+  color: #292929;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 33px; }
+  .c-button:hover {
+    color: #b42b25;
+    border-color: #b42b25; }
+
 .c-version {
   vertical-align: top;
   display: inline-block;
@@ -169,6 +182,54 @@ input[type="checkbox"] {
 .c-social {
   vertical-align: top;
   display: inline-block; }
+
+.c-card {
+  width: 385px;
+  height: 440px;
+  display: inline-block;
+  position: relative; }
+  .c-card_img {
+    width: 385px;
+    height: 258px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px; }
+    .c-card_img img {
+      max-width: 100%;
+      height: auto; }
+  .c-card_title {
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px; }
+  .c-card_text {
+    height: 40px;
+    overflow: hidden;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300; }
+  .c-card .c-button {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+
+.c-link-more {
+  padding-right: 14px;
+  color: #292929;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  position: relative; }
+  .c-link-more::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 8px;
+    height: 7px;
+    background: url("../img/link-more-icon.png") 0 0 no-repeat; }
 
 .header {
   border-bottom: 4px solid #E1A4A4;
@@ -266,3 +327,51 @@ input[type="checkbox"] {
     color: #F0C2C0; }
     .submenu_link:hover {
       color: #fff; }
+
+.l-grid {
+  font-size: 0; }
+  .l-grid_item {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px; }
+
+.l-main {
+  padding: 55px 40px; }
+  .l-main::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.main {
+  background: #fff url("../img/bg.jpg") 0 0 repeat; }
+  .main_left-column {
+    float: left; }
+  .main_right-column {
+    float: right; }
+
+.news {
+  width: 288px;
+  padding: 35px 25px;
+  border: 1px solid #000; }
+  .news_title {
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px; }
+  .news_post {
+    padding: 20px 0;
+    border-bottom: 1px dotted #000; }
+    .news_post-date {
+      color: #292929;
+      font-family: "Minion Pro";
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .news_post-title {
+      color: #000;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline; }
