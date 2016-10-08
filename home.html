@@ -40,7 +40,7 @@
     <div class="header_body">
     	<!-- begin header-version -->
     	<div class="header-version">
-        <a class="c-version" href="#">Версия для слабовидящих</a>
+        <a class="c-version" href="#">Версия сайта для слабовидящих</a>
         <div class="c-social">
           <a href="#" class="fb"></a>
           <a href="#" class="inst"></a>
@@ -50,8 +50,9 @@
       <!-- begin header-search -->
       <div class="header-search">
         <div class="c-search">
-          <input class="c-search_input" type="search" placeholder="Поиск">
-          <input class="c-search_button" type="submit">
+
+          <button class="c-search_button"></button>
+          <div class="c-search_field"><input type="search" placeholder="Поиск"></div>
         </div>
       </div><!-- end header-search -->
     </div><!-- end header_body -->
@@ -60,7 +61,7 @@
     <div class="header-menu">
       <ul class="header-menu_list">
         <li class="header-menu_item">
-          <a href="#" class="header-menu_link">Афиша</a>
+          <a href="#" class="header-menu_link has-children">Афиша</a>
 
           <!--<div class="l-submenu">-->
             <ul class="submenu">
@@ -89,7 +90,7 @@
   <!-- begin l-layout -->
   <div class="l-layout">
     <!-- begin l-main -->
-    <div class="l-main">
+    <div class="l-main l-main--top l-main--bottom">
 
       <!-- begin main_left-column -->
       <div class="main_left-column">
@@ -209,13 +210,69 @@
         <div class="subscription">
           <h3 class="subscription_title">Подпишись на наши новости:</h3>
           <p class="subscription_text">Получайте свежие новости прямо себе на почту:</p>
-          <div class="subscription_email"><input class="c-search_input" type="search" placeholder="Введите адрес e-mail..."></div>
+          <div class="subscription_email"><input type="email" placeholder="Введите адрес e-mail..."></div>
           <a href="#" class="c-button c-button--bg">Подробнее</a>
         </div><!-- end subscription -->
       </div><!-- end main_right-column -->
       
 
     </div><!-- end l-main -->
+    <!-- begin l-main -->
+
+    <!-- begin collective -->
+    <div class="collective">
+      <div class="l-full-width">
+        <div class="l-full-width_item">
+          <!-- begin c-card-actor -->
+          <div class="c-card-actor">
+            <div class="c-card-actor_img"><a href=""><img src="img/actor-1.jpg" alt=""></a></div>
+            <div class="c-card-actor_title"><a href="">Людмила Бынова</a></div>
+            <div class="c-card-actor_text">Заслуженная артистка России</div>
+          </div><!-- end c-card-actor -->
+        </div>
+        <div class="l-full-width_item">
+          <!-- begin c-card-actor -->
+          <div class="c-card-actor">
+            <div class="c-card-actor_img"><a href=""><img src="img/actor-1.jpg" alt=""></a></div>
+            <div class="c-card-actor_title"><a href="">Людмила Бынова</a></div>
+            <div class="c-card-actor_text">Заслуженная артистка России</div>
+          </div><!-- end c-card-actor -->
+        </div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+        <div class="l-full-width_item"></div>
+      </div>
+    </div><!-- end collective -->
+
+
+    <div class="about">
+      <div class="l-main l-main--bottom">
+        <div class="c-line"></div>
+      <div class="about_left-column col-1-2">
+        <div class="about_video">
+          <iframe width="539" height="303" src="https://www.youtube.com/embed/V53cJ4QabU4" frameborder="0" allowfullscreen></iframe>        </div>
+        </div>
+      <div class="about_right-column col-1-2">
+        <div class="about_description">
+          <div class="about_ava"><img src="img/about-ava.jpg" alt=""></div>
+          <div class="about_title">О театре</div>
+          <div class="about_text">″Творческий состав театра полон сил и надежд.
+            У нас талантливая труппа, интересный репертуар,
+            две сцены: Основная и Каемерная, большие творческие
+            планы и благодарные, преданные зрители, которые
+            любят нас и верят в нас…″
+          </div>
+        </div>
+      </div>
+      </div><!-- end l-main -->
+    </div>
 
 
   </div><!-- end l-layout -->
@@ -230,7 +287,7 @@
         <div class="footer_content">
           <div class="l-grid">
             <div class="l-grid_item">
-              <ГД class="footer-menu">
+              <ul class="footer-menu">
                 <li class="footer-menu_item"><a href="#" class="footer-menu_link">Афиша</a></li>
                 <li class="footer-menu_item"><a href="#" class="footer-menu_link">Визит в театр</a></li>
                 <li class="footer-menu_item"><a href="#" class="footer-menu_link">Труппа</a></li>
@@ -238,12 +295,52 @@
                 <li class="footer-menu_item"><a href="#" class="footer-menu_link">Новости</a></li>
                 <li class="footer-menu_item"><a href="#" class="footer-menu_link">Для прессы</a></li>
                 <li class="footer-menu_item"><a href="#" class="footer-menu_link">Документы</a></li>
-              </ГД>
+              </ul>
             </div>
             <div class="l-grid_item">
-
+              <div class="footer_search">
+                <div class="c-search">
+                  <button class="c-search_button" id="c-search_button"></button>
+                  <div class="c-search_field"><input type="search" placeholder="Поиск"></div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="l-grid">
+          <div class="l-grid_item">
+            <div class="l-grid">
+              <div class="l-grid_item">
+                <div class="footer-block-text">
+                  <div class="footer_text">8 (8182) 441-530, 477-273</div>
+                  <div class="footer_subtext">Концертные кассы</div>
+                </div>
+              </div>
+              <div class="l-grid_item">
+                <div class="footer-block-text">
+                  <div class="footer_text">8 (8182) 41-20-57</div>
+                  <div class="footer_subtext">Администраторы</div>
+                </div>
+              </div>
+              <div class="l-grid_item">
+                <div class="footer-block-text">
+                  <div class="footer_text">Начало спектаклей:</div>
+                  <div class="footer_subtext">Пн.-Чт.: <span>18:30,</span> Пт.: 18:00, Сб.-Вс.: <span>17:00;</span> Детские спектакли: <span>11:00.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-grid_item">
+            <div class="c-social">
+              <a href="#" class="fb"></a>
+              <a href="#" class="inst"></a>
+              <a href="#" class="vk"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-block-text">
+          <div class="footer_text">Кассы театра работают с 11 до 19 часов по адресу:</div>
+          <div class="footer_subtext">Петровский парк, 1; тел.: 20-84-34 (Основная сцена)</div>
         </div>
       </div>
       <div class="footer_copiright">
