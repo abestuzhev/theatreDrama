@@ -1,6 +1,9 @@
 @import 'font';
 @import 'mixins';
 
+
+
+
 $default-font-size: 12px;
 $default-font-family: "Open Sans", sans-serif;
 $expresion-font-family: "MinionPro", serif;
@@ -26,10 +29,20 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 32px;
+}
+
+li {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  color: #292929;
+  margin-bottom: 10px;
 }
 
 a {
   text-decoration: none;
+  color: $expresion-color;
 }
 
 p {
@@ -38,12 +51,29 @@ p {
   padding: 0;
   margin-bottom: 10px;
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #292929;
   font-size: 14px;
   font-weight: 400;
-}3
 
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+}
+
+figure {
+  margin: 0;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -52,16 +82,37 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #6C8795;
-  font-size: 48px;
+  font-size: 30px;
   line-height: 36px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-h3 {
-  font-size: 14px;
-  text-transform: uppercase;
+h2 {
+  font-size: 24px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.c-pages_title-h2 {
+  text-align: center;
+  color: #292929;
+  font-family: "Minion Pro";
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+h3 {
+  color: #292929;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  border-bottom: 1px dotted #000;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 img, video {
@@ -82,9 +133,12 @@ img, video {
   @include clear;
   max-width: 1250px;
   padding-bottom: 1px;
+  bottom: -1px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 0 16px;
+  padding-top: 1px;
+  position: relative;
+  top: -1px;
 }
 
 
@@ -143,13 +197,38 @@ input[type="checkbox"] {
 //components
 //**************************//
 
+//l-grid
+
+.l-grid {
+  font-size: 0;
+
+  &_item {
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+.l-main {
+  position: relative;
+  padding: 0 56px;
+  @include clear;
+
+  &--top {
+    padding-top: 48px;
+  }
+  &--bottom {
+    padding-bottom: 48px;
+  }
+}
 
 //l-full-width
+
 .l-full-width {
   text-align: justify;
   @include full-width;
 
   &_item {
+    vertical-align: top;
     display: inline-block;
   }
 }
@@ -299,8 +378,13 @@ input[type="checkbox"] {
   margin-right: 40px;
   margin-bottom: 40px;
 
+  &--col-3 {
+    width: 370px;
+    margin-right: 0;
+  }
+
   &_img  {
-    width: 385px;
+    //width: 385px;
     height: 258px;
     overflow: hidden;
     position: relative;
@@ -313,6 +397,7 @@ input[type="checkbox"] {
   }
 
   &_title {
+    text-align: left;
     color: #292929;
     font-family: "Minion Pro";
     font-size: 25px;
@@ -324,6 +409,7 @@ input[type="checkbox"] {
   }
 
   &_text {
+    text-align: left;
     height: 39px;
     overflow: hidden;
     color: #000;
@@ -373,6 +459,32 @@ input[type="checkbox"] {
   }
 }
 
+//c-link-back
+.c-link-back {
+  padding-left: 14px;
+  color: #292929;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  position: relative;
+
+  &:hover {
+    color: $expresion-color;
+    border-color: $expresion-color;
+    @extend %transition;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 7px;
+    background: url($img-dir + 'link-more-icon.png') -8px 0 no-repeat;
+  }
+}
+
 //c-age-restrictions
 .c-age-restrictions {
   border: 1px solid #000;
@@ -400,13 +512,23 @@ input[type="checkbox"] {
 
 .c-card-actor {
   width: 174px;
-  margin: 0 9px;
+  margin: 0 5px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+
+
+  &:hover .c-card-actor_img {
+    transform: scale(1.08);
+    @extend %transition;
+  }
 
   &_img {
     overflow: hidden;
     height: 184px;
     margin-bottom: 15px;
     position: relative;
+    transform: scale(1);
+    @extend %transition;
 
     img  {
       position: absolute;
@@ -416,7 +538,12 @@ input[type="checkbox"] {
       margin-top: -94px;
       max-width: 100%;
       height: auto;
+
     }
+  }
+
+  &_title {
+
   }
 
   &_title a{
@@ -430,9 +557,6 @@ input[type="checkbox"] {
     &:hover {
       text-decoration: underline;
     }
-    &:hover .c-card-actor_img{
-      transform: ;
-    }
   }
 
   &_text {
@@ -441,6 +565,111 @@ input[type="checkbox"] {
     font-size: 13px;
     line-height: 15px;
     font-weight: 300;
+  }
+}
+
+//c-card-fotogallery
+
+.c-card-fotogallery {
+  width: 366px;
+  height: 366px;
+  border: 2px solid #292929;
+  @extend %transition;
+  margin-bottom: 20px;
+
+  &_img {
+    cursor: pointer;
+    height: 283px;
+    overflow: hidden;
+    border-bottom: 2px solid #292929;
+    position: relative;
+    @extend %transition;
+
+    a {
+      display: block;
+      height: 100%;
+    }
+
+    &::after {
+      opacity: 0;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid $expresion-color;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url($img-dir + 'version-icon-white.png');
+      background-position: 50% 50%;
+      background-size: 26px auto;
+      background-repeat: no-repeat;
+      @extend %transition;
+    }
+
+    img {
+      max-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @extend %transition;
+    }
+  }
+
+  &_title a{
+    display: block;
+    padding: 16px 22px;
+    text-align: left;
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+
+  &:hover .c-card-fotogallery_img::after{
+    opacity: 1;
+    @extend %transition;
+  }
+
+  &:hover img{
+    transform: scale(1.08);
+    @extend %transition;
+  }
+
+}
+
+//c-pagination
+
+.c-pagination {
+
+  &_link {
+    vertical-align: top;
+    display: inline-block;
+    border: 2px solid #292929;
+    padding: 12px 16px;
+    color: #292929;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 2px;
+    @extend %transition;
+
+    &:hover {
+      border: 2px solid $expresion-color;
+      color: $expresion-color;
+      @extend %transition;
+    }
+    
+    &--active {
+      color: #fff;
+      background-color: $expresion-color;
+      border: 2px solid $expresion-color;
+
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -589,6 +818,7 @@ input[type="checkbox"] {
   clip-path: inset(100%);
   content: '';
   position: absolute;
+  z-index: 999;
   left: 50%;
   margin-left: -3px;
   bottom: 0;
@@ -604,8 +834,10 @@ input[type="checkbox"] {
   width: 100%;
   background-color: $expresion-color;
   position: absolute;
+  z-index: 999;
   left: 0;
   bottom: -38px;
+  margin: 0;
   font-size: 0;
   text-align: center;
 
@@ -629,30 +861,163 @@ input[type="checkbox"] {
   }
 }
 
-//**************************//
-//l-grid
-//**************************//
+//c-page-title
 
-.l-grid {
-  font-size: 0;
+.c-page-title {
+  background-color: $expresion-color;
+  margin-top: 36px;
+  margin-bottom: 52px;
+  color: #FFF;
+  font-family: "Minion Pro";
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  text-align: center;
+  position: relative;
+
+  .c-link-back {
+    color: #fff;
+    text-transform: none;
+    position: absolute;
+    left: 56px;
+    top: 25%;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::after {
+      content: '';
+      top: 10px;
+      background: url($img-dir + 'link-more-icon-white.png') -8px 0 no-repeat;
+    }
+  }
+
+  span {
+    padding: 0 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -8px;
+      background-image: url($img-dir + 'title-point.svg');
+    }
+    &::after {
+      content: '';
+      width: 8px;
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -8px;
+      background-image: url($img-dir + 'title-point.svg');
+    }
+  }
+}
+
+
+//**************************//
+//top-slider
+//**************************//
+.top-slider {
+
+  .l-layout {
+    padding-bottom: 0;
+  }
 
   &_item {
-    vertical-align: top;
-    display: inline-block;
+    height: 626px;
+    cursor: pointer;
+  }
+
+  &_title {
+    position: absolute;
+    top: 48px;
+    left: 0;
+  }
+
+  &_date {
+    color: #FFF;
+    font-weight: 400;
+    text-shadow: 1px 1.7px 5px rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+    margin-bottom: 8px;
+
+    span {
+      font-size: 35px;
+    }
+  }
+
+  &_h1 {
+    color: #FFF;
+    font-family: "Minion Pro";
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 1px 1.7px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 8px;
+  }
+
+  &_autor {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 1px 1.7px 5px rgba(0, 0, 0, 0.4);
+  }
+}
+//slike custome
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+
+  li {
+    button {
+      border: 2px solid #fff;
+      display: block;
+      height: 15px;
+      width: 15px;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 20px;
+      background: transparent;
+      opacity: 1;
+
+      &:hover, &:focus {
+        outline: none;
+        &:before {
+          opacity: .2;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 15px;
+        height: 15px;
+        opacity: 0;
+        border-radius: 20px;
+        background-color: #fff;
+        line-height: 20px;
+      }
+    }
+    &.slick-active button:before {
+      opacity: 1;
+    }
   }
 }
 
-.l-main {
-  padding: 0 40px;
-  @include clear;
-
-  &--top {
-    padding-top: 55px;
-  }
-  &--bottom {
-    padding-bottom: 55px;
-  }
-}
 
 //**************************//
 //main
@@ -731,6 +1096,7 @@ input[type="checkbox"] {
       width: 85px;
       height: 85px;
       position: relative;
+      z-index: 10;
       margin-bottom: 20px;
 
       img  {
@@ -825,6 +1191,7 @@ input[type="checkbox"] {
     width: 85px;
     height: 85px;
     position: relative;
+    z-index: 10;
     margin-bottom: 20px;
 
     img  {
@@ -854,17 +1221,53 @@ input[type="checkbox"] {
     font-weight: 300;
   }
 }
+.l-col {
+  font-size: 0;
+}
 
 .col-1-2 {
+  vertical-align: top;
+  display: inline-block;
   width: 50%;
+}
+.col-1-3 {
+  vertical-align: top;
+  display: inline-block;
+  width: 33%;
 }
 
 //**************************//
 //collective
 //**************************//
 .collective {
-  padding: 0 45px;
   padding-bottom: 60px;
+
+  &_nav {
+    background-color: $expresion-color;
+    margin-bottom: 52px;
+  }
+
+  &_link {
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    opacity: .5;
+    color: #FFF;
+    font-family: "Minion Pro";
+    font-size: 23px;
+    font-weight: 700;
+    @extend %transition;
+
+    &:hover {
+      opacity: 1;
+      @extend %transition;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -880,7 +1283,6 @@ input[type="checkbox"] {
   background: url($img-dir + 'footer-bg.jpg') 0 0 repeat;
 
   &_body {
-    height: 215px;
     box-shadow: 0px 25px 50px -15px rgba(0,0,0,0.42);
     padding: 0 56px;
     @include clear;
@@ -900,7 +1302,7 @@ input[type="checkbox"] {
 
   &_content {
     @extend %outline;
-    float: left;
+    float: right;
     padding-top: 30px;
   }
 
@@ -933,7 +1335,9 @@ input[type="checkbox"] {
 
   &-menu {
     font-size: 0;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+    position: relative;
+    left: -14px;
 
     &_item {
       display: inline-block;
@@ -967,7 +1371,6 @@ input[type="checkbox"] {
         @extend %transition;
       }
 
-
       &:hover {
         background-color: $expresion-color;
         @extend %transition;
@@ -976,6 +1379,11 @@ input[type="checkbox"] {
         clip: auto;
         clip-path: none;
         @extend %transition;
+      }
+
+      &:last-child::before {
+        clip: rect(0,0,0,0);
+        clip-path: inset(100%);
       }
     }
 
@@ -997,11 +1405,14 @@ input[type="checkbox"] {
 
   &_search {
     width: 233px;
+    input, button {
+      border: none;
+    }
   }
 
   &-block-text {
-    margin-bottom: 30px;
-    margin-right: 27px;
+    margin-bottom: 4px;
+    margin-right: 24px;
 
   }
 
@@ -1036,3 +1447,160 @@ input[type="checkbox"] {
     }
   }
 }
+
+//**************************//
+//actor
+//**************************//
+.actor {
+
+  &_top {
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  &_title {
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  &_post {
+    color: #292929;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  &_body {
+    @include clear;
+    margin-bottom: 40px;
+  }
+
+  &_ava {
+    width: 208px;
+    height: 226px;
+    float: left;
+
+    span {
+      color: #292929;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  &_img {
+    margin-bottom: 14px;
+  }
+
+  &_about {
+    margin-left: 236px;
+  }
+}
+
+//**************************//
+//text-page
+//**************************//
+.text-page {
+
+  &_title {
+    color: #292929;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 18px;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 18px;
+    text-transform: none;
+  }
+
+  &_subtitle {
+    text-align: left;
+    color: #292929;
+    font-family: "Minion Pro";
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    text-transform: none;
+  }
+}
+
+//**************************//
+//fotogallery
+//**************************//
+.fotogallery {
+  margin-bottom: 72px;
+
+  &-play {
+    margin-bottom: 60px;
+
+    &_title {
+      text-align: center;
+      color: #292929;
+      font-family: "Minion Pro";
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    &_list {
+      @include full-width;
+      text-align: justify;
+    }
+
+    &_item {
+      width: 174px;
+      height: 189px;
+      display: inline-block;
+      margin-bottom: 20px;
+      overflow: hidden;
+      position: relative;
+      @extend %transition;
+
+      &::after {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 3px solid $expresion-color;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url($img-dir + 'version-icon-white.png');
+        background-position: 50% 50%;
+        background-size: 26px auto;
+        background-repeat: no-repeat;
+        @extend %transition;
+      }
+
+      img {
+        transition: transform .2s ease;
+      }
+
+      &:hover img{
+        transform: scale(1.08);
+        @extend %transition;
+      }
+      &:hover::after{
+        opacity: 1;
+        @extend %transition;
+      }
+    }
+
+  }
+}
+
+
+//**************************//
+//autocomplete-suggestions
+//**************************//
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+@import "indents";

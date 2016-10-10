@@ -15,7 +15,7 @@
     html { min-height: 100%; }
 
     body {
-        color: #fff;
+        color: #292929;
         padding: 0;
         margin: 0;
         min-height: 100%;
@@ -25,11 +25,11 @@
     }
 
     h1 {
-        color: #fff;
+        color: #292929;
         margin: 0 0 20px;
         padding-bottom: 10px;
         font-size: 28px;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #292929;
         font-weight: 700;
         font-family: Roboto, Arial, sans-serif;
     }
@@ -39,9 +39,12 @@
         list-style-position: inside;
     }
 
-    li {
+    .item {
       position: relative;
       padding-left: 25px;
+      color: #292929;
+      font-size: 1em;
+        margin: 0;
     }
 
     .corrected::before {
@@ -49,13 +52,26 @@
       position: absolute;
       top: 0;
       left: 0;
-      color: #fff;
+      color: #292929;
     }
+
+    .disable {
+      opacity: .6;
+      cursor: default;
+    }
+
+    .disable:hover {
+      color: #292929;
+      opacity: .6;
+      text-decoration: none;
+    }
+
 
     section {
         margin: 50px auto;
-        max-width: 400px;
-        background: rgba(0, 0, 0, .7);
+        max-width: 500px;
+        /*background: rgba(255, 255, 255, .3);*/
+        background-color: #fff;
         padding: 40px 60px;
         /*padding-left: 0;*/
         border-radius: 6px;
@@ -63,10 +79,11 @@
 
     a {
         text-decoration: none;
-        color: #fff;
+        color: #292929;
+        font-weight: 500;
     }
 
-    a:hover { color: #fcaf00; }
+    a:hover { color: #b42b25; text-decoration: underline;}
 </style>
 </head>
 
@@ -77,15 +94,21 @@
     <h1>Театр Драмы</h1>
 
     <ol>
-        <li><a href="home.html">Главная</a></li>
-        <li><a href=".html"></a></li>
-        <li><a href=".html"></a></li>
-        <li><a href=".html"></a></li>
-        <li><a href=".html"></a></li>
-        <li><a href=".html"></a></li>
-        <li><a href=".html"></a></li>
-        <li><a href=".html"></a></li>
+        <li class="item"><a href="home.html">Главная</a></li>
+        <li class="item disable"><a href=".html">Главная (версия для слабовидящих)</a></li>
+        <li class="item disable"><a href=".html">Афиша и билеты</a></li>
+        <li class="item disable"><a href=".html">Список новостей</a></li>
+        <li class="item disable"><a href=".html">Новость</a></li>
+        <li class="item disable"><a href=".html">Список видео</a></li>
+        <li class="item disable"><a href=".html">Видео</a></li>
+        <li class="item disable"><a href=".html">Поисковая выдача</a></li>
+        <li class="item"><a href="photo-gallery.html">Фотогалерея</a></li>
+        <li class="item"><a href="photo-gallery-play.html">Фотогалерея спектакля</a></li>
+        <li class="item"><a href="text-page.html">Текстовая страница</a></li>
+        <li class="item"><a href="collective.html">Труппа</a></li>
+        <li class="item"><a href="actor.html">Подробная информация об артисте</a></li>
     </ol>
+  <!--<a href="components.html">Компоненты</a>-->
 </section>
 
 </body>

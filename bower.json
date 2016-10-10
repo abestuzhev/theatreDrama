@@ -18,6 +18,8 @@
   "dependencies": {
     "jQuery.dotdotdot": "dotdotdot#^1.8.3",
     "fancybox": "^2.1.5",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "jQuery-Autocomplete": "https://github.com/devbridge/jQuery-Autocomplete",
+    "lightgallery.js": "^1.0.0"
   }
 }
