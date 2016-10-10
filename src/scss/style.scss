@@ -129,7 +129,7 @@ img, video {
 }
 
 .l-layout {
-  @extend %outline;
+  // @extend %outline;
   @include clear;
   max-width: 1250px;
   padding-bottom: 1px;
@@ -373,7 +373,7 @@ input[type="checkbox"] {
   width: 385px;
   height: 440px;
   display: inline-block;
-  @extend %outline;
+  // @extend %outline;
   position: relative;
   margin-right: 40px;
   margin-bottom: 40px;
@@ -500,7 +500,7 @@ input[type="checkbox"] {
     font-size: 18px;
     font-weight: 600;
   }
-  
+
   &--bg {
     background-color: $expresion-color;
     border: none;
@@ -660,7 +660,7 @@ input[type="checkbox"] {
       color: $expresion-color;
       @extend %transition;
     }
-    
+
     &--active {
       color: #fff;
       background-color: $expresion-color;
@@ -1181,7 +1181,7 @@ input[type="checkbox"] {
   }
 
   &_video {
-    height: 303px;
+    height: 287px;
   }
 
   &_ava {
@@ -1301,7 +1301,7 @@ input[type="checkbox"] {
   }
 
   &_content {
-    @extend %outline;
+    // @extend %outline;
     float: right;
     padding-top: 30px;
   }

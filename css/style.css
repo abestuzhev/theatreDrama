@@ -118,9 +118,6 @@ img, video {
 .c-button:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after {
   transition: all .2s ease-out; }
 
-.l-layout, .c-card, .footer_content {
-  outline: 1px solid #ccc; }
-
 .l-layout {
   max-width: 1250px;
   padding-bottom: 1px;
@@ -888,7 +885,7 @@ input[type="checkbox"] {
   border: 1px solid #000; }
 
 .about_video {
-  height: 303px; }
+  height: 287px; }
 
 .about_ava {
   display: inline-block;
