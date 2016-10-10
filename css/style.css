@@ -121,12 +121,10 @@ img, video {
 .l-layout {
   max-width: 1250px;
   padding-bottom: 1px;
-  bottom: -1px;
   margin: 0 auto;
   background-color: #fff;
   padding-top: 1px;
-  position: relative;
-  top: -1px; }
+  position: relative; }
   .l-layout::after {
     content: '';
     display: block;
@@ -701,6 +699,14 @@ input[type="checkbox"] {
       top: 50%;
       margin-top: -8px;
       background-image: url("../img/title-point.svg"); }
+
+.l-top-slider {
+  max-width: 1250px;
+  margin: 0 auto; }
+  .l-top-slider::after {
+    content: '';
+    display: block;
+    clear: both; }
 
 .top-slider .l-layout {
   padding-bottom: 0; }

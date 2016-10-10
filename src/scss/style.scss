@@ -133,12 +133,19 @@ img, video {
   @include clear;
   max-width: 1250px;
   padding-bottom: 1px;
-  bottom: -1px;
+  // bottom: -1px;
   margin: 0 auto;
   background-color: #fff;
   padding-top: 1px;
   position: relative;
-  top: -1px;
+  // top: -1px;
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   padding-top: 1px;
+  //
+  // }
 }
 
 
@@ -926,6 +933,11 @@ input[type="checkbox"] {
 //**************************//
 //top-slider
 //**************************//
+.l-top-slider {
+  @include clear;
+  max-width: 1250px;
+  margin: 0 auto;
+}
 .top-slider {
 
   .l-layout {
