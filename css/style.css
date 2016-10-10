@@ -123,8 +123,7 @@ img, video {
   padding-bottom: 1px;
   margin: 0 auto;
   background-color: #fff;
-  padding-top: 1px;
-  position: relative; }
+  padding-top: 1px; }
   .l-layout::after {
     content: '';
     display: block;
