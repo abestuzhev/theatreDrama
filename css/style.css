@@ -41,7 +41,6 @@ ul {
   margin-bottom: 32px; }
 
 li {
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
   color: #292929;
@@ -106,7 +105,7 @@ h2 {
     font-size: 14px;
     line-height: 1.6;
     position: absolute;
-    top: 15px;
+    top: 2px;
     right: 0;
     text-transform: none; }
 
@@ -616,6 +615,9 @@ input[type="checkbox"] {
     height: 179px;
     overflow: hidden;
     float: left; }
+    .c-card-postnews_img a {
+      display: block;
+      height: 100%; }
   .c-card-postnews_body {
     margin-left: 194px; }
   .c-card-postnews_date {
@@ -1375,6 +1377,8 @@ input[type="checkbox"] {
     float: left; }
   .news-post_content {
     margin-left: 207px; }
+  .news-post iframe {
+    margin-bottom: 32px; }
 
 .p-1 {
   padding: 4px; }

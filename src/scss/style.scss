@@ -33,7 +33,6 @@ ul {
 }
 
 li {
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
   color: #292929;
@@ -109,7 +108,7 @@ h2 {
     font-size: 14px;
     line-height: 1.6;
     position: absolute;
-    top: 15px;
+    top: 2px;
     right: 0;
     text-transform: none;
   }
@@ -812,6 +811,11 @@ input[type="checkbox"] {
     height: 179px;
     overflow: hidden;
     float: left;
+
+    a {
+      display: block;
+      height: 100%;
+    }
   }
 
   &_body {
@@ -1857,6 +1861,10 @@ input[type="checkbox"] {
 
   &_content {
     margin-left: 207px;
+  }
+
+  iframe {
+    margin-bottom: 32px;
   }
 }
 
