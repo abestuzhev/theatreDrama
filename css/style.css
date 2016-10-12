@@ -91,6 +91,17 @@ h2 {
   font-weight: 700;
   text-transform: uppercase; }
 
+.c-pages_title-h1 {
+  text-align: center;
+  color: #292929;
+  font-family: "Minion Pro";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 32px; }
+
 .c-pages_title-h2 {
   text-align: center;
   color: #292929;
@@ -122,7 +133,7 @@ h3 {
 img, video {
   height: auto; }
 
-.c-button:hover, .c-button--hover-bg, .c-button--hover-bg:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .c-post-list_video, .c-post-list_video::after, .c-post-list_video:hover::after, .c-card-ticket_title a, .c-card-ticket_title a:hover, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after {
+.c-button:hover, .c-button--hover-bg, .c-button--hover-bg:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .c-post-list_video, .c-post-list_video::after, .c-post-list_video:hover::after, .c-card-ticket_title a, .c-card-ticket_title a:hover, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after, .ticket-slider_link, .ticket-slider_link:hover {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -1493,8 +1504,54 @@ input[type="checkbox"] {
 .l-ticket-list {
   margin-bottom: 38px; }
 
+.l-ticket-month {
+  width: 100%;
+  height: 59px;
+  background-color: #0F0F0F;
+  position: relative;
+  margin-bottom: 32px; }
+  .l-ticket-month::after {
+    content: '';
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    margin-left: -3px;
+    top: -14px;
+    border-top: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #0F0F0F; }
+
 .ticket {
   margin-bottom: 72px; }
+  .ticket-slider {
+    font-size: 0;
+    width: 632px;
+    height: 59px;
+    margin: 0 auto;
+    background-color: #0F0F0F;
+    border-right: 1px solid #585858;
+    border-left: 1px solid #585858; }
+    .ticket-slider_item {
+      height: 59px;
+      display: inline-block; }
+      .ticket-slider_item:nth-child(2n) {
+        border-left: 1px solid #585858;
+        border-right: 1px solid #585858; }
+      .ticket-slider_item:nth-child(32n) {
+        border-right: 1px solid #585858; }
+    .ticket-slider_link {
+      display: block;
+      height: 59px;
+      color: #6B6B6B;
+      font-size: 14px;
+      line-height: 2.2;
+      font-weight: 400;
+      padding: 16px 46px;
+      text-transform: uppercase; }
+      .ticket-slider_link:hover {
+        color: #fff;
+        text-decoration: underline; }
 
 .p-1 {
   padding: 4px; }
@@ -1711,6 +1768,9 @@ input[type="checkbox"] {
 
 .mt-8 {
   margin-top: 32px; }
+
+.mb-0 {
+  margin-bottom: 0px; }
 
 .mb-1 {
   margin-bottom: 4px; }

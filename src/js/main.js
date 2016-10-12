@@ -13,7 +13,17 @@ $(document).ready(function() {
         cssEase: 'linear'
     });
 
-    // $('#anchor-tag').lightGallery();
+    $('.ticket-slider').slick({
+        autoplay: false,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 500,
+        adaptiveHeight: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true
+    });
 });
 
 $(window).bind('load', function() {
