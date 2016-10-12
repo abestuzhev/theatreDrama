@@ -2061,7 +2061,7 @@ input[type="checkbox"] {
     position: absolute;
     z-index: 999;
     left: 50%;
-    margin-left: -3px;
+    margin-left: -2px;
     top: -14px;
     border-top: 7px solid transparent;
     border-left: 7px solid transparent;
@@ -2075,7 +2075,7 @@ input[type="checkbox"] {
 
   &-slider {
     font-size: 0;
-    width: 632px;
+    width: 653px;
     height: 59px;
     margin: 0 auto;
     background-color: #0F0F0F;
@@ -2084,6 +2084,8 @@ input[type="checkbox"] {
 
 
     &_item {
+      text-align: center;
+      width: 165px;
       height: 59px;
       display: inline-block;
 
@@ -2104,7 +2106,7 @@ input[type="checkbox"] {
       font-size: 14px;
       line-height: 2.2;
       font-weight: 400;
-      padding: 16px 46px;
+      padding: 16px 0;
       text-transform: uppercase;
       @extend %transition;
 
@@ -2115,6 +2117,65 @@ input[type="checkbox"] {
       }
     }
   }
+}
+
+.slick-prev {
+  left: -35px;
+}
+.slick-next {
+  right: -35px;
+}
+
+.slick-prev:before, .slick-next:before {
+
+}
+
+.slick-prev,
+.slick-next {
+  top: 49%;
+  width: 36px;
+  height: 36px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: '';
+}
+
+.slick-prev {
+  @extend %transition;
+  left: -55px;
+  background: url($img-dir + 'arrow-right.png') 0 0 no-repeat;
+}
+
+.slick-next {
+  @extend %transition;
+  right: -55px;
+  background: url($img-dir + 'arrow-left.png') 0 0 no-repeat;
+}
+
+.slick-prev:hover {
+  @extend %transition;
+  opacity:.7;
+  background: url($img-dir + 'arrow-right.png') 0 0 no-repeat;
+}
+
+.slick-next:hover
+{
+  @extend %transition;
+  opacity:.7;
+  background: url($img-dir + 'arrow-left.png') 0 0 no-repeat;
+}
+
+.slick-prev.slick-disabled {
+  @extend %transition;
+  opacity:.3;
+  background: url($img-dir + 'arrow-right.png') 0 0 no-repeat;
+}
+.slick-next.slick-disabled {
+  @extend %transition;
+  opacity:.3;
+  background: url($img-dir + 'arrow-left.png') 0 0 no-repeat;
 }
 
 @import "indents";

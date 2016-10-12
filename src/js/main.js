@@ -23,6 +23,8 @@ $(document).ready(function() {
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true
+        // prevArrow:"<img class='a-left control-c prev slick-prev' src='img/arrow-right.png'>",
+        // nextArrow:"<img class='a-right control-c next slick-next' src='img/arrow-left.png'>"
     });
 });
 

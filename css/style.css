@@ -133,7 +133,7 @@ h3 {
 img, video {
   height: auto; }
 
-.c-button:hover, .c-button--hover-bg, .c-button--hover-bg:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .c-post-list_video, .c-post-list_video::after, .c-post-list_video:hover::after, .c-card-ticket_title a, .c-card-ticket_title a:hover, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after, .ticket-slider_link, .ticket-slider_link:hover {
+.c-button:hover, .c-button--hover-bg, .c-button--hover-bg:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .c-post-list_video, .c-post-list_video::after, .c-post-list_video:hover::after, .c-card-ticket_title a, .c-card-ticket_title a:hover, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after, .ticket-slider_link, .ticket-slider_link:hover, .slick-prev, .slick-next, .slick-prev:hover, .slick-next:hover, .slick-prev.slick-disabled, .slick-next.slick-disabled {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -1515,7 +1515,7 @@ input[type="checkbox"] {
     position: absolute;
     z-index: 999;
     left: 50%;
-    margin-left: -3px;
+    margin-left: -2px;
     top: -14px;
     border-top: 7px solid transparent;
     border-left: 7px solid transparent;
@@ -1526,13 +1526,15 @@ input[type="checkbox"] {
   margin-bottom: 72px; }
   .ticket-slider {
     font-size: 0;
-    width: 632px;
+    width: 653px;
     height: 59px;
     margin: 0 auto;
     background-color: #0F0F0F;
     border-right: 1px solid #585858;
     border-left: 1px solid #585858; }
     .ticket-slider_item {
+      text-align: center;
+      width: 165px;
       height: 59px;
       display: inline-block; }
       .ticket-slider_item:nth-child(2n) {
@@ -1547,11 +1549,51 @@ input[type="checkbox"] {
       font-size: 14px;
       line-height: 2.2;
       font-weight: 400;
-      padding: 16px 46px;
+      padding: 16px 0;
       text-transform: uppercase; }
       .ticket-slider_link:hover {
         color: #fff;
         text-decoration: underline; }
+
+.slick-prev {
+  left: -35px; }
+
+.slick-next {
+  right: -35px; }
+
+.slick-prev,
+.slick-next {
+  top: 49%;
+  width: 36px;
+  height: 36px; }
+
+.slick-prev::before,
+.slick-next::before {
+  content: ''; }
+
+.slick-prev {
+  left: -55px;
+  background: url("../img/arrow-right.png") 0 0 no-repeat; }
+
+.slick-next {
+  right: -55px;
+  background: url("../img/arrow-left.png") 0 0 no-repeat; }
+
+.slick-prev:hover {
+  opacity: .7;
+  background: url("../img/arrow-right.png") 0 0 no-repeat; }
+
+.slick-next:hover {
+  opacity: .7;
+  background: url("../img/arrow-left.png") 0 0 no-repeat; }
+
+.slick-prev.slick-disabled {
+  opacity: .3;
+  background: url("../img/arrow-right.png") 0 0 no-repeat; }
+
+.slick-next.slick-disabled {
+  opacity: .3;
+  background: url("../img/arrow-left.png") 0 0 no-repeat; }
 
 .p-1 {
   padding: 4px; }
