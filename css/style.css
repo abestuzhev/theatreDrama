@@ -122,7 +122,7 @@ h3 {
 img, video {
   height: auto; }
 
-.c-button:hover, .c-button--hover-bg, .c-button--hover-bg:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .c-post-list_video, .c-post-list_video::after, .c-post-list_video:hover::after, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after {
+.c-button:hover, .c-button--hover-bg, .c-button--hover-bg:hover, .c-link-more:hover, .c-link-back:hover, .c-card-actor:hover .c-card-actor_img, .c-card-actor_img, .c-card-fotogallery, .c-card-fotogallery_img, .c-card-fotogallery_img::after, .c-card-fotogallery_img img, .c-card-fotogallery:hover .c-card-fotogallery_img::after, .c-card-fotogallery:hover img, .c-pagination_link, .c-pagination_link:hover, .c-post-list_video, .c-post-list_video::after, .c-post-list_video:hover::after, .c-card-ticket_title a, .c-card-ticket_title a:hover, .header-menu_item:hover .submenu, .header-menu_item:hover .has-children::after, .header-menu_link, .header-menu_link:hover, .submenu_link, .submenu_link:hover, .news_post-title:hover, .collective_link, .collective_link:hover, .footer_copiright-site, .footer_copiright-site:hover, .footer-menu_item, .footer-menu_item::before, .footer-menu_item::after, .footer-menu_item:hover, .footer-menu_item:hover::after, .footer-menu_link, .footer .c-social a, .footer .c-social a:hover, .fotogallery-play_item, .fotogallery-play_item::after, .fotogallery-play_item:hover img, .fotogallery-play_item:hover::after {
   transition: all .2s ease-out; }
 
 .l-layout {
@@ -639,6 +639,68 @@ input[type="checkbox"] {
       .c-card-postnews_title a:hover {
         text-decoration: underline; }
 
+.c-card-ticket {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #292929; }
+  .c-card-ticket::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .c-card-ticket:last-child {
+    margin-bottom: 38px; }
+  .c-card-ticket_date {
+    float: left; }
+  .c-card-ticket_month {
+    text-align: left;
+    color: #292929;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2px; }
+  .c-card-ticket_time {
+    text-align: left;
+    margin-bottom: 8px;
+    color: #292929;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .c-card-ticket .c-age-restrictions {
+    color: #292929;
+    width: 39px;
+    height: 39px;
+    line-height: 39px; }
+    .c-card-ticket .c-age-restrictions span {
+      font-size: 15px; }
+  .c-card-ticket_content {
+    margin-left: 236px; }
+  .c-card-ticket_title {
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #292929;
+    margin-bottom: 10px; }
+    .c-card-ticket_title a {
+      color: #292929;
+      font-family: "Minion Pro";
+      font-size: 25px;
+      font-weight: 500; }
+      .c-card-ticket_title a:hover {
+        color: #b42b25;
+        text-decoration: underline; }
+  .c-card-ticket_text {
+    width: 640px;
+    text-align: left;
+    color: #292929;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400; }
+  .c-card-ticket .c-button--bg {
+    position: absolute;
+    bottom: 20px;
+    right: 0; }
+
 .header {
   border-bottom: 4px solid #E1A4A4;
   position: relative;
@@ -704,7 +766,7 @@ input[type="checkbox"] {
       content: '';
       width: 100%;
       display: inline-block; }
-  .header .c-search {
+  .header-search {
     margin-bottom: 25px; }
   .header-menu {
     float: right; }
@@ -1099,19 +1161,22 @@ input[type="checkbox"] {
       content: '';
       display: block;
       clear: both; }
-  .footer_logo a {
+  .footer_logo {
+    float: left;
     margin-top: 35px;
     margin-bottom: 52px;
-    width: 156px;
-    height: 130px;
-    float: left;
-    margin-right: 25px;
-    background-image: url("../img/logo-white.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat; }
+    margin-right: 25px; }
+    .footer_logo a {
+      display: block;
+      width: 156px;
+      height: 130px;
+      background-image: url("../img/logo-white.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat; }
   .footer_content {
     float: right;
-    padding-top: 30px; }
+    padding-top: 30px;
+    width: 84%; }
   .footer_copiright {
     position: relative;
     padding: 15px 0;
@@ -1379,6 +1444,57 @@ input[type="checkbox"] {
     margin-left: 207px; }
   .news-post iframe {
     margin-bottom: 32px; }
+
+.search-result {
+  margin-bottom: 72px; }
+  .search-result_top {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px dotted #000; }
+    .search-result_top .c-search {
+      width: 450px;
+      margin-bottom: 14px; }
+  .search-result_total {
+    text-align: left;
+    font-size: 13px;
+    color: #292929; }
+    .search-result_total-number {
+      color: #000; }
+  .search-result_list {
+    padding-left: 12px;
+    color: #292929;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 2px solid #000;
+    margin-bottom: 42px; }
+  .search-result_item {
+    font-weight: 600;
+    padding-left: 36px;
+    margin-bottom: 16px; }
+    .search-result_item:last-child {
+      margin-bottom: 40px; }
+  .search-result_title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 12px; }
+    .search-result_title a {
+      color: #292929; }
+  .search-result_text {
+    overflow: hidden;
+    height: 3em;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #292929; }
+
+.l-ticket-list {
+  margin-bottom: 38px; }
+
+.ticket {
+  margin-bottom: 72px; }
 
 .p-1 {
   padding: 4px; }

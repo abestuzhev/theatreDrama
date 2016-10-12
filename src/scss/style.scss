@@ -849,6 +849,94 @@ input[type="checkbox"] {
   }
 }
 
+//c-card-ticket
+
+.c-card-ticket {
+  position: relative;
+  @include clear;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #292929;
+
+  &:last-child {
+    margin-bottom: 38px;
+  }
+
+  &_date {
+    float: left;
+  }
+
+  &_month {
+    text-align: left;
+    color: #292929;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  &_time {
+    text-align: left;
+    margin-bottom: 8px;
+    color: #292929;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .c-age-restrictions {
+    color: #292929;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  &_content {
+    margin-left: 236px;
+  }
+
+  &_title {
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #292929;
+    margin-bottom: 10px;
+
+    a {
+      color: #292929;
+      font-family: "Minion Pro";
+      font-size: 25px;
+      font-weight: 500;
+      @extend %transition;
+
+      &:hover {
+        color: $expresion-color;
+        @extend %transition;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_text {
+    width: 640px;
+    text-align: left;
+    color: #292929;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .c-button--bg {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+  }
+}
+
 //**************************//
 //header
 //**************************//
@@ -937,7 +1025,7 @@ input[type="checkbox"] {
 
   }
 
-  .c-search {
+  &-search {
     margin-bottom: 25px;
   }
 
@@ -1483,22 +1571,27 @@ input[type="checkbox"] {
     @include clear;
   }
 
-  &_logo a {
+  &_logo {
+    float: left;
     margin-top: 35px;
     margin-bottom: 52px;
-    width: 156px;
-    height: 130px;
-    float: left;
     margin-right: 25px;
-    background-image: url($img-dir + 'logo-white.svg');
-    background-position: 0 0;
-    background-repeat: no-repeat;
+
+    a {
+      display: block;
+      width: 156px;
+      height: 130px;
+      background-image: url($img-dir + 'logo-white.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
   }
 
   &_content {
     // @extend %outline;
     float: right;
     padding-top: 30px;
+    width: 84%;
   }
 
   &_copiright {
@@ -1866,6 +1959,87 @@ input[type="checkbox"] {
   iframe {
     margin-bottom: 32px;
   }
+}
+
+
+//**************************//
+//search-result
+//**************************//
+.search-result {
+  margin-bottom: 72px;
+
+  &_top {
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px dotted #000;
+
+    .c-search {
+      width: 450px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &_total {
+    text-align: left;
+    font-size: 13px;
+    color: #292929;
+
+    &-number {
+      color: #000;
+    }
+  }
+
+  &_list {
+    padding-left: 12px;
+    color: #292929;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 2px solid #000;
+    margin-bottom: 42px;
+  }
+
+  &_item {
+    font-weight: 600;
+    padding-left: 36px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &_title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 12px;
+
+    a {
+      color: #292929;
+    }
+  }
+
+  &_text {
+    overflow: hidden;
+    height: 3em;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #292929;
+  }
+}
+
+//**************************//
+//ticket
+//**************************//
+.l-ticket-list {
+  margin-bottom: 38px;
+}
+
+.ticket {
+  margin-bottom: 72px;
 }
 
 @import "indents";
