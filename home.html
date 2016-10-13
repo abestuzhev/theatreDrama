@@ -16,6 +16,22 @@
 <!-- begin header -->
 <div class="header">
 	<div class="l-layout pl-4 pr-4">
+    
+    <div id="cecutient-panel" class="cecutient-panel">
+      <div class="cecutient-panel_title">Версия для слабовидящих</div>
+      <div class="cecutient-panel_size">
+        <div class="cecutient-panel_subtitle">Размер шрифта:</div>
+        <a id="SmallFonts" class="cecutient-panel_small cecutient-panel_active">A</a>
+        <a id="MediumFonts" class="cecutient-panel_medium">A</a>
+        <a id="BigFonts" class="cecutient-panel_big">A</a>
+
+      </div>
+      <div class="cecutient-panel_color">
+
+      </div>
+      <a id="CecutientOff" class="c-ordinary-btn" href="#">Обычная версия сайта</a>
+    </div><!-- end cecutient-panel -->
+    
 		<div class="header_top">
 			<div class="header_logo"></div><!-- end header_logo -->
       <div class="header-title">
@@ -34,7 +50,7 @@
     <!-- begin header_body -->
     <div class="header_body">
     	<div class="header-version">
-        <a class="c-version" href="#">Версия сайта для слабовидящих</a>
+        <a id="CecutientOn" class="c-version" href="#">Версия сайта для слабовидящих</a>
         <div class="c-social">
           <a href="#" class="fb"></a>
           <a href="#" class="inst"></a>
@@ -390,7 +406,7 @@
         <div class="c-line"></div>
         <div class="about_left-column col-1-2">
           <div class="about_video">
-            <iframe width="539" height="287" src="https://www.youtube.com/embed/V53cJ4QabU4" frameborder="0" allowfullscreen></iframe>        </div>
+            <iframe width="539" height="303" src="https://www.youtube.com/embed/V53cJ4QabU4" frameborder="0" allowfullscreen></iframe>        </div>
         </div>
         <div class="about_right-column col-1-2">
           <div class="about_description">
@@ -486,6 +502,7 @@
 <!-- end footer -->
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="js/jquery.cookie.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
 <script src="bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min.js"></script>
 <script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
