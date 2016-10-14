@@ -2237,6 +2237,8 @@ input[type="checkbox"] {
 .ticket-post {
   position: relative;
   @include clear;
+  margin-bottom: 68px;
+
   &_img {
     width: 304px;
     float: left;
@@ -2384,10 +2386,11 @@ input[type="checkbox"] {
   &_size {
     padding-left: 24px;
     padding-right: 22px;
+    padding-top: 19px;
     display: inline-block;
     position: relative;
     color: #292929;
-    
+
     a {
       cursor: pointer;
 

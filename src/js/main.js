@@ -42,7 +42,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         variableWidth: true
     });
-    
+
     //
     if ($.cookie("CecutientCookie")=="on"){
         CecutientOn();
@@ -54,13 +54,13 @@ $(document).ready(function() {
         if ($.cookie("style")=="blue"){BlueStyle();}
     }
     /*alert($.cookie("fonts")+'&'+$.cookie("CecutientCookie"));*/
-    
+
     /*Включение стилей для слабовидящих*/
     $('#CecutientOn').click(function(e){
         e.preventDefault();
         CecutientOn();
     });
-        
+
     /*Размер шрифта*/
     $('#SmallFonts').click(function(e){
         e.preventDefault();
@@ -81,7 +81,7 @@ $(document).ready(function() {
         $(this).addClass('is-active');
         BigFonts();
     });
-    
+
     /*Цветовая схема*/
     $('#WhiteStyle').click(function(e){
         e.preventDefault();
@@ -95,7 +95,7 @@ $(document).ready(function() {
         e.preventDefault();
         BlueStyle();
     });
-    
+
     /*Функция обработчик включения стилей*/
     function CecutientOn(){
         $('#CecutientOn').css("display","none");
@@ -135,7 +135,7 @@ $(document).ready(function() {
         });
         return false;
     }
-    
+
     /*Функции изменения размера шрифта*/
     function SmallFonts(){
         if ($.cookie("CecutientCookie")=="on"){
@@ -213,35 +213,32 @@ $(document).ready(function() {
             return false;
         }
     }
-    
-    
+
+
     /*Функции изменения цветовой схема*/
     function WhiteStyle(){
         if ($.cookie("CecutientCookie")=="on"){
-            $('body, html').css({"color":"#000","background":"#fff"});
+            // $('body, html').css({"color":"#000","background":"#fff"});
+            // $('.main a,.header-menu a, p, ul, li' +
+            //     '.c-card_text, ' +
+            //     '.about_text, ' +
+            //     '.js-dotted, ' +
+            //     '.subscription_text, ' +
+            //     '.subscription_title,' +
+            //     '.news_post-ava-description,' +
+            //     '.news_title,' +
+            //     '.news_post-date, ' +
+            //     '.header *').css({"color" : "#000"});
+
+
             $('.news, .subscription, .about_description').css({"border-color" : "#000"});
-            $('.main a,.header-menu a, p, ul, li' +
-                '.c-card_text, ' +
-                '.about_text, ' +
-                '.js-dotted, ' +
-                '.subscription_text, ' +
-                '.subscription_title,' +
-                '.news_post-ava-description,' +
-                '.news_title,' +
-                '.news_post-date, ' +
-                '.header *').css({"color" : "#000"});
+            $('body, html, .hearder *, .main *, .footer *, .submenu a').css({"color":"#000"});
+            $('body, html').css({"background":"#fff"});
+            $('.header a').css({"color":"#000"});
 
 
-            $('.header-title_season-text').css({"background":"#000","color":"#fff"});
+            // $('.header-title_season-text').css({"background":"#000","color":"#fff"});
 
-            $('#CecutientTop').css("color","#000");
-            $('.SubMenu').css("background","#fff");
-            $('.SubMenu *').css("color","#000");
-            $('#bottom, #bottom *').css({"background":"#000","color":"#fff"});
-            $('#headerline').css({"color":"#fff","background":"#000"});
-            $('.TopMenu').css({"border":"1px solid #000","paddingTop":"10px","paddingBottom":"10px","marginTop":"10px"});
-            $('.TopMenu li a').css({"background":"none","paddingTop":"0px","color":"#000"});
-            $('.PriceTable tr td').css("border","1px solid #000");
             $.cookie("style", "white", {
                 expires: 365,
                 path: '/'
@@ -249,36 +246,32 @@ $(document).ready(function() {
             return false;
         }
     }
-    
+
     function BlackStyle(){
         if ($.cookie("CecutientCookie")=="on"){
-            $('body, html').css({"color":"#fff","background":"#000"});
+            // $('body, html').css({"color":"#fff","background":"#000"});
             $('.l-layout').css({"background" : "transparent"});
             $('.header').css({"background" : "transparent"});
+            // $('.news, .subscription, .about_description').css({"border-color" : "#fff"});
+            // $('.main a,.header-menu a, p, ul, li' +
+            //     '.c-card_text, ' +
+            //     '.about_text, ' +
+            //     '.js-dotted, ' +
+            //     '.subscription_text, ' +
+            //     '.subscription_title,' +
+            //     '.news_post-ava-description,' +
+            //     '.news_title,' +
+            //     '.news_post-date, ' +
+            //     '.header *').css({"color" : "#fff"});
+            // $('.collective_nav, .collective_link, .submenu, .submenu a, .header-title_season-text').css({"background":"#fff", "color":"#000"});
+
+            ////
+            $('.header a').css({"color":"#fff"});
             $('.news, .subscription, .about_description').css({"border-color" : "#fff"});
-            $('.main a,.header-menu a, p, ul, li' +
-                '.c-card_text, ' +
-                '.about_text, ' +
-                '.js-dotted, ' +
-                '.subscription_text, ' +
-                '.subscription_title,' +
-                '.news_post-ava-description,' +
-                '.news_title,' +
-                '.news_post-date, ' +
-                '.header *').css({"color" : "#fff"});
-            $('.collective_nav, .collective_link, .submenu, .submenu a, .header-title_season-text').css({"background":"#fff", "color":"#000"});
+            $('body, html, .hearder *, .main *, .footer *, .submenu a').css({"color":"#fff"});
+            $('body, html').css({"background":"#000"});
 
 
-            $('#content').css({"width":"100%","padding":"0px"});
-            $('#content *').css({"background":"#000","color":"#fff"});
-            $('#CecutientTop').css("color","#fff");
-            $('.SubMenu').css("background","#000");
-            $('.SubMenu *').css("color","#fff");
-            $('#bottom, #bottom *').css({"background":"#fff","color":"#000"});
-            $('#headerline').css({"color":"#000","background":"#fff"});
-            $('.TopMenu').css({"border":"1px solid #fff","paddingTop":"10px","paddingBottom":"10px","marginTop":"10px"});
-            $('.TopMenu li a').css({"background":"none","paddingTop":"0px","color":"#fff"});
-            $('.PriceTable tr td').css("border","1px solid #fff");
             $.cookie("style", "black", {
                 expires: 365,
                 path: '/'
@@ -286,49 +279,45 @@ $(document).ready(function() {
             return false;
         }
     }
-    
+
     function BlueStyle(){
         if ($.cookie("CecutientCookie")=="on"){
-            $('body, html').css("background","#9DD1FF");
+            // $('body, html').css("background","#9DD1FF");
             $('.l-layout').css({"background" : "transparent"});
             $('.header').css({"background" : "transparent"});
-            $('.footer, ' +
-                '.footer_body, ' +
-                '.footer_copiright, ' +
-                '.vk, ' +
-                '.fb, ' +
-                '.inst, ' +
-                '.header-title_season-text ').css({"background-color" : "#03295e"});
 
-
-
+            $('.header a').css({"color":"#000"});
             $('.news, .subscription, .about_description').css({"border-color" : "#000"});
-            $('.main a,.header-menu a, p, ul, li' +
-                '.c-card_text, ' +
-                '.about_text, ' +
-                '.js-dotted, ' +
-                '.subscription_text, ' +
-                '.subscription_title,' +
-                '.news_post-ava-description,' +
-                '.news_title,' +
-                '.news_post-date, ' +
-                '.header * ').css({"color" : "#03295e"});
-
-            $('.header-title_season-text').css({"color":"#fff"});
-            $('.collective_nav, .collective_link, .submenu, .submenu a').css({"background":"#03295e", "color":"#fff"});
+            $('body, html, .hearder *, .main *, .submenu a').css({"color":"#000"});
+            $('.footer *, .footer_body, .').css({"color":"#fff", "background-color" : "#03295e"});
+            $('body, html').css({"background":"#9DD1FF"});
+            // $('.footer, ' +
+            //     '.footer_body, ' +
+            //     '.footer_copiright, ' +
+            //     '.vk, ' +
+            //     '.fb, ' +
+            //     '.inst, ' +
+            //     '.header-title_season-text ').css({"background-color" : "#03295e"});
 
 
 
-            $('#content').css({"width":"100%","padding":"0px"});
-            $('#content *').css({"background":"#9DD1FF","color":"#063462"});
-            $('#CecutientTop').css("color","#063462");
-            $('.SubMenu').css("background","#9DD1FF");
-            $('.SubMenu *').css("color","#063462");
-            $('#bottom, #bottom *').css({"background":"#063462","color":"#9DD1FF"});
-            $('#headerline').css({"color":"#9DD1FF","background":"#063462"});
-            $('.TopMenu').css({"border":"1px solid #063462","paddingTop":"10px","paddingBottom":"10px","marginTop":"10px"});
-            $('.TopMenu li a').css({"background":"none","paddingTop":"0px","color":"#063462"});
-            $('.PriceTable tr td').css("border","1px solid #063462");
+            // $('.news, .subscription, .about_description').css({"border-color" : "#000"});
+            // $('.main a,.header-menu a, p, ul, li' +
+            //     '.c-card_text, ' +
+            //     '.about_text, ' +
+            //     '.js-dotted, ' +
+            //     '.subscription_text, ' +
+            //     '.subscription_title,' +
+            //     '.news_post-ava-description,' +
+            //     '.news_title,' +
+            //     '.news_post-date, ' +
+            //     '.header * ').css({"color" : "#03295e"});
+
+            // $('.header-title_season-text').css({"color":"#fff"});
+            // $('.collective_nav, .collective_link, .submenu, .submenu a').css({"background":"#03295e", "color":"#fff"});
+
+
+
             $.cookie("style", "blue", {
                 expires: 365,
                 path: '/'
@@ -336,7 +325,7 @@ $(document).ready(function() {
             return false;
         }
     }
-    
+
     /*Отключение версии для слабовидящих*/
     $('#CecutientOff').click(function(){
         $.cookie("CecutientCookie", null);
