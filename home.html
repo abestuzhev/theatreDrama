@@ -14,23 +14,30 @@
 </head>
 <body>
 <!-- begin header -->
+<div class="l-cecutient-panel">
+  <div id="cecutient-panel" class="cecutient-panel">
+    <div class="cecutient-panel_title">Версия для слабовидящих</div>
+    <div class="cecutient-panel_size">
+      <div class="cecutient-panel_subtitle">Размер шрифта:</div>
+      <a id="SmallFonts" class="cecutient-panel_small is-active">A</a>
+      <a id="MediumFonts" class="cecutient-panel_medium">A</a>
+      <a id="BigFonts" class="cecutient-panel_big">A</a>
+
+    </div>
+    <div class="cecutient-panel_color">
+      <div class="cecutient-panel_subtitle">Цветовая схема:</div>
+      <a id="WhiteStyle" class="cecutient-icon-color cecutientcecutient-panel_white">Ц</a>
+      <a id="BlackStyle" class="cecutient-icon-color cecutient-panel_black">Ц</a>
+      <a id="BlueStyle" class="cecutient-icon-color cecutient-panel_blue">Ц</a>
+    </div>
+    <a id="CecutientOff" class="c-ordinary-btn" href="#">Обычная версия сайта</a>
+  </div><!-- end cecutient-panel -->
+</div>
+
 <div class="header">
 	<div class="l-layout pl-4 pr-4">
     
-    <div id="cecutient-panel" class="cecutient-panel">
-      <div class="cecutient-panel_title">Версия для слабовидящих</div>
-      <div class="cecutient-panel_size">
-        <div class="cecutient-panel_subtitle">Размер шрифта:</div>
-        <a id="SmallFonts" class="cecutient-panel_small cecutient-panel_active">A</a>
-        <a id="MediumFonts" class="cecutient-panel_medium">A</a>
-        <a id="BigFonts" class="cecutient-panel_big">A</a>
 
-      </div>
-      <div class="cecutient-panel_color">
-
-      </div>
-      <a id="CecutientOff" class="c-ordinary-btn" href="#">Обычная версия сайта</a>
-    </div><!-- end cecutient-panel -->
     
 		<div class="header_top">
 			<div class="header_logo"></div><!-- end header_logo -->
@@ -60,7 +67,7 @@
       <!-- begin header-search -->
       <div class="header-search">
         <div class="c-search">
-          <button class="c-search_button"></button>
+          <button class="c-search_button">Поиск</button>
           <div class="c-search_field"><input type="search" id="autocomplete-search" placeholder="Поиск"></div>
         </div>
       </div><!-- end header-search -->
@@ -411,8 +418,8 @@
         <div class="about_right-column col-1-2">
           <div class="about_description">
             <div class="about_ava"><img src="img/about-ava.jpg" alt=""></div>
-            <div class="about_title">О театре</div>
-            <div class="about_text">″Творческий состав театра полон сил и надежд.
+            <div class="about_title"><a href="#">О театре</a></div>
+            <div class="about_text js-dotted">″Творческий состав театра полон сил и надежд.
               У нас талантливая труппа, интересный репертуар,
               две сцены: Основная и Каемерная, большие творческие
               планы и благодарные, преданные зрители, которые
@@ -433,62 +440,59 @@
     <div class="footer_body">
       <div class="footer_logo"><a href="#"></a></div>
       <div class="footer_content">
-        <div class="l-full-width">
-          <div class="l-full-width_item">
-            <ul class="footer-menu">
-              <li class="footer-menu_item"><a href="#" class="footer-menu_link">Афиша</a></li>
-              <li class="footer-menu_item"><a href="#" class="footer-menu_link">Визит в театр</a></li>
-              <li class="footer-menu_item"><a href="#" class="footer-menu_link">Труппа</a></li>
-              <li class="footer-menu_item"><a href="#" class="footer-menu_link">О театре</a></li>
-              <li class="footer-menu_item"><a href="#" class="footer-menu_link">Новости</a></li>
-              <li class="footer-menu_item"><a href="#" class="footer-menu_link">Для прессы</a></li>
-            </ul>
-          </div><!--end l-full-width_item-->
-          <div class="l-full-width_item">
-            <div class="footer_search">
-              <div class="c-search">
-                <button class="c-search_button" id="c-search_button"></button>
-                <div class="c-search_field"><input type="search" placeholder="Поиск"></div>
-              </div>
-            </div>
-          </div><!--end l-full-width_item-->
-        </div><!--end l-full-width-->
+        <ul class="footer-menu">
+          <li class="footer-menu_item"><a href="#" class="footer-menu_link">Афиша</a></li>
+          <li class="footer-menu_item"><a href="#" class="footer-menu_link">Визит в театр</a></li>
+          <li class="footer-menu_item"><a href="#" class="footer-menu_link">Труппа</a></li>
+          <li class="footer-menu_item"><a href="#" class="footer-menu_link">О театре</a></li>
+          <li class="footer-menu_item"><a href="#" class="footer-menu_link">Новости</a></li>
+          <li class="footer-menu_item"><a href="#" class="footer-menu_link">Для прессы</a></li>
+        </ul>
 
-        <div class="l-full-width">
-          <div class="l-full-width_item">
-            <div class="l-full-width">
-              <div class="l-full-width_item">
-                <div class="footer-block-text">
-                  <div class="footer_text">8 (8182) 20-84-34</div>
-                  <div class="footer_subtext">Касса театра</div>
-                </div>
-              </div>
-              <div class="l-full-width_item">
-                <div class="footer-block-text">
-                  <div class="footer_text">8 (8182) 41-20-57</div>
-                  <div class="footer_subtext">Администраторы</div>
-                </div>
-              </div>
-              <div class="l-full-width_item">
-                <div class="footer-block-text">
-                  <div class="footer_text">Начало спектаклей:</div>
-                  <div class="footer_subtext">Пн.-Чт.: <span>18:30,</span> Пт.: 18:00, Сб.-Вс.: <span>17:00;</span> Детские спектакли: <span>11:00.</span></div>
-                </div>
-              </div>
+
+
+        <div class="l-grid">
+          <div class="l-grid_item">
+            <div class="footer-block-text">
+              <div class="footer_text">8 (8182) 20-84-34</div>
+              <div class="footer_subtext">Касса театра</div>
             </div>
-          </div><!--end l-full-width_item-->
-          <div class="l-full-width_item">
-            <div class="c-social">
-              <a href="#" class="fb"></a>
-              <a href="#" class="inst"></a>
-              <a href="#" class="vk"></a>
+          </div>
+          <div class="l-grid_item">
+            <div class="footer-block-text">
+              <div class="footer_text">8 (8182) 41-20-57</div>
+              <div class="footer_subtext">Администраторы</div>
             </div>
-          </div><!--end l-full-width_item-->
-        </div><!--end l-full-width-->
+          </div>
+          <div class="l-grid_item">
+            <div class="footer-block-text">
+              <div class="footer_text">Начало спектаклей:</div>
+              <div class="footer_subtext">Пн.-Чт.: <span>18:30,</span> Пт.: 18:00, Сб.-Вс.: <span>17:00;</span> Детские спектакли: <span>11:00.</span></div>
+            </div>
+          </div>
+
+        </div><!-- end l-grid -->
+
         <div class="footer-block-text">
           <div class="footer_text">Кассы театра работают с 11 до 19 часов по адресу:</div>
           <div class="footer_subtext">Петровский парк, 1; тел.: 20-84-34 (Основная сцена)</div>
         </div>
+
+
+
+        <div class="footer_right-col">
+          <div class="footer_search">
+            <div class="c-search">
+              <button class="c-search_button" id="c-search_button">Поиск</button>
+              <div class="c-search_field"><input type="search" placeholder="Поиск"></div>
+            </div>
+          </div>
+          <div class="c-social">
+            <a href="#" class="fb"></a>
+            <a href="#" class="inst"></a>
+            <a href="#" class="vk"></a>
+          </div>
+        </div><!-- end footer_right-col -->
 
       </div><!--end footer_content-->
     </div> <!--end footer_body-->
