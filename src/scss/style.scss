@@ -103,6 +103,26 @@ h2 {
   padding-bottom: 14px;
   border-bottom: 2px solid #000;
   margin-bottom: 32px;
+  position: relative;
+
+  .c-link-back {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    text-transform: none;
+    line-height: 1.8;
+  }
+
+  .c-age-restrictions {
+    width: 39px;
+    height: 39px;
+    line-height: 1.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    vertical-align: middle;
+  }
 }
 
 .c-pages_title-h2 {
@@ -1293,6 +1313,7 @@ input[type="checkbox"] {
       background-image: url($img-dir + 'title-point.svg');
     }
   }
+
 }
 
 
