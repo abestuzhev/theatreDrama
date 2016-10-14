@@ -282,11 +282,52 @@ input[type="checkbox"] {
     input [type="search"]{
       width: 100%;
       float: left;
+      position: relative;
     }
 
     &--big {
       margin-right: 135px;
       font-size: 19px;
+    }
+  }
+
+  &_autocomplete {
+    padding-bottom: 40px;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 91%;
+    height: 159px;
+    border: 2px solid #5c5c5c;
+    background-color: #fff;
+    display: none;
+
+    .c-link-more {
+      position: absolute;
+      left: 10px;
+      bottom: 12px;
+    }
+
+    .autocomplete_item {
+      margin: 0;
+
+      &:hover {
+        background-color: #e6edef;
+      }
+    }
+
+    .autocomplete_link {
+      display: block;
+      padding: 7px 10px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #000;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
     }
   }
 
@@ -2190,6 +2231,32 @@ input[type="checkbox"] {
   }
 }
 
+//**************************//
+//ticket-post
+//**************************//
+.ticket-post {
+  position: relative;
+  @include clear;
+  &_img {
+    width: 304px;
+    float: left;
+  }
+
+  &_content {
+    margin-left: 336px;
+    position: relative;
+  }
+
+  .c-button--bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+
+
 .slick-prev {
   left: -35px;
 }
@@ -2553,6 +2620,11 @@ input[type="checkbox"] {
     width: 1250px;
     margin: 0 auto;
   }
+}
+
+//is-visible
+.is-visible {
+  display: block;
 }
 
 .litle_text {

@@ -68,7 +68,18 @@
       <div class="header-search">
         <div class="c-search">
           <button class="c-search_button">Поиск</button>
-          <div class="c-search_field"><input type="search" id="autocomplete-search" placeholder="Поиск"></div>
+          <div class="c-search_field">
+            <input type="search" id="header-search" placeholder="Поиск">
+            <div class="c-search_autocomplete">
+              <ul class="autocomplete_list">
+                <li class="autocomplete_item"><a class="autocomplete_link" href="#">Спектакль «Волшебник изумрудного города. Cпектакль «Волшебник </a></li>
+                <li class="autocomplete_item"><a class="autocomplete_link" href="#">Спектакль праздник ведёт Ирина</a></li>
+                <li class="autocomplete_item"><a class="autocomplete_link" href="#">Спектакль «Волшебник изумрудного города</a></li>
+                <li class="autocomplete_item"><a class="autocomplete_link" href="#">Спектакль «Волшебник изумрудного города.</a></li>
+              </ul>
+              <a href="#" class="c-link-more">Все результаты</a>
+            </div>
+          </div>
         </div>
       </div><!-- end header-search -->
     </div><!-- end header_body -->
@@ -484,7 +495,12 @@
           <div class="footer_search">
             <div class="c-search">
               <button class="c-search_button" id="c-search_button">Поиск</button>
-              <div class="c-search_field"><input type="search" placeholder="Поиск"></div>
+              <div class="c-search_field">
+                <input type="search" placeholder="Поиск">
+                <div class="c-search_autocomplete">
+                  <a href="#" class="c-link-more">Все результаты</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="c-social">

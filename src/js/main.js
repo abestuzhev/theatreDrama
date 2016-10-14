@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+    //focus
+    // $( ".c-search_field input" ).focus(function() {
+    //     $('.c-search_autocomplete').toggleClass('is-visible');
+    //     $('.c-search_autocomplete').blur();
+    // });
+
+    $('#header-search').focus(function() {
+        $('.c-search_autocomplete').show();
+        $(document).bind('focusin.c-search_autocomplete click.c-search_autocomplete',function(e) {
+            if ($(e.target).closest('#header-search, .c-search_autocomplete').length) return;
+            $(document).unbind('.c-search_autocomplete');
+            $('.c-search_autocomplete').fadeOut(100);
+        });
+    });
+    $('.c-search_autocomplete').hide();
+
+
     $('.top-slider').slick({
         autoplay: true,
         autoplaySpeed: 5000,

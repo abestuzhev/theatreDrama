@@ -241,10 +241,40 @@ input[type="checkbox"] {
     margin-right: 36px; }
     .c-search_field input [type="search"] {
       width: 100%;
-      float: left; }
+      float: left;
+      position: relative; }
     .c-search_field--big {
       margin-right: 135px;
       font-size: 19px; }
+  .c-search_autocomplete {
+    padding-bottom: 40px;
+    z-index: 999;
+    overflow: hidden;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 91%;
+    height: 159px;
+    border: 2px solid #5c5c5c;
+    background-color: #fff;
+    display: none; }
+    .c-search_autocomplete .c-link-more {
+      position: absolute;
+      left: 10px;
+      bottom: 12px; }
+    .c-search_autocomplete .autocomplete_item {
+      margin: 0; }
+      .c-search_autocomplete .autocomplete_item:hover {
+        background-color: #e6edef; }
+    .c-search_autocomplete .autocomplete_link {
+      display: block;
+      padding: 7px 10px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #000;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
   .c-search_button {
     float: right;
     display: block;
@@ -1604,6 +1634,23 @@ input[type="checkbox"] {
         color: #fff;
         text-decoration: underline; }
 
+.ticket-post {
+  position: relative; }
+  .ticket-post::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .ticket-post_img {
+    width: 304px;
+    float: left; }
+  .ticket-post_content {
+    margin-left: 336px;
+    position: relative; }
+  .ticket-post .c-button--bg {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
 .slick-prev {
   left: -35px; }
 
@@ -1848,6 +1895,9 @@ input[type="checkbox"] {
     background-color: #000;
     width: 1250px;
     margin: 0 auto; }
+
+.is-visible {
+  display: block; }
 
 .litle_text {
   font-size: 14px; }
