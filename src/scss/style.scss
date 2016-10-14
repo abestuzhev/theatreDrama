@@ -180,7 +180,6 @@ input[type="checkbox"] {
 }
 //input[type="search"],
 
-
 .vk svg:hover #vk {
   fill: #4d76a1;
 }
@@ -1064,8 +1063,9 @@ input[type="checkbox"] {
     width: 160px;
     height: 133px;
     float: left;
-    background-image: url($img-dir + 'logo.svg');
-    background-size: 151px auto;
+    fill: $expresion-color;
+    // background-image: url($img-dir + 'logo.svg');
+    // background-size: 151px auto;
     background-repeat:no-repeat;
     background-position: 0 0;
     margin-right: 10px;
