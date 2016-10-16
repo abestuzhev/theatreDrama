@@ -1833,121 +1833,14 @@ input[type="checkbox"] {
 .bgc-black {
   background-color: #000; }
 
+.clr-black {
+  color: #000; }
+
 .bgc-white {
   background-color: #fff; }
 
 .color-black {
   color: #000; }
-
-.menu-cecutiont {
-  width: 100%;
-  border-top: 2px solid #000;
-  margin-top: 22px; }
-  .menu-cecutiont .header {
-    border-bottom: 4px solid #000; }
-  .menu-cecutiont .header-menu_list {
-    margin: 0; }
-  .menu-cecutiont .header-menu_item {
-    margin: 0 21px; }
-  .menu-cecutiont .header-menu_link {
-    font-weight: 600;
-    font-size: 27px;
-    padding: 18px 0;
-    display: block; }
-  .menu-cecutiont .submenu {
-    background-color: #000;
-    bottom: -46px; }
-  .menu-cecutiont .submenu_link {
-    font-size: 18px;
-    color: #fff;
-    padding: 14px 0; }
-    .menu-cecutiont .submenu_link:hover {
-      text-decoration: underline; }
-  .menu-cecutiont .has-children::after {
-    border-top: 14px solid transparent;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 14px solid #000; }
-
-.footer-cecutiont {
-  background: transparent;
-  background-color: #000;
-  margin: 0;
-  width: auto; }
-  .footer-cecutiont .footer_body {
-    width: 1250px;
-    margin: 0 auto;
-    box-shadow: none;
-    border-bottom: 2px solid #fff;
-    background-color: #000;
-    color: #fff; }
-  .footer-cecutiont .footer_right-col {
-    position: static; }
-    .footer-cecutiont .footer_right-col::after {
-      content: '';
-      display: block;
-      clear: both; }
-  .footer-cecutiont .footer_search {
-    float: left;
-    width: 535px; }
-  .footer-cecutiont .footer-menu_item::before {
-    content: '';
-    width: 0; }
-  .footer-cecutiont .footer-menu_item:hover {
-    background-color: #fff;
-    color: #000; }
-  .footer-cecutiont .footer-menu_item:hover::after {
-    content: '';
-    clip: rect(0, 0, 0, 0);
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%); }
-  .footer-cecutiont .footer-menu_link {
-    font-size: 19px; }
-    .footer-cecutiont .footer-menu_link:hover {
-      background-color: #fff;
-      color: #000; }
-  .footer-cecutiont .c-social {
-    float: right; }
-  .footer-cecutiont .footer_copiright {
-    background-color: #000;
-    width: 1250px;
-    margin: 0 auto; }
-
-.is-visible {
-  display: block; }
-
-.litle_text {
-  font-size: 14px; }
-
-.litle_title {
-  font-size: 23px; }
-
-.small_text {
-  font-size: 16px; }
-
-.medium_text {
-  font-size: 19px; }
-
-.big_text {
-  font-size: 21px; }
-
-.litle_title {
-  font-size: 23px; }
-
-.small_title {
-  font-size: 25px; }
-
-.medium_title {
-  font-size: 27px; }
-
-.big_title {
-  font-size: 30px; }
-
-.big_title-2x {
-  font-size: 33px; }
-
-.big_title-3x {
-  font-size: 35px; }
 
 .p-1 {
   padding: 4px; }
@@ -2191,3 +2084,221 @@ input[type="checkbox"] {
 
 .mb-8 {
   margin-bottom: 32px; }
+
+.header-cecutiont {
+  padding-top: 65px;
+  border-bottom: 4px solid #000; }
+  .header-cecutiont .header_logo {
+    fill: #000; }
+  .header-cecutiont .header_logo {
+    width: 226px;
+    height: 193px;
+    margin-right: 24px; }
+  .header-cecutiont .header-title_name {
+    margin-top: 18px;
+    margin-bottom: 6px; }
+  .header-cecutiont .header-title_name-medium {
+    font-size: 38px;
+    margin-bottom: 10px; }
+  .header-cecutiont .header-title_name-big {
+    font-size: 50px; }
+  .header-cecutiont .header-title_name-small {
+    font-size: 25px; }
+  .header-cecutiont .header-title_season-number {
+    font-size: 58px;
+    margin-right: 12px;
+    color: #000; }
+  .header-cecutiont .header-title_season-text {
+    font-size: 22px;
+    background-color: #000; }
+  .header-cecutiont .header_body {
+    padding-top: 60px;
+    width: 526px; }
+  .header-cecutiont .c-social a {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    margin: 0 2px; }
+  .header-cecutiont .header-version {
+    font-size: 0;
+    margin-bottom: 52px; }
+  .header-cecutiont .header-search {
+    margin: 0; }
+  .header-cecutiont .c-search input {
+    height: 40px; }
+  .header-cecutiont .c-search_button {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    height: 40px; }
+  .header-cecutiont--white {
+    color: #000; }
+    .header-cecutiont--white .header-title_season-text {
+      background-color: #000;
+      color: #fff; }
+  .header-cecutiont--black {
+    color: #fff; }
+    .header-cecutiont--black .header-title_season-number {
+      color: #fff; }
+    .header-cecutiont--black .c-search_button {
+      background-color: #fff;
+      color: #000; }
+    .header-cecutiont--black .c-search input {
+      border: none; }
+    .header-cecutiont--black .header-title_season-text {
+      background-color: #fff;
+      color: #000; }
+    .header-cecutiont--black .header_logo {
+      fill: #fff; }
+    .header-cecutiont--black .header_logo-letter {
+      fill: #000; }
+  .header-cecutiont--blue {
+    color: #03295e; }
+    .header-cecutiont--blue .header-title_season-number {
+      color: #03295e; }
+    .header-cecutiont--blue .c-search_button {
+      background-color: #03295e;
+      color: #fff; }
+    .header-cecutiont--blue .c-search input {
+      border-color: #03295e; }
+    .header-cecutiont--blue .header-title_season-text {
+      background-color: #03295e;
+      color: #fff; }
+
+.menu-cecutiont {
+  width: 100%;
+  border-top: 2px solid #000;
+  margin-top: 22px; }
+  .menu-cecutiont .header-menu_list {
+    margin: 0; }
+  .menu-cecutiont .header-menu_item {
+    margin: 0 21px; }
+  .menu-cecutiont .header-menu_link {
+    font-weight: 600;
+    font-size: 27px;
+    padding: 18px 0;
+    display: block; }
+  .menu-cecutiont .submenu {
+    background-color: #000;
+    bottom: -46px; }
+  .menu-cecutiont .submenu_link {
+    font-size: 18px;
+    color: #fff;
+    padding: 14px 0; }
+    .menu-cecutiont .submenu_link:hover {
+      text-decoration: underline; }
+  .menu-cecutiont .has-children::after {
+    border-top: 14px solid transparent;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #000; }
+  .menu-cecutiont--white .submenu {
+    background-color: #000; }
+  .menu-cecutiont--white .submenu_link {
+    color: #000; }
+  .menu-cecutiont--white a {
+    color: #000;
+    background-color: transparent; }
+  .menu-cecutiont--white .has-children::after {
+    content: '';
+    border-bottom-color: #000; }
+  .menu-cecutiont--black .submenu {
+    background-color: #fff; }
+  .menu-cecutiont--black .submenu_link {
+    color: #000; }
+  .menu-cecutiont--black a {
+    color: #fff;
+    background-color: transparent; }
+  .menu-cecutiont--black .has-children::after {
+    content: '';
+    border-bottom-color: #fff; }
+  .menu-cecutiont--blue .submenu {
+    background-color: #03295e; }
+  .menu-cecutiont--blue .submenu_link {
+    color: #fff; }
+  .menu-cecutiont--blue a {
+    color: #03295e;
+    background-color: transparent; }
+  .menu-cecutiont--blue .has-children::after {
+    content: '';
+    border-bottom-color: #03295e; }
+
+.footer-cecutiont {
+  background: transparent;
+  background-color: #000;
+  margin: 0;
+  width: auto; }
+  .footer-cecutiont .footer_body {
+    width: 1250px;
+    margin: 0 auto;
+    box-shadow: none;
+    border-bottom: 2px solid #fff;
+    background-color: #000;
+    color: #fff; }
+  .footer-cecutiont .footer_right-col {
+    position: static; }
+    .footer-cecutiont .footer_right-col::after {
+      content: '';
+      display: block;
+      clear: both; }
+  .footer-cecutiont .footer_search {
+    float: left;
+    width: 535px; }
+  .footer-cecutiont .footer-menu_item::before {
+    content: '';
+    width: 0; }
+  .footer-cecutiont .footer-menu_item:hover {
+    background-color: #fff;
+    color: #000; }
+  .footer-cecutiont .footer-menu_item:hover::after {
+    content: '';
+    clip: rect(0, 0, 0, 0);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%); }
+  .footer-cecutiont .footer-menu_link {
+    font-size: 19px; }
+    .footer-cecutiont .footer-menu_link:hover {
+      background-color: #fff;
+      color: #000; }
+  .footer-cecutiont .c-social {
+    float: right; }
+  .footer-cecutiont .footer_copiright {
+    background-color: #000;
+    width: 1250px;
+    margin: 0 auto; }
+
+.is-visible {
+  display: block; }
+
+.litle_text {
+  font-size: 14px; }
+
+.litle_title {
+  font-size: 23px; }
+
+.small_text {
+  font-size: 16px; }
+
+.medium_text {
+  font-size: 19px; }
+
+.big_text {
+  font-size: 21px; }
+
+.litle_title {
+  font-size: 23px; }
+
+.small_title {
+  font-size: 25px; }
+
+.medium_title {
+  font-size: 27px; }
+
+.big_title {
+  font-size: 30px; }
+
+.big_title-2x {
+  font-size: 33px; }
+
+.big_title-3x {
+  font-size: 35px; }
