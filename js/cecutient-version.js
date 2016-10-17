@@ -65,16 +65,17 @@ $(document).ready(function() {
         //c-card-cecutiont
         $('.c-card').addClass('c-card-cecutiont');
 
+        //collective_nav-cecutiont
+        $('.collective_nav').addClass('collective_nav-cecutiont');
 
 
-        // $('.header-title_season-number').css("color","#000");
-        // $('.header-title_season-text').css("background-color","#000");
         $('.header-version').css({'text-align': 'right'});
-        // $('.submenu').css({"background":"#000"});
-        // $('.submenu_link').css({"color":"#fff"});
 
+        //
+        $('.collective_nav').addClass('collective_nav-cecutiont');
 
-        $('.c-button--bg').css({"width": "100%", "background-color": "#000", "color": "#fff", "text-align": "center"});
+        //c-button--bg-cecutiont
+        $('.c-button--bg').addClass('c-button--bg-cecutiont');
 
 
         //main
@@ -116,28 +117,26 @@ $(document).ready(function() {
             //c-link-more
             $('.c-link-more').removeClass('c-link-more--black c-link-more--blue').addClass('c-link-more--white');
 
+            //collective_nav-cecutiont
+            $('.collective_nav-cecutiont').removeClass('collective_nav-cecutiont--black collective_nav-cecutiont--blue').addClass('collective_nav-cecutionte--white');
+
+            //c-card-actor
+            $('.c-card-actor').removeClass('c-card-actor--black c-card-actor--blue').addClass('c-card-actor--white');
+
+            //about_description
+            $('.about_description').removeClass('about_description--black about_description--blue').addClass('about_description--white');
+
+            //news
+            $('.news').removeClass('news--black news--blue').addClass('news--white');
+
+            //subscription
+            $('.subscription').removeClass('subscription--black subscription--blue').addClass('subscription--white');
+
+            //c-button--bg-cecutiont
+            $('.c-button--bg-cecutiont').removeClass('c-button--bg-cecutiont--black c-button--bg-cecutiont--blue').addClass('c-button--bg-cecutiont--white');
+
 
             $('body').css({"color":"#000","background":"#fff"});
-            // $('.main a,.header-menu a, p, ul, li' +
-            //     '.c-card_text, ' +
-            //     '.about_text, ' +
-            //     '.js-dotted, ' +
-            //     '.subscription_text, ' +
-            //     '.subscription_title,' +
-            //     '.news_post-ava-description,' +
-            //     '.news_title,' +
-            //     '.news_post-date').css({"color" : "#000"});
-            //
-            // // $('.header-title_season-text').css({"background":"#000","color":"#fff"});
-            // $('.collective_nav, .collective_link').css({"background-color":"#000", "color":"#fff"});
-            //
-            //
-            // $('.vk, .fb, .inst').css({"background-color":"#000"});
-            // $('.c-button--bg').css({"width": "100%", "background-color": "#000", "color": "#fff", "text-align": "center"});
-            //
-            // $('.submenu').css({"background":"#000"});
-            // $('.menu-cecutiont .has-children::after').css({"border-bottom":"14px solid #000"});
-            // $('.submenu_link').css({"color":"#fff"});
 
             $.cookie("style", "white", {
                 expires: 365,
@@ -166,34 +165,29 @@ $(document).ready(function() {
             //c-link-more
             $('.c-link-more').removeClass('c-link-more--white c-link-more--blue').addClass('c-link-more--black');
 
+            //collective_nav-cecutiont
+            $('.collective_nav-cecutiont').removeClass('collective_nav-cecutiont--white collective_nav-cecutiont--blue').addClass('collective_nav-cecutiont--black');
+
+            //c-card-actor
+            $('.c-card-actor').removeClass('c-card-actor--white c-card-actor--blue').addClass('c-card-actor--black');
+
+            //about_description
+            $('.about_description').removeClass('about_description--white about_description--blue').addClass('about_description--black');
+
+            //news
+            $('.news').removeClass('news--white news--blue').addClass('news--black');
+
+            //subscription
+            $('.subscription').removeClass('subscription--white subscription--blue').addClass('subscription--black');
+
+            //c-button--bg-cecutiont
+            $('.c-button--bg-cecutiont').removeClass('c-button--bg-cecutiont--white c-button--bg-cecutiont--blue').addClass('c-button--bg-cecutiont--black');
+
 
             $('body').css({"color":"#fff","background":"#000"});
             $('.l-layout').css({"background" : "transparent"});
             $('.header').css({"background" : "transparent"});
 
-
-            // $('.news, .subscription, .about_description').css({"border-color" : "#fff"});
-            // $('.main a,.header-menu a, p, ul, li' +
-            //     '.c-card_text, ' +
-            //     '.about_text, ' +
-            //     '.js-dotted, ' +
-            //     '.subscription_text, ' +
-            //     '.subscription_title,' +
-            //     '.news_post-ava-description,' +
-            //     '.news_title,' +
-            //     '.news_post-date ').css({"color" : "#fff"});
-            // $('.collective_nav, .collective_link, .header-title_season-text').css({"background":"#fff", "color":"#000"});
-            //
-            //
-            // $('.vk, .fb, .inst').css({"background-color":"#000"});
-            //
-            // $('.footer, .footer_body').css({"background-color":"#000"});
-            //
-            // $('.c-button--bg').css({"width": "100%", "background-color": "#fff", "color": "#000", "text-align": "center"});
-            //
-            // $('.submenu').css({"background":"#fff"});
-            // $('.menu-cecutiont .has-children::after').css({"border-bottom":"14px solid #fff"});
-            // $('.submenu_link').css({"color":"#000"});
 
             $.cookie("style", "black", {
                 expires: 365,
@@ -221,6 +215,25 @@ $(document).ready(function() {
 
             //c-link-more
             $('.c-link-more').removeClass('c-link-more--white c-link-more--black').addClass('c-link-more--blue');
+
+            //collective_nav-cecutiont
+            $('.collective_nav-cecutiont').removeClass('collective_nav-cecutiont--white collective_nav-cecutiont--black').addClass('collective_nav-cecutiont--blue');
+
+            //c-card-actor
+            $('.c-card-actor').removeClass('c-card-actor--white c-card-actor--black').addClass('c-card-actor--blue');
+
+            //about_description
+            $('.about_description').removeClass('about_description--white about_description--black').addClass('about_description--blue');
+
+            //news
+            $('.news').removeClass('news--white news--black').addClass('news--blue');
+
+            //subscription
+            $('.subscription').removeClass('subscription--white subscription--black').addClass('subscription--blue');
+
+            //c-button--bg-cecutiont
+            $('.c-button--bg-cecutiont').removeClass('c-button--bg-cecutiont--white c-button--bg-cecutiont--black').addClass('c-button--bg-cecutiont--blue');
+
 
             $('body').css("background","#9DD1FF");
             $('.l-layout').css({"background" : "transparent"});
@@ -279,15 +292,15 @@ $(document).ready(function() {
     function SmallFonts(){
         if ($.cookie("CecutientCookie")=="on"){
             //c-card
-            $('.c-card_title').removeClass("litle_text medium_title big_title").addClass('small_title');
-            $('.c-card_text').removeClass("litle_text medium_text big_text").addClass('small_text');
+            $('.c-card_title').removeClass("little_text medium_title big_title").addClass('small_title');
+            $('.c-card_text').removeClass("little_text medium_text big_text").addClass('small_text');
             $('.c-card').animate({'height': '440px'});
             // $('.c-card_text').removeClass("MediumFonts BigFonts").addClass("SmallFonts-text");
             //actor
-            $('.c-card-actor_text').removeClass("small_text medium_text big_text").addClass('litle_text');
+            $('.c-card-actor_text').removeClass("small_text medium_text big_text").addClass('little_text');
 
             //about_text
-            $('.about_text').removeClass("litle_text medium_text big_text").addClass('small_text');
+            $('.about_text, .subscription_text, .c-button--bg-cecution, .subscription_email input').removeClass("little_text medium_text big_text").addClass('small_text');
 
             //news and email
 
@@ -309,12 +322,12 @@ $(document).ready(function() {
             $('.c-card_text').animate({'height': '3.8em'});
 
             //actor
-            $('.c-card-actor_text').removeClass("litle_text medium_text big_text").addClass('small_text');
-            $('.c-card-actor_title').removeClass("small_title medium_title big_title").addClass('litle_title');
+            $('.c-card-actor_text').removeClass("little_text medium_text big_text").addClass('small_text');
+            $('.c-card-actor_title').removeClass("small_title medium_title big_title").addClass('little_title');
 
             //about_text
-            $('.about_title, .news_title, .subscription_title').removeClass("litle_title small_title medium_title big_title-2x big_title-3x").addClass('big_title');
-            $('.about_text').removeClass("little_text small_text medium_text big_text").addClass('medium_text');
+            $('.about_title, .news_title, .subscription_title').removeClass("little_title small_title medium_title big_title-2x big_title-3x").addClass('big_title');
+            $('.about_text, .subscription_text, .c-button--bg-cecutiont, .subscription_email input').removeClass("little_text small_text medium_text big_text").addClass('medium_text');
 
             //news and email
 
@@ -335,13 +348,13 @@ $(document).ready(function() {
             $('.c-card').animate({'height': '480px'});
 
             //actor
-            $('.c-card-actor_text').removeClass("litle_text small_text big_text").addClass('medium_text');
-            $('.c-card-actor_title').removeClass("litle_title medium_title big_title").addClass('small_title');
+            $('.c-card-actor_text').removeClass("little_text small_text big_text").addClass('medium_text');
+            $('.c-card-actor_title').removeClass("little_title medium_title big_title").addClass('small_title');
             $('.c-card-actor_title').animate({'line-height': '18px'});
 
             //about_text
-            $('.about_title, .news_title, .subscription_title').removeClass("litle_title small_title medium_title big_title big_title-2x").addClass('big_title-3x');
-            $('.about_text').removeClass("little_text small_text medium_text medium_text").addClass('big_text');
+            $('.about_title, .news_title, .subscription_title').removeClass("little_title small_title medium_title big_title big_title-2x").addClass('big_title-3x');
+            $('.about_text, .subscription_text, .c-button--bg-cecutiont').removeClass("little_text small_text medium_text medium_text").addClass('big_text');
 
 
 

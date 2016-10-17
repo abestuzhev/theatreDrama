@@ -361,7 +361,7 @@ input[type="checkbox"] {
       top: 0;
       left: -100%;
       width: 100%;
-      height: 40px;
+      height: 65px;
       background-color: #d63d36;
       transition: all .1s ease-out; }
     .c-button--bg:hover {
@@ -2103,7 +2103,8 @@ input[type="checkbox"] {
   padding-top: 65px;
   border-bottom: 4px solid #000; }
   .header-cecutiont .c-search_autocomplete {
-    top: 44px; }
+    top: 44px;
+    width: 74%; }
   .header-cecutiont .header_logo {
     fill: #000; }
   .header-cecutiont .header_logo {
@@ -2365,6 +2366,19 @@ input[type="checkbox"] {
   color: #03295e;
   border-color: #03295e; }
 
+.c-button--bg-cecutiont {
+  width: 100%;
+  text-align: center; }
+  .c-button--bg-cecutiont--white {
+    color: #fff;
+    background-color: #000; }
+  .c-button--bg-cecutiont--black {
+    color: #000;
+    background-color: #fff; }
+  .c-button--bg-cecutiont--blue {
+    color: #fff;
+    background-color: #03295e; }
+
 .c-link-more--white {
   color: #000; }
 
@@ -2373,6 +2387,110 @@ input[type="checkbox"] {
 
 .c-link-more--blue {
   color: #03295e; }
+
+.collective_nav-cecutiont {
+  color: #fff;
+  background-color: #000; }
+  .collective_nav-cecutiont--white {
+    background-color: #000; }
+    .collective_nav-cecutiont--white .collective_link {
+      color: #fff; }
+  .collective_nav-cecutiont--black {
+    background-color: #fff; }
+    .collective_nav-cecutiont--black .collective_link {
+      color: #000; }
+  .collective_nav-cecutiont--blue {
+    background-color: #03295e; }
+    .collective_nav-cecutiont--blue .collective_link {
+      color: #fff; }
+
+.c-card-actor--white .c-card-actor_title a,
+.c-card-actor--white .c-card-actor_text {
+  color: #000; }
+
+.c-card-actor--black .c-card-actor_title a,
+.c-card-actor--black .c-card-actor_text {
+  color: #fff; }
+
+.c-card-actor--blue .c-card-actor_title a,
+.c-card-actor--blue .c-card-actor_text {
+  color: #03295e; }
+
+.about_description--white {
+  border-color: #000; }
+  .about_description--white .about_title a,
+  .about_description--white .about_text {
+    color: #000; }
+
+.about_description--black {
+  border-color: #fff; }
+  .about_description--black .about_title a,
+  .about_description--black .about_text {
+    color: #fff; }
+
+.about_description--blue {
+  border-color: #03295e; }
+  .about_description--blue .about_title a,
+  .about_description--blue .about_text {
+    color: #03295e; }
+
+.news--white {
+  border-color: #000; }
+  .news--white .news_post {
+    border-bottom-color: #000; }
+  .news--white .news_title,
+  .news--white .news_post-date,
+  .news--white .news_post-title,
+  .news--white .news_post-ava-description {
+    color: #000; }
+
+.news--black {
+  border-color: #fff; }
+  .news--black .news_post {
+    border-bottom-color: #fff; }
+  .news--black .news_title,
+  .news--black .news_post-date,
+  .news--black .news_post-title,
+  .news--black .news_post-ava-description {
+    color: #fff; }
+
+.news--blue {
+  border-color: #03295e; }
+  .news--blue .news_post {
+    border-bottom-color: #03295e; }
+  .news--blue .news_title,
+  .news--blue .news_post-date,
+  .news--blue .news_post-title,
+  .news--blue .news_post-ava-description {
+    color: #03295e; }
+
+.subscription--white {
+  border-color: #000; }
+  .subscription--white .subscription_title {
+    border-bottom-color: #000; }
+  .subscription--white .subscription_title,
+  .subscription--white .subscription_text {
+    color: #000; }
+
+.subscription--black {
+  border-color: #fff; }
+  .subscription--black .subscription_title {
+    border-bottom-color: #fff; }
+  .subscription--black .subscription_title,
+  .subscription--black .subscription_text {
+    color: #fff; }
+  .subscription--black .subscription_email input {
+    border: none; }
+
+.subscription--blue {
+  border-color: #03295e; }
+  .subscription--blue .subscription_title {
+    border-bottom-color: #03295e; }
+  .subscription--blue .subscription_title,
+  .subscription--blue .subscription_text {
+    color: #03295e; }
+  .subscription--blue .subscription_email input {
+    border-color: #03295e; }
 
 .is-visible {
   display: block; }
