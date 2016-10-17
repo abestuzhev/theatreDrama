@@ -213,6 +213,8 @@ input[type="checkbox"] {
 
 
 .vk, .fb, .inst  {
+  vertical-align: top;
+  position: relative;
   display: inline-block;
   width: 30px;
   height: 28px;
@@ -222,15 +224,38 @@ input[type="checkbox"] {
   background-color: $expresion-color;
 }
 
-.fb {
-  background-image: url($img-dir + '/social/fb.svg');
+.c-social svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: #fff;
 }
-.inst {
-  background-image: url($img-dir + '/social/inst.svg');
+
+.fb svg{
+  width: 20px;
+  top: 3px;
+  left: 5px;
 }
-.vk {
-  background-image: url($img-dir + '/social/vk.svg');
+.inst svg {
+  width: 18px;
+  top: 5px;
+  left: 5px;
 }
+.vk svg {
+  width: 21px;
+  top: 4px;
+  left: 4px;
+}
+
+//.fb {
+//  background-image: url($img-dir + '/social/fb.svg');
+//}
+//.inst {
+//  background-image: url($img-dir + '/social/inst.svg');
+//}
+//.vk {
+//  background-image: url($img-dir + '/social/vk.svg');
+//}
 //**************************//
 //components
 //**************************//
@@ -371,7 +396,6 @@ input[type="checkbox"] {
       margin-left: -3px;
       margin-top: -6px;
       background: url($img-dir + 'search-icon.png') 0 0 no-repeat;
-      background-color: #000;
     }
 
     &--big {
@@ -554,13 +578,13 @@ input[type="checkbox"] {
   }
 
   &::after {
-    content: '';
+    content: '»';
+    font-size: 18px;
     position: absolute;
-    top: 8px;
+    top: -1px;
     right: 0;
     width: 8px;
     height: 7px;
-    background: url($img-dir + 'link-more-icon.png') 0 0 no-repeat;
   }
 }
 

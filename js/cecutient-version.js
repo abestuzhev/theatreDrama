@@ -60,8 +60,12 @@ $(document).ready(function() {
 
         //header
         $('.header').addClass('header-cecutiont');
-
         $('.header-menu').addClass("menu-cecutiont");
+
+        //c-card-cecutiont
+        $('.c-card').addClass('c-card-cecutiont');
+
+
 
         // $('.header-title_season-number').css("color","#000");
         // $('.header-title_season-text').css("background-color","#000");
@@ -74,8 +78,8 @@ $(document).ready(function() {
 
 
         //main
-        $('.collective_nav').addClass("bgc-black");
-        $('.c-age-restrictions--bg').addClass("bgc-white color-black");
+        // $('.collective_nav').addClass("bgc-black");
+        // $('.c-age-restrictions--bg').addClass("bgc-white color-black");
 
         //footer
         $('.footer').addClass("footer-cecutiont");
@@ -95,9 +99,22 @@ $(document).ready(function() {
     /*Функции изменения цветовой схема*/
     function WhiteStyle(){
         if ($.cookie("CecutientCookie")=="on"){
-
+            //header
             $('.header').removeClass('header-cecutiont--black header-cecutiont--blue').addClass('header-cecutiont--white');
             $('.header-menu').removeClass('menu-cecutiont--black menu-cecutiont--blue').addClass('menu-cecutiont--white');
+
+            //footer
+            $('.footer').removeClass('footer-cecutiont--black footer-cecutiont--blue').addClass('footer-cecutiont--white');
+
+
+            //button
+            $('.c-button').removeClass('c-button--black c-button--blue').addClass('c-button--white');
+
+            //c-card-cecutiont
+            $('.c-card-cecutiont').removeClass('c-card-cecutiont--black c-card-cecutiont--blue').addClass('c-card-cecutiont--white');
+
+            //c-link-more
+            $('.c-link-more').removeClass('c-link-more--black c-link-more--blue').addClass('c-link-more--white');
 
 
             $('body').css({"color":"#000","background":"#fff"});
@@ -133,9 +150,21 @@ $(document).ready(function() {
 
     function BlackStyle(){
         if ($.cookie("CecutientCookie")=="on"){
-
+            //header
             $('.header').removeClass('header-cecutiont--white header-cecutiont--blue').addClass('header-cecutiont--black');
             $('.header-menu').removeClass('menu-cecutiont--white menu-cecutiont--blue').addClass('menu-cecutiont--black');
+
+            //footer
+            $('.footer').removeClass('footer-cecutiont--white footer-cecutiont--blue').addClass('footer-cecutiont--black');
+
+            //c-button
+            $('.c-button').removeClass('c-button--white c-button--blue').addClass('c-button--black');
+
+            //c-card-cecutiont
+            $('.c-card-cecutiont').removeClass('c-card-cecutiont--white c-card-cecutiont--blue').addClass('c-card-cecutiont--black');
+
+            //c-link-more
+            $('.c-link-more').removeClass('c-link-more--white c-link-more--blue').addClass('c-link-more--black');
 
 
             $('body').css({"color":"#fff","background":"#000"});
@@ -177,9 +206,21 @@ $(document).ready(function() {
 
     function BlueStyle(){
         if ($.cookie("CecutientCookie")=="on"){
-
+            //header
             $('.header').removeClass('header-cecutiont--white header-cecutiont--black').addClass('header-cecutiont--blue');
             $('.header-menu').removeClass('menu-cecutiont--white menu-cecutiont--black').addClass('menu-cecutiont--blue');
+
+            //footer
+            $('.footer').removeClass('footer-cecutiont--white footer-cecutiont--black').addClass('footer-cecutiont--blue');
+
+            //c-button
+            $('.c-button').removeClass('c-button--white c-button--black').addClass('c-button--blue');
+
+            //c-card-cecutiont
+            $('.c-card-cecutiont').removeClass('c-card-cecutiont--white c-card-cecutiont--black').addClass('c-card-cecutiont--blue');
+
+            //c-link-more
+            $('.c-link-more').removeClass('c-link-more--white c-link-more--black').addClass('c-link-more--blue');
 
             $('body').css("background","#9DD1FF");
             $('.l-layout').css({"background" : "transparent"});

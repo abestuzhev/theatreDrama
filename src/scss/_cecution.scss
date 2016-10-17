@@ -2,6 +2,10 @@
     padding-top: 65px;
     border-bottom: 4px solid #000;
 
+  .c-search_autocomplete {
+    top: 44px;
+  }
+
   .header_logo {
     fill: #000;
   }
@@ -54,6 +58,30 @@
     margin: 0 2px;
   }
 
+  .c-social svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke: #fff;
+  }
+
+  .fb svg{
+    width: 24px;
+    top: 9px;
+    left: 10px;
+  }
+  .inst svg {
+    width: 19px;
+    top: 11px;
+    left: 11px;
+  }
+  .vk svg {
+    width: 22px;
+    top: 9px;
+    left: 10px;
+  }
+
+
   .header-version {
     font-size: 0;
     margin-bottom: 52px;
@@ -74,6 +102,15 @@
       border: 1px solid #000;
       color: #fff;
       height: 40px;
+
+
+      &::after {
+        content: '';
+        width: 9px;
+        height: 18px;
+        margin-top: -9px;
+        background-image: url($img-dir + 'arrows-big-white.png');
+      }
     }
   }
 
@@ -97,6 +134,14 @@
     .c-search_button {
       background-color: #fff;
       color: #000;
+      
+      &::after {
+        content: '';
+        width: 9px;
+        height: 18px;
+        margin-top: -9px;
+        background-image: url($img-dir + 'arrows-big-black.png');
+      }
     }
 
     .c-search input {
@@ -113,6 +158,14 @@
     }
     .header_logo-letter {
       fill: #000;
+    }
+
+    .c-social a {
+      background-color: #fff;
+    }
+
+    .c-social svg {
+      stroke: #000;
     }
   }
 
@@ -136,6 +189,21 @@
     .header-title_season-text {
       background-color: #03295e;
       color: #fff;
+    }
+
+    .c-social a {
+      width: 40px;
+      height: 40px;
+      background-color: #03295e;
+      margin: 0 2px;
+    }
+
+
+    .header_logo {
+      fill: #03295e;
+    }
+    .header_logo-letter {
+      fill: #fff;
     }
   }
 }//header-cecutiont
@@ -192,7 +260,7 @@
     }
 
     .submenu_link {
-      color: #000;
+      color: #fff;
     }
 
     a {
@@ -249,8 +317,7 @@
 
 //footer
 .footer-cecutiont {
-  background: transparent;
-  background-color: #000;
+  background: #000;
   margin:0;
   width: auto;
 
@@ -263,7 +330,7 @@
     margin: 0 auto;
     box-shadow: none;
     border-bottom: 2px solid #fff;
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
   }
 
@@ -311,13 +378,106 @@
     float: right;
   }
 
+  .c-social a {
+    background-color: #fff;
+  }
+
+  .c-social svg {
+    stroke: #000;
+  }
+
   .footer_copiright {
-    background-color: #000;
+    //background-color: transparent;
     width: 1250px;
     margin: 0 auto;
   }
+
+  &--white {
+    background: #000;
+  }
+
+  &--black {
+    background: #272727;
+  }
+
+  &--blue {
+    background: #03295e;
+
+    .c-search_button {
+      color: #03295e;
+    }
+
+    .c-social svg {
+      stroke: #03295e;
+    }
+  }
 }
 
+//c-card
+.c-card-cecutiont {
+
+  .c-age-restrictions {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &--white {
+    .c-card_title a,
+    .c-card_text {
+      color: #000;
+    }
+  }
+
+  &--black {
+    .c-card_title a,
+    .c-card_text {
+      color: #fff;
+    }
+  }
+
+  &--blue {
+    .c-card_title a,
+    .c-card_text {
+      color: #03295e;
+    }
+  }
+}
+
+
+//c-button
+.c-button {
+
+  &--white {
+    color: #000;
+    border-color:#000;
+  }
+
+  &--black {
+    color: #fff;
+    border-color:#fff;
+  }
+
+  &--blue {
+    color: #03295e;
+    border-color:#03295e;
+  }
+}
+
+//c-link-more
+.c-link-more {
+
+  &--white {
+    color: #000;
+  }
+
+  &--black {
+    color: #fff;
+  }
+
+  &--blue {
+    color: #03295e;
+  }
+}
 
 
 

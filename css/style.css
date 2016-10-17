@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'MinionPro-Regular';
   src: url("MinionPro-Regular.woff2") format("woff2"), url("MinionPro-Regular.otf") format("truetype"), url("MinionPro-Regular.woff") format("woff");
@@ -189,6 +190,8 @@ input[type="checkbox"] {
   fill: #f58220; }
 
 .vk, .fb, .inst {
+  vertical-align: top;
+  position: relative;
   display: inline-block;
   width: 30px;
   height: 28px;
@@ -197,14 +200,26 @@ input[type="checkbox"] {
   background-position: 50% 50%;
   background-color: #b42b25; }
 
-.fb {
-  background-image: url("../img//social/fb.svg"); }
+.c-social svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: #fff; }
 
-.inst {
-  background-image: url("../img//social/inst.svg"); }
+.fb svg {
+  width: 20px;
+  top: 3px;
+  left: 5px; }
 
-.vk {
-  background-image: url("../img//social/vk.svg"); }
+.inst svg {
+  width: 18px;
+  top: 5px;
+  left: 5px; }
+
+.vk svg {
+  width: 21px;
+  top: 4px;
+  left: 4px; }
 
 .l-grid {
   font-size: 0; }
@@ -311,8 +326,7 @@ input[type="checkbox"] {
       left: 50%;
       margin-left: -3px;
       margin-top: -6px;
-      background: url("../img/search-icon.png") 0 0 no-repeat;
-      background-color: #000; }
+      background: url("../img/search-icon.png") 0 0 no-repeat; }
     .c-search_button--big {
       font-size: 19px;
       font-weight: 600;
@@ -442,13 +456,13 @@ input[type="checkbox"] {
     color: #b42b25;
     border-color: #b42b25; }
   .c-link-more::after {
-    content: '';
+    content: '»';
+    font-size: 18px;
     position: absolute;
-    top: 8px;
+    top: -1px;
     right: 0;
     width: 8px;
-    height: 7px;
-    background: url("../img/link-more-icon.png") 0 0 no-repeat; }
+    height: 7px; }
 
 .c-link-back {
   padding-left: 14px;
@@ -2088,6 +2102,8 @@ input[type="checkbox"] {
 .header-cecutiont {
   padding-top: 65px;
   border-bottom: 4px solid #000; }
+  .header-cecutiont .c-search_autocomplete {
+    top: 44px; }
   .header-cecutiont .header_logo {
     fill: #000; }
   .header-cecutiont .header_logo {
@@ -2119,6 +2135,23 @@ input[type="checkbox"] {
     height: 40px;
     background-color: #000;
     margin: 0 2px; }
+  .header-cecutiont .c-social svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke: #fff; }
+  .header-cecutiont .fb svg {
+    width: 24px;
+    top: 9px;
+    left: 10px; }
+  .header-cecutiont .inst svg {
+    width: 19px;
+    top: 11px;
+    left: 11px; }
+  .header-cecutiont .vk svg {
+    width: 22px;
+    top: 9px;
+    left: 10px; }
   .header-cecutiont .header-version {
     font-size: 0;
     margin-bottom: 52px; }
@@ -2131,6 +2164,12 @@ input[type="checkbox"] {
     border: 1px solid #000;
     color: #fff;
     height: 40px; }
+    .header-cecutiont .c-search_button::after {
+      content: '';
+      width: 9px;
+      height: 18px;
+      margin-top: -9px;
+      background-image: url("../img/arrows-big-white.png"); }
   .header-cecutiont--white {
     color: #000; }
     .header-cecutiont--white .header-title_season-text {
@@ -2143,6 +2182,12 @@ input[type="checkbox"] {
     .header-cecutiont--black .c-search_button {
       background-color: #fff;
       color: #000; }
+      .header-cecutiont--black .c-search_button::after {
+        content: '';
+        width: 9px;
+        height: 18px;
+        margin-top: -9px;
+        background-image: url("../img/arrows-big-black.png"); }
     .header-cecutiont--black .c-search input {
       border: none; }
     .header-cecutiont--black .header-title_season-text {
@@ -2152,6 +2197,10 @@ input[type="checkbox"] {
       fill: #fff; }
     .header-cecutiont--black .header_logo-letter {
       fill: #000; }
+    .header-cecutiont--black .c-social a {
+      background-color: #fff; }
+    .header-cecutiont--black .c-social svg {
+      stroke: #000; }
   .header-cecutiont--blue {
     color: #03295e; }
     .header-cecutiont--blue .header-title_season-number {
@@ -2164,6 +2213,15 @@ input[type="checkbox"] {
     .header-cecutiont--blue .header-title_season-text {
       background-color: #03295e;
       color: #fff; }
+    .header-cecutiont--blue .c-social a {
+      width: 40px;
+      height: 40px;
+      background-color: #03295e;
+      margin: 0 2px; }
+    .header-cecutiont--blue .header_logo {
+      fill: #03295e; }
+    .header-cecutiont--blue .header_logo-letter {
+      fill: #fff; }
 
 .menu-cecutiont {
   width: 100%;
@@ -2195,7 +2253,7 @@ input[type="checkbox"] {
   .menu-cecutiont--white .submenu {
     background-color: #000; }
   .menu-cecutiont--white .submenu_link {
-    color: #000; }
+    color: #fff; }
   .menu-cecutiont--white a {
     color: #000;
     background-color: transparent; }
@@ -2224,8 +2282,7 @@ input[type="checkbox"] {
     border-bottom-color: #03295e; }
 
 .footer-cecutiont {
-  background: transparent;
-  background-color: #000;
+  background: #000;
   margin: 0;
   width: auto; }
   .footer-cecutiont .footer_body {
@@ -2233,7 +2290,7 @@ input[type="checkbox"] {
     margin: 0 auto;
     box-shadow: none;
     border-bottom: 2px solid #fff;
-    background-color: #000;
+    background-color: transparent;
     color: #fff; }
   .footer-cecutiont .footer_right-col {
     position: static; }
@@ -2262,10 +2319,60 @@ input[type="checkbox"] {
       color: #000; }
   .footer-cecutiont .c-social {
     float: right; }
+  .footer-cecutiont .c-social a {
+    background-color: #fff; }
+  .footer-cecutiont .c-social svg {
+    stroke: #000; }
   .footer-cecutiont .footer_copiright {
-    background-color: #000;
     width: 1250px;
     margin: 0 auto; }
+  .footer-cecutiont--white {
+    background: #000; }
+  .footer-cecutiont--black {
+    background: #272727; }
+  .footer-cecutiont--blue {
+    background: #03295e; }
+    .footer-cecutiont--blue .c-search_button {
+      color: #03295e; }
+    .footer-cecutiont--blue .c-social svg {
+      stroke: #03295e; }
+
+.c-card-cecutiont .c-age-restrictions {
+  background-color: #fff;
+  color: #000; }
+
+.c-card-cecutiont--white .c-card_title a,
+.c-card-cecutiont--white .c-card_text {
+  color: #000; }
+
+.c-card-cecutiont--black .c-card_title a,
+.c-card-cecutiont--black .c-card_text {
+  color: #fff; }
+
+.c-card-cecutiont--blue .c-card_title a,
+.c-card-cecutiont--blue .c-card_text {
+  color: #03295e; }
+
+.c-button--white {
+  color: #000;
+  border-color: #000; }
+
+.c-button--black {
+  color: #fff;
+  border-color: #fff; }
+
+.c-button--blue {
+  color: #03295e;
+  border-color: #03295e; }
+
+.c-link-more--white {
+  color: #000; }
+
+.c-link-more--black {
+  color: #fff; }
+
+.c-link-more--blue {
+  color: #03295e; }
 
 .is-visible {
   display: block; }
