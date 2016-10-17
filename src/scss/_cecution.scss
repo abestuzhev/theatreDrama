@@ -676,17 +676,136 @@
 }
 
 
+
+//c-page-title
+.c-page-title-cecutiont {
+  background-color: #000;
+  color: #fff;
+
+  &--white {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &--black {
+    background-color: #fff;
+    color: #000;
+
+    span::before,
+    span::after {
+      content: '';
+      height: 9px;
+      background-image: url($img-dir + 'title-point-black.svg');
+    }
+  }
+
+  &--blue {
+    background-color: #03295e;
+    color: #fff;
+  }
+}
+
+//c-post-list_item
+.c-post-list_item {
+
+
+  &--white {
+    border-bottom-color: #000;
+
+    .c-post-list_title a,
+    .c-post-list_date,
+    .c-post-list_text {
+      color: #000;
+    }
+
+    .c-post-list_top {
+      border-bottom-color: #000;
+      height: 80px;
+      margin-bottom: 10px;
+
+    }
+  }
+
+  &--black {
+    border-bottom-color: #fff;
+
+    .c-post-list_title a,
+    .c-post-list_date,
+    .c-post-list_text {
+      color: #fff;
+    }
+
+    .c-post-list_top {
+      border-bottom-color: #fff;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--blue {
+    border-bottom-color: #03295e;
+
+    .c-post-list_title a,
+    .c-post-list_date,
+    .c-post-list_text {
+      color: #03295e;
+    }
+
+    .c-post-list_top {
+      border-bottom-color: #03295e;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//c-pagination_link
+.c-pagination_link {
+
+  &--white {
+    color: #000;
+    border-color: #000;
+
+    .c-pagination_link--active {
+      background-color: #000;
+    }
+  }
+
+  &--black {
+    color: #fff;
+    border-color: #fff;
+
+
+    .c-pagination_link--active {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &--blue {
+    color: #03295e;
+    background-color: transparent;
+    border-color: #03295e;
+
+    .c-pagination_link--active {
+      background-color: #03295e;
+      color: #fff;
+    }
+  }
+}
+
+
 //is-visible
 .is-visible {
   display: block;
 }
 
-.litle_text {
+.little_text {
   font-size: 14px;
 }
 
 
-.litle_title {
+.little_title {
   font-size: 23px;
 }
 
@@ -704,7 +823,7 @@
 
 //title
 
-.litle_title {
+.little_title {
   font-size: 23px;
 }
 

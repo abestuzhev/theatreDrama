@@ -850,15 +850,17 @@ input[type="checkbox"] {
     border-bottom: 1px dotted #000;
   }
 
-  &_title a{
-    display: block;
-    text-align: left;
-    color: #292929;
-    font-family: "Open Sans";
+  &_title {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 26px;
     font-weight: 600;
-    margin-bottom: 8px;
+    a {
+      color: #292929;
+      display: block;
+      text-align: left;
+      font-family: "Open Sans";
+      margin-bottom: 8px;
+    }
   }
 
   &_date {

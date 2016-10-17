@@ -77,6 +77,9 @@ $(document).ready(function() {
         //c-button--bg-cecutiont
         $('.c-button--bg').addClass('c-button--bg-cecutiont');
 
+        //c-page-title-cecutiont
+        $('.c-page-title').addClass('c-page-title-cecutiont');
+
 
         //main
         // $('.collective_nav').addClass("bgc-black");
@@ -135,6 +138,15 @@ $(document).ready(function() {
             //c-button--bg-cecutiont
             $('.c-button--bg-cecutiont').removeClass('c-button--bg-cecutiont--black c-button--bg-cecutiont--blue').addClass('c-button--bg-cecutiont--white');
 
+            //c-page-title-cecutiont
+            $('.c-page-title-cecutiont').removeClass('c-page-title-cecutiont--black c-page-title-cecutiont--blue').addClass('c-page-title-cecutiont--white');
+
+            //c-post-list_item
+            $('.c-post-list_item').removeClass('c-post-list_item--black c-post-list_item--blue').addClass('c-post-list_item--white');
+
+            //c-pagination_link
+            $('.c-pagination_link').removeClass('c-pagination_link--black c-pagination_link--blue').addClass('c-pagination_link--white');
+
 
             $('body').css({"color":"#000","background":"#fff"});
 
@@ -182,6 +194,15 @@ $(document).ready(function() {
 
             //c-button--bg-cecutiont
             $('.c-button--bg-cecutiont').removeClass('c-button--bg-cecutiont--white c-button--bg-cecutiont--blue').addClass('c-button--bg-cecutiont--black');
+
+            //c-page-title-cecutiont
+            $('.c-page-title-cecutiont').removeClass('c-page-title-cecutiont--white c-page-title-cecutiont--blue').addClass('c-page-title-cecutiont--black');
+
+            //c-post-list_item
+            $('.c-post-list_item').removeClass('c-post-list_item--white c-post-list_item--blue').addClass('c-post-list_item--black');
+
+            //c-pagination_link
+            $('.c-pagination_link').removeClass('c-pagination_link--white c-pagination_link--blue').addClass('c-pagination_link--black');
 
 
             $('body').css({"color":"#fff","background":"#000"});
@@ -234,51 +255,19 @@ $(document).ready(function() {
             //c-button--bg-cecutiont
             $('.c-button--bg-cecutiont').removeClass('c-button--bg-cecutiont--white c-button--bg-cecutiont--black').addClass('c-button--bg-cecutiont--blue');
 
+            //c-page-title-cecutiont
+            $('.c-page-title-cecutiont').removeClass('c-page-title-cecutiont--white c-page-title-cecutiont--black').addClass('c-page-title-cecutiont--blue');
+
+            //c-post-list_item
+            $('.c-post-list_item').removeClass('c-post-list_item--white c-post-list_item--black').addClass('c-post-list_item--blue');
+
+            //c-pagination_link
+            $('.c-pagination_link').removeClass('c-pagination_link--white c-pagination_link--black').addClass('c-pagination_link--blue');
+
 
             $('body').css("background","#9DD1FF");
             $('.l-layout').css({"background" : "transparent"});
             $('.header').css({"background" : "transparent"});
-
-            // $('.header a').css({"color":"#000"});
-            // $('.submenu').css({"background-color" : "#fff"});
-            // $('.news, .subscription, .about_description').css({"border-color" : "#000"});
-            // $('body, html, .hearder *, .main *').css({"color":"#000"});
-            // $('.footer *, .footer_body').css({"color":"#fff", "background-color" : "#03295e"});
-            // $('body, html').css({"background":"#9DD1FF"});
-
-
-            // $('.footer, ' +
-            //     '.footer_body, ' +
-            //     '.footer_copiright, ' +
-            //     '.vk, ' +
-            //     '.fb, ' +
-            //     '.inst, ' +
-            //     '.header-title_season-text ').css({"background-color" : "#03295e"});
-            //
-            //
-            //
-            // $('.news, .subscription, .about_description').css({"border-color" : "#000"});
-            // $('.main a,.header-menu a, p, ul, li' +
-            //     '.c-card_text, ' +
-            //     '.about_text, ' +
-            //     '.js-dotted, ' +
-            //     '.subscription_text, ' +
-            //     '.subscription_title,' +
-            //     '.news_post-ava-description,' +
-            //     '.news_title,' +
-            //     '.news_post-date').css({"color" : "#03295e"});
-            //
-            // $('.header-title_season-text').css({"color":"#fff"});
-            // $('.collective_nav, .collective_link').css({"background":"#03295e", "color":"#fff"});
-            //
-            //
-            // $('.c-button--bg').css({"width": "100%", "background-color": "#03295e", "color": "#fff", "text-align": "center"});
-            //
-            // $('.submenu').css({"background":"#03295e"});
-            // $('.menu-cecutiont .has-children::after').css({"border-bottom":"14px solid #03295e"});
-            // $('.submenu_link').css({"color":"#fff"});
-
-
 
             $.cookie("style", "blue", {
                 expires: 365,
@@ -298,6 +287,10 @@ $(document).ready(function() {
             // $('.c-card_text').removeClass("MediumFonts BigFonts").addClass("SmallFonts-text");
             //actor
             $('.c-card-actor_text').removeClass("small_text medium_text big_text").addClass('little_text');
+
+            $('.c-post-list_title').removeClass("medium_title small_title big_title big_title-2x big_title-3x").addClass('little_title');
+            $('.c-post-list_text').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
+
 
             //about_text
             $('.about_text, .subscription_text, .c-button--bg-cecution, .subscription_email input').removeClass("little_text medium_text big_text").addClass('small_text');
@@ -325,6 +318,10 @@ $(document).ready(function() {
             $('.c-card-actor_text').removeClass("little_text medium_text big_text").addClass('small_text');
             $('.c-card-actor_title').removeClass("small_title medium_title big_title").addClass('little_title');
 
+
+            $('.c-post-list_title').removeClass("little_title medium_title big_title big_title-2x big_title-3x").addClass('small_title');
+            $('.c-post-list_text').removeClass("small_text little_text big_text big_text-2x big_text-3x").addClass('medium_text');
+
             //about_text
             $('.about_title, .news_title, .subscription_title').removeClass("little_title small_title medium_title big_title-2x big_title-3x").addClass('big_title');
             $('.about_text, .subscription_text, .c-button--bg-cecutiont, .subscription_email input').removeClass("little_text small_text medium_text big_text").addClass('medium_text');
@@ -347,8 +344,11 @@ $(document).ready(function() {
             $('.c-card_text').animate({'height': '3.8em'});
             $('.c-card').animate({'height': '480px'});
 
+            $('.c-post-list_title').removeClass("little_title small_title big_title big_title-2x big_title-3x").addClass('medium_title');
+            $('.c-post-list_text').removeClass("big_text little_text medium_text big_text-2x big_text-3x").addClass('small_text');
+
             //actor
-            $('.c-card-actor_text').removeClass("little_text small_text big_text").addClass('medium_text');
+            $('.c-card-actor_text, .c-post-list_date').removeClass("little_text small_text big_text").addClass('medium_text');
             $('.c-card-actor_title').removeClass("little_title medium_title big_title").addClass('small_title');
             $('.c-card-actor_title').animate({'line-height': '18px'});
 
