@@ -794,6 +794,30 @@
   }
 }
 
+//text-page--cecutiont.
+//
+.text-page-cecutiont,
+.news-post-cecutiont {
+
+  &--white {
+    h1, h2, h3, p, ul, li, a, figcaption {
+      color: #000;
+    }
+  }
+
+  &--black {
+    h1, h2, h3, p, ul, li, a, figcaption {
+      color: #fff;
+    }
+  }
+
+  &--blue {
+    h1, h2, h3, p, ul, li, a, figcaption {
+      color: #03295e;
+    }
+  }
+}
+
 
 //is-visible
 .is-visible {

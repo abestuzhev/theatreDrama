@@ -80,6 +80,12 @@ $(document).ready(function() {
         //c-page-title-cecutiont
         $('.c-page-title').addClass('c-page-title-cecutiont');
 
+        //text-page-cecutiont
+        $('.text-page').addClass('text-page-cecutiont');
+
+        //news-post-cecutiont
+        $('.news-post').addClass('news-post-cecutiont');
+
 
         //main
         // $('.collective_nav').addClass("bgc-black");
@@ -147,6 +153,13 @@ $(document).ready(function() {
             //c-pagination_link
             $('.c-pagination_link').removeClass('c-pagination_link--black c-pagination_link--blue').addClass('c-pagination_link--white');
 
+            //text-page-cecutiont
+            $('.text-page-cecutiont').removeClass('text-page-cecutiont--black text-page-cecutiont--blue').addClass('text-page-cecutiont--white');
+
+            //news-post-cecutiont
+            $('.news-post-cecutiont').removeClass('news-post-cecutiont--black news-post-cecutiont--blue').addClass('news-post-cecutiont--white');
+
+
 
             $('body').css({"color":"#000","background":"#fff"});
 
@@ -203,6 +216,12 @@ $(document).ready(function() {
 
             //c-pagination_link
             $('.c-pagination_link').removeClass('c-pagination_link--white c-pagination_link--blue').addClass('c-pagination_link--black');
+
+            //text-page-cecutiont
+            $('.text-page-cecutiont').removeClass('text-page-cecutiont--white text-page-cecutiont--blue').addClass('text-page-cecutiont--black');
+
+            //news-post-cecutiont
+            $('.news-post-cecutiont').removeClass('news-post-cecutiont--white news-post-cecutiont--blue').addClass('news-post-cecutiont--black');
 
 
             $('body').css({"color":"#fff","background":"#000"});
@@ -263,6 +282,12 @@ $(document).ready(function() {
 
             //c-pagination_link
             $('.c-pagination_link').removeClass('c-pagination_link--white c-pagination_link--black').addClass('c-pagination_link--blue');
+
+            //text-page-cecutiont
+            $('.text-page-cecutiont').removeClass('text-page-cecutiont--white text-page-cecutiont--black').addClass('text-page-cecutiont--blue');
+
+            //news-post-cecutiont
+            $('.news-post-cecutiont').removeClass('news-post-cecutiont--white news-post-cecutiont--black').addClass('news-post-cecutiont--blue');
 
 
             $('body').css("background","#9DD1FF");
