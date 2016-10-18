@@ -107,8 +107,7 @@ h2 {
     position: absolute;
     left: 0;
     top: 5px;
-    text-transform: none;
-    line-height: 1.8; }
+    text-transform: none; }
   .c-pages_title-h1 .c-age-restrictions {
     width: 39px;
     height: 39px;
@@ -761,14 +760,14 @@ input[type="checkbox"] {
     margin-left: 236px; }
   .c-card-ticket_title {
     text-align: left;
+    font-size: 25px;
+    font-weight: 500;
     padding-bottom: 10px;
     border-bottom: 1px dotted #292929;
     margin-bottom: 10px; }
     .c-card-ticket_title a {
       color: #292929;
-      font-family: "Minion Pro";
-      font-size: 25px;
-      font-weight: 500; }
+      font-family: "Minion Pro"; }
       .c-card-ticket_title a:hover {
         color: #b42b25;
         text-decoration: underline; }
@@ -780,7 +779,7 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400; }
-  .c-card-ticket .c-button--bg {
+  .c-card-ticket .c-card-ticket_btn {
     position: absolute;
     bottom: 20px;
     right: 0; }
@@ -1639,7 +1638,6 @@ input[type="checkbox"] {
     width: 653px;
     height: 59px;
     margin: 0 auto;
-    background-color: #0F0F0F;
     border-right: 1px solid #585858;
     border-left: 1px solid #585858; }
     .ticket-slider_item {
@@ -1678,7 +1676,7 @@ input[type="checkbox"] {
   .ticket-post_content {
     margin-left: 336px;
     position: relative; }
-  .ticket-post .c-button--bg {
+  .ticket-post_btn {
     position: absolute;
     right: 0;
     bottom: 0; }
@@ -2381,13 +2379,16 @@ input[type="checkbox"] {
     color: #fff;
     background-color: #03295e; }
 
-.c-link-more--white {
+.c-link-more--white,
+.c-link-back--white {
   color: #000; }
 
-.c-link-more--black {
+.c-link-more--black,
+.c-link-back--black {
   color: #fff; }
 
-.c-link-more--blue {
+.c-link-more--blue,
+.c-link-back--blue {
   color: #03295e; }
 
 .collective_nav-cecutiont {
@@ -2620,13 +2621,17 @@ input[type="checkbox"] {
   .text-page-qoute--blue .text-page-qoute_text {
     color: #03295e; }
 
-.c-pages_title-h2-cecutiont {
+.c-pages_title-h2-cecutiont,
+.c-pages_title-h1-cecutiont {
   color: #000; }
-  .c-pages_title-h2-cecutiont--white {
+  .c-pages_title-h2-cecutiont--white,
+  .c-pages_title-h1-cecutiont--white {
     color: #000; }
-  .c-pages_title-h2-cecutiont--black {
+  .c-pages_title-h2-cecutiont--black,
+  .c-pages_title-h1-cecutiont--black {
     color: #fff; }
-  .c-pages_title-h2-cecutiont--blue {
+  .c-pages_title-h2-cecutiont--blue,
+  .c-pages_title-h1-cecutiont--blue {
     color: #03295e; }
 
 .c-card-postnews--white {
@@ -2693,7 +2698,118 @@ input[type="checkbox"] {
 .fotogallery-play_title--blue {
   color: #03295e; }
 
-.is-visible {
+.search-result--white .search-result_title a,
+.search-result--white .search-result_text,
+.search-result--white .search-result_total,
+.search-result--white .search-result_item,
+.search-result--white .search-result_total-number {
+  color: #000; }
+
+.search-result--white .search-result_top,
+.search-result--white .search-result_list {
+  border-color: #000; }
+
+.search-result--white .c-search_button {
+  color: #fff;
+  background-color: #000; }
+  .search-result--white .c-search_button::after {
+    content: '';
+    background-image: url(../img/arrows-big-white.png);
+    background-size: 6px 13px; }
+
+.search-result--black .search-result_title a,
+.search-result--black .search-result_text,
+.search-result--black .search-result_total,
+.search-result--black .search-result_item,
+.search-result--black .search-result_total-number {
+  color: #fff; }
+
+.search-result--black .search-result_top,
+.search-result--black .search-result_list {
+  border-color: #fff; }
+
+.search-result--black .c-search_button {
+  color: #000;
+  background-color: #fff; }
+  .search-result--black .c-search_button::after {
+    content: '';
+    background-size: 6px 13px; }
+
+.search-result--blue .search-result_title a,
+.search-result--blue .search-result_text,
+.search-result--blue .search-result_total,
+.search-result--blue .search-result_item,
+.search-result--blue .search-result_total-number {
+  color: #03295e; }
+
+.search-result--blue .search-result_top,
+.search-result--blue .search-result_list {
+  border-color: #03295e; }
+
+.search-result--blue .c-search_button {
+  color: #fff;
+  background-color: #03295e; }
+  .search-result--blue .c-search_button::after {
+    content: '';
+    background-image: url(../img/arrows-big-white.png);
+    background-size: 6px 13px; }
+
+.l-ticket-month-cecutiont {
+  background-color: #272727; }
+  .l-ticket-month-cecutiont--white {
+    background-color: #272727; }
+  .l-ticket-month-cecutiont--black {
+    background-color: #272727; }
+  .l-ticket-month-cecutiont--blue {
+    background-color: #272727; }
+
+.c-card-ticket-cecutiont {
+  color: #000; }
+  .c-card-ticket-cecutiont--white .c-card-ticket_month,
+  .c-card-ticket-cecutiont--white .c-card-ticket_time span,
+  .c-card-ticket-cecutiont--white .c-age-restrictions span,
+  .c-card-ticket-cecutiont--white .c-card-ticket_title a,
+  .c-card-ticket-cecutiont--white .c-card-ticket_text {
+    color: #000; }
+  .c-card-ticket-cecutiont--white .c-card-ticket_title,
+  .c-card-ticket-cecutiont--white .c-age-restrictions,
+  .c-card-ticket-cecutiont--white .c-card-ticket {
+    border-color: #000; }
+  .c-card-ticket-cecutiont--black .c-card-ticket_month,
+  .c-card-ticket-cecutiont--black .c-card-ticket_time span,
+  .c-card-ticket-cecutiont--black .c-age-restrictions span,
+  .c-card-ticket-cecutiont--black .c-card-ticket_title a,
+  .c-card-ticket-cecutiont--black .c-card-ticket_text {
+    color: #fff; }
+  .c-card-ticket-cecutiont--black .c-card-ticket_title,
+  .c-card-ticket-cecutiont--black .c-age-restrictions,
+  .c-card-ticket-cecutiont--black .c-card-ticket {
+    border-color: #fff; }
+  .c-card-ticket-cecutiont--blue .c-card-ticket_month,
+  .c-card-ticket-cecutiont--blue .c-card-ticket_time span,
+  .c-card-ticket-cecutiont--blue .c-age-restrictions span,
+  .c-card-ticket-cecutiont--blue .c-card-ticket_title a,
+  .c-card-ticket-cecutiont--blue .c-card-ticket_text {
+    color: #03295e; }
+  .c-card-ticket-cecutiont--blue .c-card-ticket_title,
+  .c-card-ticket-cecutiont--blue .c-age-restrictions,
+  .c-card-ticket-cecutiont--blue .c-card-ticket {
+    border-color: #03295e; }
+
+.ticket-post_content-cecutiont {
+  color: #000; }
+  .ticket-post_content-cecutiont .ticket-post a {
+    text-decoration: underline; }
+  .ticket-post_content-cecutiont--white h1, .ticket-post_content-cecutiont--white h2, .ticket-post_content-cecutiont--white h3, .ticket-post_content-cecutiont--white p, .ticket-post_content-cecutiont--white ul, .ticket-post_content-cecutiont--white li, .ticket-post_content-cecutiont--white figcaption, .ticket-post_content-cecutiont--white .actor_title, .ticket-post_content-cecutiont--white .actor_post, .ticket-post_content-cecutiont--white .actor_ava span {
+    color: #000; }
+  .ticket-post_content-cecutiont--black h1, .ticket-post_content-cecutiont--black h2, .ticket-post_content-cecutiont--black h3, .ticket-post_content-cecutiont--black p, .ticket-post_content-cecutiont--black ul, .ticket-post_content-cecutiont--black li, .ticket-post_content-cecutiont--black figcaption, .ticket-post_content-cecutiont--black .actor_title, .ticket-post_content-cecutiont--black .actor_post, .ticket-post_content-cecutiont--black .actor_ava span {
+    color: #fff; }
+  .ticket-post_content-cecutiont--black h3 {
+    border-color: #fff; }
+  .ticket-post_content-cecutiont--blue h1, .ticket-post_content-cecutiont--blue h2, .ticket-post_content-cecutiont--blue h3, .ticket-post_content-cecutiont--blue p, .ticket-post_content-cecutiont--blue ul, .ticket-post_content-cecutiont--blue li, .ticket-post_content-cecutiont--blue a, .ticket-post_content-cecutiont--blue figcaption, .ticket-post_content-cecutiont--blue .actor_title, .ticket-post_content-cecutiont--blue .actor_post, .ticket-post_content-cecutiont--blue .actor_ava span {
+    color: #03295e; }
+
+.c-pages_title-h1 .is-visible {
   display: block; }
 
 .little_text {

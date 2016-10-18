@@ -89,8 +89,20 @@ $(document).ready(function() {
         //.c-pages_title-h2-cecutiont
         $('.c-pages_title-h2').addClass('c-pages_title-h2-cecutiont');
 
+        //c-pages_title-h1-cecutiont
+        $('.c-pages_title-h1').addClass('c-pages_title-h1-cecutiont');
+
         //actor-cecutiont
         $('.actor').addClass('actor-cecutiont');
+
+        //l-ticket-month-cecutiont
+        $('.l-ticket-month').addClass('l-ticket-month-cecutiont');
+
+        //c-card-ticket-cecutiont
+        $('.c-card-ticket').addClass('c-card-ticket-cecutiont');
+
+        //ticket-post_content-cecutiont
+        $('.ticket-post_content').addClass('ticket-post_content-cecutiont');
 
 
         //main
@@ -132,6 +144,9 @@ $(document).ready(function() {
             //c-link-more
             $('.c-link-more').removeClass('c-link-more--black c-link-more--blue').addClass('c-link-more--white');
 
+            //c-link-back
+            $('.c-link-back').removeClass('c-link-back--black c-link-back--blue').addClass('c-link-back--white');
+
             //collective_nav-cecutiont
             $('.collective_nav-cecutiont').removeClass('collective_nav-cecutiont--black collective_nav-cecutiont--blue').addClass('collective_nav-cecutionte--white');
 
@@ -171,6 +186,9 @@ $(document).ready(function() {
             //c-pages_title-h2-cecutiont
             $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--black c-pages_title-h2-cecutiont--blue').addClass('c-pages_title-h2-cecutiont--white');
 
+            //c-pages_title-h1-cecutiont
+            $('.c-pages_title-h1-cecutiont').removeClass('c-pages_title-h1-cecutiont--black c-pages_title-h1-cecutiont--blue').addClass('c-pages_title-h1-cecutiont--white');
+
             //actor-cecutiont
             $('.actor-cecutiont').removeClass('actor-cecutiont--black actor-cecutiont--blue').addClass('actor-cecutiont--white');
 
@@ -182,6 +200,18 @@ $(document).ready(function() {
 
             //fotogallery-play_title
             $('.fotogallery-play_title').removeClass('fotogallery-play_title--black fotogallery-play_title--blue').addClass('fotogallery-play_title--white');
+
+            //search-result
+            $('.search-result').removeClass('search-result--black search-result--blue').addClass('search-result--white');
+
+            //l-ticket-month-cecutiont
+            $('.l-ticket-month-cecutiont').removeClass('l-ticket-month-cecutiont--black l-ticket-month-cecutiont--blue').addClass('l-ticket-month-cecutiont--white');
+
+            //c-card-ticket-cecutiont
+            $('.c-card-ticket-cecutiont').removeClass('c-card-ticket-cecutiont--black c-card-ticket-cecutiont--blue').addClass('c-card-ticket-cecutiont--white');
+
+            //ticket-post_content-cecutiont
+            $('.ticket-post_content-cecutiont').removeClass('ticket-post_content-cecutiont--black ticket-post_content-cecutiont--blue').addClass('ticket-post_content-cecutiont--white');
 
 
 
@@ -213,6 +243,9 @@ $(document).ready(function() {
 
             //c-link-more
             $('.c-link-more').removeClass('c-link-more--white c-link-more--blue').addClass('c-link-more--black');
+
+            //c-link-back
+            $('.c-link-back').removeClass('c-link-back--white c-link-back--blue').addClass('c-link-back--black');
 
             //collective_nav-cecutiont
             $('.collective_nav-cecutiont').removeClass('collective_nav-cecutiont--white collective_nav-cecutiont--blue').addClass('collective_nav-cecutiont--black');
@@ -253,6 +286,9 @@ $(document).ready(function() {
             //c-pages_title-h2-cecutiont
             $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--white c-pages_title-h2-cecutiont--blue').addClass('c-pages_title-h2-cecutiont--black');
 
+            //c-pages_title-h1-cecutiont
+            $('.c-pages_title-h1-cecutiont').removeClass('c-pages_title-h1-cecutiont--white c-pages_title-h1-cecutiont--blue').addClass('c-pages_title-h1-cecutiont--black');
+
             //actor-cecutiont
             $('.actor-cecutiont').removeClass('actor-cecutiont--white actor-cecutiont--blue').addClass('actor-cecutiont--black');
 
@@ -264,6 +300,18 @@ $(document).ready(function() {
 
             //fotogallery-play_title
             $('.fotogallery-play_title').removeClass('fotogallery-play_title--white fotogallery-play_title--blue').addClass('fotogallery-play_title--black');
+
+            //search-result
+            $('.search-result').removeClass('search-result--white search-result--blue').addClass('search-result--black');
+
+            //l-ticket-month-cecutiont
+            $('.l-ticket-month-cecutiont').removeClass('l-ticket-month-cecutiont--white l-ticket-month-cecutiont--blue').addClass('l-ticket-month-cecutiont--black');
+
+            //c-card-ticket-cecutiont
+            $('.c-card-ticket-cecutiont').removeClass('c-card-ticket-cecutiont--white c-card-ticket-cecutiont--blue').addClass('c-card-ticket-cecutiont--black');
+
+            //ticket-post_content-cecutiont
+            $('.ticket-post_content-cecutiont').removeClass('ticket-post_content-cecutiont--white ticket-post_content-cecutiont--blue').addClass('ticket-post_content-cecutiont--black');
 
 
             $('body').css({"color":"#fff","background":"#000"});
@@ -297,6 +345,9 @@ $(document).ready(function() {
 
             //c-link-more
             $('.c-link-more').removeClass('c-link-more--white c-link-more--black').addClass('c-link-more--blue');
+
+            //c-link-back
+            $('.c-link-back').removeClass('c-link-back--white c-link-back--black').addClass('c-link-back--blue');
 
             //collective_nav-cecutiont
             $('.collective_nav-cecutiont').removeClass('collective_nav-cecutiont--white collective_nav-cecutiont--black').addClass('collective_nav-cecutiont--blue');
@@ -337,6 +388,9 @@ $(document).ready(function() {
             //c-pages_title-h2-cecutiont
             $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--white c-pages_title-h2-cecutiont--black').addClass('c-pages_title-h2-cecutiont--blue');
 
+            //c-pages_title-h1-cecutiont
+            $('.c-pages_title-h1-cecutiont').removeClass('c-pages_title-h1-cecutiont--white c-pages_title-h1-cecutiont--black').addClass('c-pages_title-h1-cecutiont--blue');
+
             //actor-cecutiont
             $('.actor-cecutiont').removeClass('actor-cecutiont--white actor-cecutiont--black').addClass('actor-cecutiont--blue');
 
@@ -348,6 +402,15 @@ $(document).ready(function() {
 
             //fotogallery-play_title
             $('.fotogallery-play_title').removeClass('fotogallery-play_title--white fotogallery-play_title--black').addClass('fotogallery-play_title--blue');
+
+            //search-result
+            $('.search-result').removeClass('search-result--white search-result--black').addClass('search-result--blue');
+
+            //l-ticket-month-cecutiont
+            $('.l-ticket-month-cecutiont').removeClass('l-ticket-month-cecutiont--white l-ticket-month-cecutiont--black').addClass('l-ticket-month-cecutiont--blue');
+
+            //ticket-post_content-cecutiont
+            $('.ticket-post_content-cecutiont').removeClass('ticket-post_content-cecutiont--white ticket-post_content-cecutiont--black').addClass('ticket-post_content-cecutiont--blue');
 
 
             $('body').css("background","#9DD1FF");
@@ -366,24 +429,24 @@ $(document).ready(function() {
     function SmallFonts(){
         if ($.cookie("CecutientCookie")=="on"){
             //c-card
-            $('.c-card_title, .c-pages_title-h2').removeClass("little_text medium_title big_title").addClass('small_title');
+            $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("little_text medium_title big_title").addClass('small_title');
             $('.c-card_text').removeClass("little_text medium_text big_text").addClass('small_text');
             $('.c-card').animate({'height': '440px'});
             // $('.c-card_text').removeClass("MediumFonts BigFonts").addClass("SmallFonts-text");
             //actor
             $('.c-card-actor_text, .c-card-postnews_date, .c-card-postnews_title').removeClass("small_text medium_text big_text").addClass('little_text');
 
-            $('.c-post-list_title, .text-page-qoute_title').removeClass("medium_title small_title big_title big_title-2x big_title-3x").addClass('little_title');
-            $('.c-post-list_text, .text-page-qoute_text, .actor_post').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
+            $('.c-post-list_title, .text-page-qoute_title, .search-result_title, .actor_about h3, .ticket-post_content h3').removeClass("medium_title small_title big_title big_title-2x big_title-3x").addClass('little_title');
+            $('.c-post-list_text, .text-page-qoute_text, .actor_post, .search-result_text, .search-result_item, .search-result_total').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
 
             //text-page
             $('.text-page_title, .fotogallery-play_title').removeClass("medium_title small_title little_title big_title-2x big_title-3x").addClass('big_title');
             $('.text-page_subtitle').removeClass("medium_title big_title little_title big_title-2x big_title-3x").addClass('small_title');
             $('.text-page p, .text-page ul, .text-page figcaption,' +
-                '.actor_about p, .actor_about ul, .actor_about a').removeClass("medium_text small_text big_text big_text-2x big_text-3x").addClass('little_text');
+                '.actor_about p, .actor_about ul, .actor_about a, .ticket-post_content p, .ticket-post_content ul, .ticket-post_content a').removeClass("medium_text small_text big_text big_text-2x big_text-3x").addClass('little_text');
 
             //about_text
-            $('.about_text, .subscription_text, .c-button--bg-cecution, .subscription_email input').removeClass("little_text medium_text big_text").addClass('small_text');
+            $('.about_text, .subscription_text, .c-button--bg-cecution, .subscription_email input, .c-card-ticket_text').removeClass("little_text medium_text big_text").addClass('small_text');
 
             //text-page-qoute
 
@@ -399,7 +462,7 @@ $(document).ready(function() {
         if ($.cookie("CecutientCookie")=="on"){
             // $('.c-card_text').removeClass("SmallFonts-text BigFonts").addClass("MediumFonts");
             //c-card
-            $('.c-card_title, .c-pages_title-h2').removeClass("small_title big_title").addClass('medium_title');
+            $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("small_title big_title").addClass('medium_title');
             $('.c-card_text, .news_post-title, .news_post-ava-description').removeClass("small_text big_text").addClass('medium_text');
             $('.c-card').animate({'height': '470px'});
             $('.c-card_text').animate({'height': '3.8em'});
@@ -409,17 +472,17 @@ $(document).ready(function() {
             $('.c-card-actor_title').removeClass("small_title medium_title big_title").addClass('little_title');
 
 
-            $('.c-post-list_title, .text-page-qoute_title').removeClass("little_title medium_title big_title big_title-2x big_title-3x").addClass('small_title');
-            $('.c-post-list_text, .text-page-qoute_text, .actor_post').removeClass("small_text little_text big_text big_text-2x big_text-3x").addClass('medium_text');
+            $('.c-post-list_title, .text-page-qoute_title, .search-result_title, .actor_about h3, .ticket-post_content h3').removeClass("little_title medium_title big_title big_title-2x big_title-3x").addClass('small_title');
+            $('.c-post-list_text, .text-page-qoute_text, .actor_post, .search-result_text, .search-result_item, .search-result_total').removeClass("small_text little_text big_text big_text-2x big_text-3x").addClass('medium_text');
 
             //about_text
             $('.about_title, .news_title, .subscription_title').removeClass("little_title small_title medium_title big_title-2x big_title-3x").addClass('big_title');
-            $('.about_text, .subscription_text, .c-button--bg-cecutiont, .subscription_email input').removeClass("little_text small_text medium_text big_text").addClass('medium_text');
+            $('.about_text, .subscription_text, .c-button--bg-cecutiont, .subscription_email input, .c-card-ticket_text, .c-card-ticket_time').removeClass("little_text small_text medium_text big_text").addClass('medium_text');
 
             $('.text-page_title, .fotogallery-play_title').removeClass("medium_title small_title little_title big_title big_title-3x").addClass('big_title-2x');
             $('.text-page_subtitle').removeClass("small_title big_title little_title big_title-2x big_title-3x").addClass('medium_title');
             $('.text-page p, .text-page ul, .text-page figcaption,' +
-                '.actor_about p, .actor_about ul, .actor_about a').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
+                '.actor_about p, .actor_about ul, .actor_about a, .ticket-post_content p, .ticket-post_content ul, .ticket-post_content a').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
 
             //text-page-qoute
 
@@ -434,12 +497,12 @@ $(document).ready(function() {
         if ($.cookie("CecutientCookie")=="on"){
             // $('.c-card_text').removeClass("SmallFonts-text MediumFonts").addClass("BigFonts");
             //c-card
-            $('.c-card_title, .c-pages_title-h2').removeClass("small_title medium_title").addClass('big_title');
+            $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("small_title medium_title").addClass('big_title');
             $('.c-card_text').removeClass("small_text medium_text").addClass('big_text');
             $('.c-card_text').animate({'height': '3.8em'});
             $('.c-card').animate({'height': '480px'});
 
-            $('.c-post-list_title, .text-page-qoute_title').removeClass("little_title small_title big_title big_title-2x big_title-3x").addClass('medium_title');
+            $('.c-post-list_title, .text-page-qoute_title, .search-result_title, .actor_about h3, .ticket-post_content h3').removeClass("little_title small_title big_title big_title-2x big_title-3x").addClass('medium_title');
             $('.c-post-list_text').removeClass("big_text little_text medium_text big_text-2x big_text-3x").addClass('small_text');
 
             //actor
@@ -449,12 +512,12 @@ $(document).ready(function() {
 
             //about_text
             $('.about_title, .news_title, .subscription_title, .fotogallery-play_title').removeClass("little_title small_title medium_title big_title big_title-2x").addClass('big_title-3x');
-            $('.about_text, .subscription_text, .c-button--bg-cecutiont, .text-page-qoute_text, .actor_post').removeClass("little_text small_text medium_text medium_text").addClass('big_text');
+            $('.about_text, .subscription_text, .c-button--bg-cecutiont, .text-page-qoute_text, .actor_post, .search-result_text, .search-result_item, .search-result_total, .c-card-ticket_text, .c-card-ticket_time').removeClass("little_text small_text medium_text medium_text").addClass('big_text');
 
             $('.text-page_title').removeClass("medium_title small_title little_title big_title big_title-2x").addClass('big_title-3x');
             $('.text-page_subtitle').removeClass("small_title medium_title little_title big_title-2x big_title-3x").addClass('big_title');
             $('.text-page p, .text-page ul, .text-page figcaption,' +
-                '.actor_about p, .actor_about ul, .actor_about a').removeClass("little_text small_text big_text big_text-2x big_text-3x").addClass('medium_text');
+                '.actor_about p, .actor_about ul, .actor_about a, .ticket-post_content p, .ticket-post_content ul, .ticket-post_content a').removeClass("little_text small_text big_text big_text-2x big_text-3x").addClass('medium_text');
 
             //text-page-qoute
 

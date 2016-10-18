@@ -487,7 +487,8 @@
 }
 
 //c-link-more
-.c-link-more {
+.c-link-more,
+.c-link-back {
 
   &--white {
     color: #000;
@@ -854,7 +855,8 @@
 }
 
 //c-pages_title-h2
-.c-pages_title-h2-cecutiont {
+.c-pages_title-h2-cecutiont,
+.c-pages_title-h1-cecutiont {
   color: #000;
 
   &--white {
@@ -982,6 +984,184 @@
   }
 }
 
+//search-result_list
+.search-result {
+
+
+  &--white {
+    .search-result_title a,
+    .search-result_text,
+    .search-result_total,
+    .search-result_item,
+    .search-result_total-number {
+      color: #000;
+    }
+    .search-result_top,
+    .search-result_list {
+      border-color: #000;
+    }
+
+    .c-search_button {
+      color: #fff;
+      background-color: #000;
+
+      &::after {
+        content: '';
+        background-image: url(../img/arrows-big-white.png);
+        background-size: 6px 13px;
+      }
+    }
+  }
+
+  &--black {
+    .search-result_title a,
+    .search-result_text,
+    .search-result_total,
+    .search-result_item,
+    .search-result_total-number {
+      color: #fff;
+    }
+    .search-result_top,
+    .search-result_list {
+      border-color: #fff;
+    }
+
+    .c-search_button {
+      color: #000;
+      background-color: #fff;
+
+      &::after {
+        content: '';
+        background-size: 6px 13px;
+      }
+    }
+  }
+
+  &--blue {
+    .search-result_title a,
+    .search-result_text,
+    .search-result_total,
+    .search-result_item,
+    .search-result_total-number {
+      color: #03295e;
+    }
+    .search-result_top,
+    .search-result_list {
+      border-color: #03295e;
+    }
+
+    .c-search_button {
+      color: #fff;
+      background-color: #03295e;
+
+      &::after {
+        content: '';
+        background-image: url(../img/arrows-big-white.png);
+        background-size: 6px 13px;
+      }
+    }
+  }
+}
+
+
+//l-ticket-month
+.l-ticket-month-cecutiont {
+  background-color: #272727;
+
+  &--white {
+    background-color: #272727;
+  }
+
+  &--black {
+    background-color: #272727;
+  }
+
+  &--blue {
+    background-color: #272727;
+  }
+}
+
+//c-card-ticket
+.c-card-ticket-cecutiont {
+    color: #000;
+  &--white {
+    .c-card-ticket_month,
+    .c-card-ticket_time span,
+    .c-age-restrictions span,
+    .c-card-ticket_title a,
+    .c-card-ticket_text {
+      color: #000;
+    }
+    .c-card-ticket_title,
+    .c-age-restrictions,
+    .c-card-ticket {
+      border-color: #000;
+  }
+}
+
+  &--black {
+    .c-card-ticket_month,
+    .c-card-ticket_time span,
+    .c-age-restrictions span,
+    .c-card-ticket_title a,
+    .c-card-ticket_text {
+      color: #fff;
+    }
+    .c-card-ticket_title,
+    .c-age-restrictions,
+    .c-card-ticket {
+      border-color: #fff;
+  }
+}
+
+  &--blue {
+    .c-card-ticket_month,
+    .c-card-ticket_time span,
+    .c-age-restrictions span,
+    .c-card-ticket_title a,
+    .c-card-ticket_text {
+      color: #03295e;
+    }
+    .c-card-ticket_title,
+    .c-age-restrictions,
+    .c-card-ticket {
+      border-color: #03295e;
+    }
+  }
+}
+
+//ticket-post
+.ticket-post_content-cecutiont {
+  color: #000;
+  .ticket-post a {
+    text-decoration: underline;
+  }
+
+  &--white {
+    h1, h2, h3, p, ul, li, figcaption, .actor_title, .actor_post, .actor_ava span {
+      color: #000;
+    }
+  }
+
+  &--black {
+    h1, h2, h3, p, ul, li, figcaption, .actor_title, .actor_post, .actor_ava span {
+      color: #fff;
+    }
+
+    h3 {
+      border-color: #fff;
+    }
+  }
+
+  &--blue {
+    h1, h2, h3, p, ul, li, a, figcaption, .actor_title, .actor_post, .actor_ava span {
+      color: #03295e;
+    }
+  }
+}
+
+//c-pages_title-h1
+.c-pages_title-h1
 
 //is-visible
 .is-visible {

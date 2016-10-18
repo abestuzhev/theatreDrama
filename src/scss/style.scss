@@ -109,7 +109,6 @@ h2 {
     left: 0;
     top: 5px;
     text-transform: none;
-    line-height: 1.8;
   }
 
   .c-age-restrictions {
@@ -1019,6 +1018,8 @@ input[type="checkbox"] {
 
   &_title {
     text-align: left;
+    font-size: 25px;
+    font-weight: 500;
     padding-bottom: 10px;
     border-bottom: 1px dotted #292929;
     margin-bottom: 10px;
@@ -1026,8 +1027,6 @@ input[type="checkbox"] {
     a {
       color: #292929;
       font-family: "Minion Pro";
-      font-size: 25px;
-      font-weight: 500;
       @extend %transition;
 
       &:hover {
@@ -1048,7 +1047,7 @@ input[type="checkbox"] {
     font-weight: 400;
   }
 
-  .c-button--bg {
+  .c-card-ticket_btn {
     position: absolute;
     bottom: 20px;
     right: 0;
@@ -2242,7 +2241,6 @@ input[type="checkbox"] {
     width: 653px;
     height: 59px;
     margin: 0 auto;
-    background-color: #0F0F0F;
     border-right: 1px solid #585858;
     border-left: 1px solid #585858;
 
@@ -2301,7 +2299,7 @@ input[type="checkbox"] {
     position: relative;
   }
 
-  .c-button--bg {
+  &_btn{
     position: absolute;
     right: 0;
     bottom: 0;
