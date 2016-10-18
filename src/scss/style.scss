@@ -604,13 +604,13 @@ input[type="checkbox"] {
   }
 
   &::after {
-    content: '';
+    content: '«';
     position: absolute;
-    top: 8px;
+    font-size: 18px;
+    top: -1px;
     left: 0;
     width: 8px;
     height: 7px;
-    background: url($img-dir + 'link-more-icon.png') -8px 0 no-repeat;
   }
 }
 
@@ -745,16 +745,20 @@ input[type="checkbox"] {
     }
   }
 
-  &_title a{
-    display: block;
-    padding: 16px 22px;
-    text-align: left;
-    color: #292929;
-    font-family: "Minion Pro";
+  &_title {
     font-size: 20px;
     font-weight: 500;
 
+    a {
+      display: block;
+      padding: 16px 22px;
+      text-align: left;
+      color: #292929;
+      font-family: "Minion Pro";
+    }
   }
+
+
 
   &:hover .c-card-fotogallery_img::after{
     opacity: 1;
@@ -917,7 +921,7 @@ input[type="checkbox"] {
   padding: 24px;
   @include clear;
   width: 368px;
-  background-color: #FFF;
+  //background-color: #FFF;
   border: 2px solid #292929;
 
   &_img {
@@ -949,11 +953,11 @@ input[type="checkbox"] {
     text-align: left;
     overflow: hidden;
     height: 152px;
+    font-size: 14px;
+    line-height: 1.4;
 
     a {
      color: #000;
-     font-size: 14px;
-     line-height: 1.4;
      font-weight: 400;
 
      &:hover {
@@ -1308,9 +1312,10 @@ input[type="checkbox"] {
     }
 
     &::after {
-      content: '';
-      top: 10px;
-      background: url($img-dir + 'link-more-icon-white.png') -8px 0 no-repeat;
+      content: '«';
+      position: absolute;
+      font-size: 18px;
+      top: -1px;
     }
   }
 

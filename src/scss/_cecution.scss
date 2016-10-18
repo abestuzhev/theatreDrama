@@ -873,6 +873,113 @@
 //c-card-postnews
 .c-card-postnews {
 
+  &--white {
+    color: #000;
+    border-color:#000;
+    .c-card-postnews_date,
+    .c-card-postnews_title a {
+      color: #000;
+    }
+  }
+
+  &--black {
+    color: #fff;
+    border-color: #fff;
+    .c-card-postnews_date,
+    .c-card-postnews_title a {
+      color: #fff;
+    }
+  }
+
+  &--blue {
+    color: #03295e;
+    border-color: #03295e;
+    .c-card-postnews_date,
+    .c-card-postnews_title a {
+      color: #03295e;
+    }
+  }
+}
+
+//actor
+.actor-cecutiont {
+  color: #000;
+  .actor_about a {
+    text-decoration: underline;
+  }
+
+  &--white {
+    h1, h2, h3, p, ul, li, a, figcaption, .actor_title, .actor_post, .actor_ava span {
+      color: #000;
+    }
+    .actor_top {
+      border-color: #000;
+    }
+  }
+
+  &--black {
+    h1, h2, h3, p, ul, li, a, figcaption, .actor_title, .actor_post, .actor_ava span {
+      color: #fff;
+    }
+    .actor_top {
+      border-color: #fff;
+    }
+
+    h3 {
+      border-color: #fff;
+    }
+  }
+
+  &--blue {
+    h1, h2, h3, p, ul, li, a, figcaption, .actor_title, .actor_post, .actor_ava span {
+      color: #03295e;
+    }
+    .actor_top {
+      border-color: #03295e;
+    }
+  }
+}
+
+//c-card-fotogallery
+.c-card-fotogallery {
+  &--white {
+    border-color: #000;
+    .c-card-fotogallery_title a {
+      color: #000;
+    }
+  }
+
+  &--black {
+    border-color: #fff;
+    .c-card-fotogallery_title a {
+      color: #fff;
+    }
+
+  }
+
+  &--blue {
+    border-color: #03295e;
+    .c-card-fotogallery_title a {
+      color: #03295e;
+    }
+
+  }
+}
+
+//fotogallery-play_title
+.fotogallery-play_title {
+
+  &--white {
+    color: #000;
+  }
+
+  &--black {
+    color: #fff;
+  }
+
+  &--blue {
+    color: #03295e;
+  }
 }
 
 
