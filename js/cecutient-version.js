@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //
-    if ($.cookie("CecutientCookie")=="on"){
+    if ($.cookie("CecutientCookie")=="off"){
         CecutientOn();
         if ($.cookie("fonts")=="small"){SmallFonts();}
         if ($.cookie("fonts")=="medium"){MediumFonts();}
@@ -23,6 +23,7 @@ $(document).ready(function() {
         $('.cecutient-panel_size a').removeClass('is-active');
         $(this).addClass('is-active');
         SmallFonts();
+
     });
     $('#MediumFonts').click(function(e){
         e.preventDefault();
