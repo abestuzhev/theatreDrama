@@ -23,6 +23,7 @@ $(document).ready(function() {
         $('.cecutient-panel_size a').removeClass('is-active');
         $(this).addClass('is-active');
         SmallFonts();
+
     });
     $('#MediumFonts').click(function(e){
         e.preventDefault();
