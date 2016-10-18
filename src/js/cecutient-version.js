@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //
-    if ($.cookie("CecutientCookie")=="on"){
+    if ($.cookie("CecutientCookie")=="off"){
         CecutientOn();
         if ($.cookie("fonts")=="small"){SmallFonts();}
         if ($.cookie("fonts")=="medium"){MediumFonts();}
