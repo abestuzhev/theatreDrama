@@ -235,7 +235,7 @@
 
   .submenu {
     background-color: #000;
-    bottom: -46px;
+    bottom: -48px;
   }
 
   .submenu_link {
@@ -276,6 +276,7 @@
   }
 
   &--black {
+    border-top: 2px solid #fff;
     .submenu {
       background-color: #fff;
     }
@@ -296,6 +297,7 @@
   }
 
   &--blue {
+    border-top: 2px solid #03295e;
     .submenu {
       background-color: #03295e;
     }

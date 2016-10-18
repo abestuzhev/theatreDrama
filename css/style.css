@@ -2239,7 +2239,7 @@ input[type="checkbox"] {
     display: block; }
   .menu-cecutiont .submenu {
     background-color: #000;
-    bottom: -46px; }
+    bottom: -48px; }
   .menu-cecutiont .submenu_link {
     font-size: 18px;
     color: #fff;
@@ -2261,26 +2261,30 @@ input[type="checkbox"] {
   .menu-cecutiont--white .has-children::after {
     content: '';
     border-bottom-color: #000; }
-  .menu-cecutiont--black .submenu {
-    background-color: #fff; }
-  .menu-cecutiont--black .submenu_link {
-    color: #000; }
-  .menu-cecutiont--black a {
-    color: #fff;
-    background-color: transparent; }
-  .menu-cecutiont--black .has-children::after {
-    content: '';
-    border-bottom-color: #fff; }
-  .menu-cecutiont--blue .submenu {
-    background-color: #03295e; }
-  .menu-cecutiont--blue .submenu_link {
-    color: #fff; }
-  .menu-cecutiont--blue a {
-    color: #03295e;
-    background-color: transparent; }
-  .menu-cecutiont--blue .has-children::after {
-    content: '';
-    border-bottom-color: #03295e; }
+  .menu-cecutiont--black {
+    border-top: 2px solid #fff; }
+    .menu-cecutiont--black .submenu {
+      background-color: #fff; }
+    .menu-cecutiont--black .submenu_link {
+      color: #000; }
+    .menu-cecutiont--black a {
+      color: #fff;
+      background-color: transparent; }
+    .menu-cecutiont--black .has-children::after {
+      content: '';
+      border-bottom-color: #fff; }
+  .menu-cecutiont--blue {
+    border-top: 2px solid #03295e; }
+    .menu-cecutiont--blue .submenu {
+      background-color: #03295e; }
+    .menu-cecutiont--blue .submenu_link {
+      color: #fff; }
+    .menu-cecutiont--blue a {
+      color: #03295e;
+      background-color: transparent; }
+    .menu-cecutiont--blue .has-children::after {
+      content: '';
+      border-bottom-color: #03295e; }
 
 .footer-cecutiont {
   background: #000;
