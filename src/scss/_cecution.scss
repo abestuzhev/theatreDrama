@@ -819,6 +819,63 @@
 }
 
 
+//text-page-qoute
+.text-page-qoute {
+
+  &--white {
+    border-color: #000;
+    border-color: #000;
+
+    .text-page-qoute_title,
+    .text-page-qoute_text {
+      color: #000;
+    }
+  }
+
+  &--black {
+    border-color: #fff;
+    border-color: #fff;
+
+    .text-page-qoute_title,
+    .text-page-qoute_text {
+      color: #fff;
+    }
+  }
+
+  &--blue {
+    border-color: #03295e;
+    border-color: #03295e;
+
+    .text-page-qoute_title,
+    .text-page-qoute_text {
+      color: #03295e;
+    }
+  }
+}
+
+//c-pages_title-h2
+.c-pages_title-h2-cecutiont {
+  color: #000;
+
+  &--white {
+    color: #000;
+  }
+
+  &--black {
+    color: #fff;
+  }
+
+  &--blue {
+    color: #03295e;
+  }
+}
+
+//c-card-postnews
+.c-card-postnews {
+
+}
+
+
 //is-visible
 .is-visible {
   display: block;

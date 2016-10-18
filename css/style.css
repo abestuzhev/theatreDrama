@@ -2598,6 +2598,36 @@ input[type="checkbox"] {
 .news-post-cecutiont--blue figcaption {
   color: #03295e; }
 
+.text-page-qoute--white {
+  border-color: #000;
+  border-color: #000; }
+  .text-page-qoute--white .text-page-qoute_title,
+  .text-page-qoute--white .text-page-qoute_text {
+    color: #000; }
+
+.text-page-qoute--black {
+  border-color: #fff;
+  border-color: #fff; }
+  .text-page-qoute--black .text-page-qoute_title,
+  .text-page-qoute--black .text-page-qoute_text {
+    color: #fff; }
+
+.text-page-qoute--blue {
+  border-color: #03295e;
+  border-color: #03295e; }
+  .text-page-qoute--blue .text-page-qoute_title,
+  .text-page-qoute--blue .text-page-qoute_text {
+    color: #03295e; }
+
+.c-pages_title-h2-cecutiont {
+  color: #000; }
+  .c-pages_title-h2-cecutiont--white {
+    color: #000; }
+  .c-pages_title-h2-cecutiont--black {
+    color: #fff; }
+  .c-pages_title-h2-cecutiont--blue {
+    color: #03295e; }
+
 .is-visible {
   display: block; }
 

@@ -86,6 +86,9 @@ $(document).ready(function() {
         //news-post-cecutiont
         $('.news-post').addClass('news-post-cecutiont');
 
+        //.c-pages_title-h2-cecutiont
+        $('.c-pages_title-h2').addClass('c-pages_title-h2-cecutiont');
+
 
         //main
         // $('.collective_nav').addClass("bgc-black");
@@ -159,6 +162,12 @@ $(document).ready(function() {
             //news-post-cecutiont
             $('.news-post-cecutiont').removeClass('news-post-cecutiont--black news-post-cecutiont--blue').addClass('news-post-cecutiont--white');
 
+            //text-page-qoute
+            $('.text-page-qoute').removeClass('text-page-qoute--black text-page-qoute--blue').addClass('text-page-qoute--white');
+
+            //c-pages_title-h2-cecutiont
+            $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--black c-pages_title-h2-cecutiont--blue').addClass('c-pages_title-h2-cecutiont--white');
+
 
 
             $('body').css({"color":"#000","background":"#fff"});
@@ -222,6 +231,12 @@ $(document).ready(function() {
 
             //news-post-cecutiont
             $('.news-post-cecutiont').removeClass('news-post-cecutiont--white news-post-cecutiont--blue').addClass('news-post-cecutiont--black');
+
+            //text-page-qoute
+            $('.text-page-qoute').removeClass('text-page-qoute--white text-page-qoute--blue').addClass('text-page-qoute--black');
+
+            //c-pages_title-h2-cecutiont
+            $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--white c-pages_title-h2-cecutiont--blue').addClass('c-pages_title-h2-cecutiont--black');
 
 
             $('body').css({"color":"#fff","background":"#000"});
@@ -289,6 +304,12 @@ $(document).ready(function() {
             //news-post-cecutiont
             $('.news-post-cecutiont').removeClass('news-post-cecutiont--white news-post-cecutiont--black').addClass('news-post-cecutiont--blue');
 
+            //text-page-qoute
+            $('.text-page-qoute').removeClass('text-page-qoute--white text-page-qoute--black').addClass('text-page-qoute--blue');
+
+            //c-pages_title-h2-cecutiont
+            $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--white c-pages_title-h2-cecutiont--black').addClass('c-pages_title-h2-cecutiont--blue');
+
 
             $('body').css("background","#9DD1FF");
             $('.l-layout').css({"background" : "transparent"});
@@ -306,21 +327,25 @@ $(document).ready(function() {
     function SmallFonts(){
         if ($.cookie("CecutientCookie")=="on"){
             //c-card
-            $('.c-card_title').removeClass("little_text medium_title big_title").addClass('small_title');
+            $('.c-card_title, .c-pages_title-h2').removeClass("little_text medium_title big_title").addClass('small_title');
             $('.c-card_text').removeClass("little_text medium_text big_text").addClass('small_text');
             $('.c-card').animate({'height': '440px'});
             // $('.c-card_text').removeClass("MediumFonts BigFonts").addClass("SmallFonts-text");
             //actor
             $('.c-card-actor_text').removeClass("small_text medium_text big_text").addClass('little_text');
 
-            $('.c-post-list_title').removeClass("medium_title small_title big_title big_title-2x big_title-3x").addClass('little_title');
-            $('.c-post-list_text').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
+            $('.c-post-list_title, .text-page-qoute_title').removeClass("medium_title small_title big_title big_title-2x big_title-3x").addClass('little_title');
+            $('.c-post-list_text, .text-page-qoute_text').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
 
+            //text-page
+            $('.text-page_title').removeClass("medium_title small_title little_title big_title-2x big_title-3x").addClass('big_title');
+            $('.text-page_subtitle').removeClass("medium_title big_title little_title big_title-2x big_title-3x").addClass('small_title');
+            $('.text-page p, .text-page ul, .text-page figcaption').removeClass("medium_text small_text big_text big_text-2x big_text-3x").addClass('little_text');
 
             //about_text
             $('.about_text, .subscription_text, .c-button--bg-cecution, .subscription_email input').removeClass("little_text medium_text big_text").addClass('small_text');
 
-            //news and email
+            //text-page-qoute
 
 
             $.cookie("fonts", "small", {
@@ -334,7 +359,7 @@ $(document).ready(function() {
         if ($.cookie("CecutientCookie")=="on"){
             // $('.c-card_text').removeClass("SmallFonts-text BigFonts").addClass("MediumFonts");
             //c-card
-            $('.c-card_title').removeClass("small_title big_title").addClass('medium_title');
+            $('.c-card_title, .c-pages_title-h2').removeClass("small_title big_title").addClass('medium_title');
             $('.c-card_text, .news_post-title, .news_post-ava-description').removeClass("small_text big_text").addClass('medium_text');
             $('.c-card').animate({'height': '470px'});
             $('.c-card_text').animate({'height': '3.8em'});
@@ -344,14 +369,18 @@ $(document).ready(function() {
             $('.c-card-actor_title').removeClass("small_title medium_title big_title").addClass('little_title');
 
 
-            $('.c-post-list_title').removeClass("little_title medium_title big_title big_title-2x big_title-3x").addClass('small_title');
-            $('.c-post-list_text').removeClass("small_text little_text big_text big_text-2x big_text-3x").addClass('medium_text');
+            $('.c-post-list_title, .text-page-qoute_title').removeClass("little_title medium_title big_title big_title-2x big_title-3x").addClass('small_title');
+            $('.c-post-list_text, .text-page-qoute_text').removeClass("small_text little_text big_text big_text-2x big_text-3x").addClass('medium_text');
 
             //about_text
             $('.about_title, .news_title, .subscription_title').removeClass("little_title small_title medium_title big_title-2x big_title-3x").addClass('big_title');
             $('.about_text, .subscription_text, .c-button--bg-cecutiont, .subscription_email input').removeClass("little_text small_text medium_text big_text").addClass('medium_text');
 
-            //news and email
+            $('.text-page_title').removeClass("medium_title small_title little_title big_title big_title-3x").addClass('big_title-2x');
+            $('.text-page_subtitle').removeClass("small_title big_title little_title big_title-2x big_title-3x").addClass('medium_title');
+            $('.text-page p, .text-page ul, .text-page figcaption').removeClass("medium_text little_text big_text big_text-2x big_text-3x").addClass('small_text');
+
+            //text-page-qoute
 
             $.cookie("fonts", "medium", {
                 expires: 365,
@@ -364,12 +393,12 @@ $(document).ready(function() {
         if ($.cookie("CecutientCookie")=="on"){
             // $('.c-card_text').removeClass("SmallFonts-text MediumFonts").addClass("BigFonts");
             //c-card
-            $('.c-card_title').removeClass("small_title medium_title").addClass('big_title');
+            $('.c-card_title, .c-pages_title-h2').removeClass("small_title medium_title").addClass('big_title');
             $('.c-card_text').removeClass("small_text medium_text").addClass('big_text');
             $('.c-card_text').animate({'height': '3.8em'});
             $('.c-card').animate({'height': '480px'});
 
-            $('.c-post-list_title').removeClass("little_title small_title big_title big_title-2x big_title-3x").addClass('medium_title');
+            $('.c-post-list_title, .text-page-qoute_title').removeClass("little_title small_title big_title big_title-2x big_title-3x").addClass('medium_title');
             $('.c-post-list_text').removeClass("big_text little_text medium_text big_text-2x big_text-3x").addClass('small_text');
 
             //actor
@@ -379,9 +408,13 @@ $(document).ready(function() {
 
             //about_text
             $('.about_title, .news_title, .subscription_title').removeClass("little_title small_title medium_title big_title big_title-2x").addClass('big_title-3x');
-            $('.about_text, .subscription_text, .c-button--bg-cecutiont').removeClass("little_text small_text medium_text medium_text").addClass('big_text');
+            $('.about_text, .subscription_text, .c-button--bg-cecutiont, .text-page-qoute_text').removeClass("little_text small_text medium_text medium_text").addClass('big_text');
 
+            $('.text-page_title').removeClass("medium_title small_title little_title big_title big_title-2x").addClass('big_title-3x');
+            $('.text-page_subtitle').removeClass("small_title medium_title little_title big_title-2x big_title-3x").addClass('big_title');
+            $('.text-page p, .text-page ul, .text-page figcaption').removeClass("little_text small_text big_text big_text-2x big_text-3x").addClass('medium_text');
 
+            //text-page-qoute
 
 
             $.cookie("fonts", "big", {
