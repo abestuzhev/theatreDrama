@@ -334,7 +334,6 @@ input[type="checkbox"] {
   }
 
   &_autocomplete {
-    text-align: left;
     padding-bottom: 40px;
     z-index: 999;
     overflow: hidden;
@@ -534,6 +533,10 @@ input[type="checkbox"] {
     margin-bottom: 8px;
     a {
       color: #292929;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -730,17 +733,13 @@ input[type="checkbox"] {
       background-color: rgba(0, 0, 0, 0.5);
       background-image: url($img-dir + 'version-icon-white.png');
       background-position: 50% 50%;
-      background-size: 26px auto;
+      background-size: 56px auto;
       background-repeat: no-repeat;
       @extend %transition;
     }
 
     img {
-      //max-width: 100%;
       min-height: 100%;
-      //position: absolute;
-      //top: 0;
-      //left: 0;
       @extend %transition;
     }
   }
@@ -864,6 +863,10 @@ input[type="checkbox"] {
       text-align: left;
       font-family: "Open Sans";
       margin-bottom: 8px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -1196,7 +1199,6 @@ input[type="checkbox"] {
 
     &_item {
       display: inline-block;
-      //margin: 0 14px;
       margin: 0;
 
       &:last-child {
@@ -2424,6 +2426,15 @@ input[type="checkbox"] {
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
+  }
+
+  &_size {
+    padding-left: 24px;
+    padding-right: 22px;
+    padding-top: 19px;
+    display: inline-block;
+    position: relative;
+    color: #292929;
 
     &::after {
       content: '';
@@ -2434,15 +2445,6 @@ input[type="checkbox"] {
       right: 0;
       top: 5px;
     }
-  }
-
-  &_size {
-    padding-left: 24px;
-    padding-right: 22px;
-    padding-top: 19px;
-    display: inline-block;
-    position: relative;
-    color: #292929;
 
     a {
       cursor: pointer;
