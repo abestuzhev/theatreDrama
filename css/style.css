@@ -277,6 +277,7 @@ input[type="checkbox"] {
       margin-right: 135px;
       font-size: 19px; }
   .c-search_autocomplete {
+    text-align: left;
     padding-bottom: 40px;
     z-index: 999;
     overflow: hidden;
@@ -881,7 +882,7 @@ input[type="checkbox"] {
       margin-bottom: 16px; }
     .header-menu_item {
       display: inline-block;
-      margin: 0 14px; }
+      margin: 0; }
       .header-menu_item:last-child {
         margin-right: 0; }
       .header-menu_item:hover .submenu {
@@ -899,6 +900,7 @@ input[type="checkbox"] {
       text-transform: uppercase;
       color: #292929;
       position: relative;
+      padding: 0 10px;
       padding-bottom: 20px; }
       .header-menu_link:hover {
         color: #b42b25; }
@@ -2230,12 +2232,10 @@ input[type="checkbox"] {
   margin-top: 22px; }
   .menu-cecutiont .header-menu_list {
     margin: 0; }
-  .menu-cecutiont .header-menu_item {
-    margin: 0 21px; }
   .menu-cecutiont .header-menu_link {
     font-weight: 600;
     font-size: 27px;
-    padding: 18px 0;
+    padding: 18px 21px;
     display: block; }
   .menu-cecutiont .submenu {
     background-color: #000;
@@ -2341,6 +2341,12 @@ input[type="checkbox"] {
       color: #03295e; }
     .footer-cecutiont--blue .c-social svg {
       stroke: #03295e; }
+  .footer-cecutiont .c-search_autocomplete {
+    width: 75%;
+    height: 70px; }
+  .footer-cecutiont .autocomplete_list {
+    overflow: hidden;
+    height: 35px; }
 
 .c-card-cecutiont .c-age-restrictions {
   background-color: #fff;
@@ -2394,6 +2400,9 @@ input[type="checkbox"] {
 .c-link-more--blue,
 .c-link-back--blue {
   color: #03295e; }
+
+.c-search_autocomplete .c-link-more--black {
+  color: #000; }
 
 .collective_nav-cecutiont {
   color: #fff;
@@ -2718,7 +2727,7 @@ input[type="checkbox"] {
   background-color: #000; }
   .search-result--white .c-search_button::after {
     content: '';
-    background-image: url(../img/arrows-big-white.png);
+    background-image: url("../img/arrows-big-white.png");
     background-size: 6px 13px; }
 
 .search-result--black .search-result_title a,
@@ -2755,7 +2764,7 @@ input[type="checkbox"] {
   background-color: #03295e; }
   .search-result--blue .c-search_button::after {
     content: '';
-    background-image: url(../img/arrows-big-white.png);
+    background-image: url("../img/arrows-big-white.png");
     background-size: 6px 13px; }
 
 .l-ticket-month-cecutiont {

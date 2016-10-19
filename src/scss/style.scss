@@ -334,6 +334,7 @@ input[type="checkbox"] {
   }
 
   &_autocomplete {
+    text-align: left;
     padding-bottom: 40px;
     z-index: 999;
     overflow: hidden;
@@ -1195,7 +1196,8 @@ input[type="checkbox"] {
 
     &_item {
       display: inline-block;
-      margin: 0 14px;
+      //margin: 0 14px;
+      margin: 0;
 
       &:last-child {
         margin-right: 0;
@@ -1222,6 +1224,7 @@ input[type="checkbox"] {
       color: #292929;
       @extend %transition;
       position: relative;
+      padding: 0 10px;
       padding-bottom: 20px;
 
       &:hover {

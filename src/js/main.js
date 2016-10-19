@@ -1,14 +1,16 @@
 $(document).ready(function() {
 
-    $('#header-search').focus(function() {
-        $('.c-search_autocomplete').show();
+    $('#search').focus(function() {
+        $(this).siblings('.c-search_autocomplete').show();
         $(document).bind('focusin.c-search_autocomplete click.c-search_autocomplete',function(e) {
-            if ($(e.target).closest('#header-search, .c-search_autocomplete').length) return;
+            if ($(e.target).closest('#search, .c-search_autocomplete').length) return;
             $(document).unbind('.c-search_autocomplete');
             $('.c-search_autocomplete').fadeOut(100);
         });
     });
     $('.c-search_autocomplete').hide();
+
+
 
 
     $('.top-slider').slick({
