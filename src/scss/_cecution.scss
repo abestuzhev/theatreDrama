@@ -223,13 +223,13 @@
   }
 
   .header-menu_item {
-    //margin: 0 21px;
+    margin: 0 21px;
   }
 
   .header-menu_link {
     font-weight: 600;
     font-size: 27px;
-    padding: 18px 21px;
+    padding: 18px 0;
     display: block;
   }
 
@@ -414,16 +414,6 @@
       stroke: #03295e;
     }
   }
-
-  .c-search_autocomplete {
-    width: 75%;
-    height: 70px;
-  }
-
-  .autocomplete_list {
-    overflow: hidden;
-    height: 35px;
-  }
 }
 
 //c-card
@@ -512,13 +502,6 @@
 
   &--blue {
     color: #03295e;
-  }
-}
-
-.c-search_autocomplete .c-link-more {
-
-  &--black {
-    color: #000;
   }
 }
 
@@ -1026,7 +1009,7 @@
 
       &::after {
         content: '';
-        background-image: url($img-dir + 'arrows-big-white.png');
+        background-image: url(../img/arrows-big-white.png);
         background-size: 6px 13px;
       }
     }
@@ -1075,7 +1058,7 @@
 
       &::after {
         content: '';
-        background-image: url($img-dir + 'arrows-big-white.png');
+        background-image: url(../img/arrows-big-white.png);
         background-size: 6px 13px;
       }
     }

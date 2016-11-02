@@ -64,6 +64,18 @@ p {
   p:last-of-type {
     margin-bottom: 32px; }
 
+blockquote {
+  color: #000;
+  font-family: "Minion Pro";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  padding: 14px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 0;
+  margin-bottom: 20px; }
+
 figure {
   margin: 0;
   padding-right: 20px;
@@ -1472,8 +1484,8 @@ input[type="checkbox"] {
     float: left; }
 
 .text-page-qoute {
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   padding: 10px 0px;
   margin-bottom: 16px; }
   .text-page-qoute::after {
@@ -2235,10 +2247,12 @@ input[type="checkbox"] {
   margin-top: 22px; }
   .menu-cecutiont .header-menu_list {
     margin: 0; }
+  .menu-cecutiont .header-menu_item {
+    margin: 0 21px; }
   .menu-cecutiont .header-menu_link {
     font-weight: 600;
     font-size: 27px;
-    padding: 18px 21px;
+    padding: 18px 0;
     display: block; }
   .menu-cecutiont .submenu {
     background-color: #000;
@@ -2344,12 +2358,6 @@ input[type="checkbox"] {
       color: #03295e; }
     .footer-cecutiont--blue .c-social svg {
       stroke: #03295e; }
-  .footer-cecutiont .c-search_autocomplete {
-    width: 75%;
-    height: 70px; }
-  .footer-cecutiont .autocomplete_list {
-    overflow: hidden;
-    height: 35px; }
 
 .c-card-cecutiont .c-age-restrictions {
   background-color: #fff;
@@ -2403,9 +2411,6 @@ input[type="checkbox"] {
 .c-link-more--blue,
 .c-link-back--blue {
   color: #03295e; }
-
-.c-search_autocomplete .c-link-more--black {
-  color: #000; }
 
 .collective_nav-cecutiont {
   color: #fff;
@@ -2730,7 +2735,7 @@ input[type="checkbox"] {
   background-color: #000; }
   .search-result--white .c-search_button::after {
     content: '';
-    background-image: url("../img/arrows-big-white.png");
+    background-image: url(../img/arrows-big-white.png);
     background-size: 6px 13px; }
 
 .search-result--black .search-result_title a,
@@ -2767,7 +2772,7 @@ input[type="checkbox"] {
   background-color: #03295e; }
   .search-result--blue .c-search_button::after {
     content: '';
-    background-image: url("../img/arrows-big-white.png");
+    background-image: url(../img/arrows-big-white.png);
     background-size: 6px 13px; }
 
 .l-ticket-month-cecutiont {
