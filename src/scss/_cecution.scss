@@ -856,6 +856,21 @@
   }
 }
 
+//text-page-data
+.text-page-data {
+
+  &--white {
+    color: #000;
+  }
+
+  &--black {
+    color: #fff;
+  }
+
+  &--blue {
+  color: #03295e;
+}
+
 //c-pages_title-h2
 .c-pages_title-h2-cecutiont,
 .c-pages_title-h1-cecutiont {

@@ -217,6 +217,7 @@ $(document).ready(function() {
 
 
             $('body').css({"color":"#000","background":"#fff"});
+            $('blockquote').css({"color":"#000","border-color":"#000"});
 
             $.cookie("style", "white", {
                 expires: 365,
@@ -318,6 +319,7 @@ $(document).ready(function() {
             $('body').css({"color":"#fff","background":"#000"});
             $('.l-layout').css({"background" : "transparent"});
             $('.header').css({"background" : "transparent"});
+            $('blockquote').css({"color":"#fff","border-color":"#fff"});
 
 
             $.cookie("style", "black", {
@@ -386,6 +388,9 @@ $(document).ready(function() {
             //text-page-qoute
             $('.text-page-qoute').removeClass('text-page-qoute--white text-page-qoute--black').addClass('text-page-qoute--blue');
 
+            //text-page-data
+            $('.text-page_date').removeClass('text-page-data--white text-page-data--black').addClass('text-page-data--blue');
+
             //c-pages_title-h2-cecutiont
             $('.c-pages_title-h2-cecutiont').removeClass('c-pages_title-h2-cecutiont--white c-pages_title-h2-cecutiont--black').addClass('c-pages_title-h2-cecutiont--blue');
 
@@ -417,6 +422,7 @@ $(document).ready(function() {
             $('body').css("background","#9DD1FF");
             $('.l-layout').css({"background" : "transparent"});
             $('.header').css({"background" : "transparent"});
+            $('blockquote').css({"color":"#03295e","border-color":"#03295e"});
 
             $.cookie("style", "blue", {
                 expires: 365,
@@ -431,7 +437,7 @@ $(document).ready(function() {
         if ($.cookie("CecutientCookie")=="on"){
             //c-card
             $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("little_text medium_title big_title").addClass('small_title');
-            $('.c-card_text').removeClass("little_text medium_text big_text").addClass('small_text');
+            $('.c-card_text, blockquote').removeClass("little_text medium_text big_text").addClass('small_text');
             $('.c-card').animate({'height': '440px'});
             // $('.c-card_text').removeClass("MediumFonts BigFonts").addClass("SmallFonts-text");
             //actor
@@ -464,7 +470,7 @@ $(document).ready(function() {
             // $('.c-card_text').removeClass("SmallFonts-text BigFonts").addClass("MediumFonts");
             //c-card
             $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("small_title big_title").addClass('medium_title');
-            $('.c-card_text, .news_post-title, .news_post-ava-description').removeClass("small_text big_text").addClass('medium_text');
+            $('.c-card_text, .news_post-title, .news_post-ava-description, blockquote').removeClass("small_text big_text").addClass('medium_text');
             $('.c-card').animate({'height': '470px'});
             $('.c-card_text').animate({'height': '3.8em'});
 
@@ -499,7 +505,7 @@ $(document).ready(function() {
             // $('.c-card_text').removeClass("SmallFonts-text MediumFonts").addClass("BigFonts");
             //c-card
             $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("small_title medium_title").addClass('big_title');
-            $('.c-card_text').removeClass("small_text medium_text").addClass('big_text');
+            $('.c-card_text, blockquote').removeClass("small_text medium_text").addClass('big_text');
             $('.c-card_text').animate({'height': '3.8em'});
             $('.c-card').animate({'height': '480px'});
 
