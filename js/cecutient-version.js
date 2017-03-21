@@ -437,7 +437,7 @@ $(document).ready(function() {
         if ($.cookie("CecutientCookie")=="on"){
             //c-card
             $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("little_text medium_title big_title").addClass('small_title');
-            $('.c-card_text, blockquote').removeClass("little_text medium_text big_text").addClass('small_text');
+            $('.c-card_text, .c-card_text1, blockquote').removeClass("little_text medium_text big_text").addClass('small_text');
             $('.c-card').animate({'height': '440px'});
             // $('.c-card_text').removeClass("MediumFonts BigFonts").addClass("SmallFonts-text");
             //actor
@@ -470,9 +470,9 @@ $(document).ready(function() {
             // $('.c-card_text').removeClass("SmallFonts-text BigFonts").addClass("MediumFonts");
             //c-card
             $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("small_title big_title").addClass('medium_title');
-            $('.c-card_text, .news_post-title, .news_post-ava-description, blockquote').removeClass("small_text big_text").addClass('medium_text');
+            $('.c-card_text, .c-card_text1, .news_post-title, .news_post-ava-description, blockquote').removeClass("small_text big_text").addClass('medium_text');
             $('.c-card').animate({'height': '470px'});
-            $('.c-card_text').animate({'height': '3.8em'});
+            $('.c-card_text, .c-card_text1').animate({'height': '3.8em'});
 
             //actor
             $('.c-card-actor_text, .c-card-postnews_date, .c-card-postnews_title').removeClass("little_text medium_text big_text").addClass('small_text');
@@ -505,8 +505,8 @@ $(document).ready(function() {
             // $('.c-card_text').removeClass("SmallFonts-text MediumFonts").addClass("BigFonts");
             //c-card
             $('.c-card_title, .c-pages_title-h2, .c-card-ticket_title').removeClass("small_title medium_title").addClass('big_title');
-            $('.c-card_text, blockquote').removeClass("small_text medium_text").addClass('big_text');
-            $('.c-card_text').animate({'height': '3.8em'});
+            $('.c-card_text, .c-card_text1, blockquote').removeClass("small_text medium_text").addClass('big_text');
+            $('.c-card_text, .c-card_text1').animate({'height': '3.8em'});
             $('.c-card').animate({'height': '480px'});
 
             $('.c-post-list_title, .text-page-qoute_title, .search-result_title, .actor_about h3, .ticket-post_content h3').removeClass("little_title small_title big_title big_title-2x big_title-3x").addClass('medium_title');
