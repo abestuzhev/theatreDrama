@@ -1,3 +1,39 @@
+/*кнопка в шапке*/
+.header-version {
+    position: relative;
+}
+
+.c-rating-services {
+    vertical-align: top;
+    display: inline-block;
+    color: #595959;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    padding-left: 30px;
+    border: 1px dotted #000;
+    position: relative;
+    letter-spacing: .5px;
+    right: 103%;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.c-rating-services::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/icon-raiting.png) 0 0 no-repeat;
+}
+
+/**/
+
+
 .question {
     font-family: 'Open Sans', sans-serif;
 }
